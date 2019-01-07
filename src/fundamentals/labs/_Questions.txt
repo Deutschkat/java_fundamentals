@@ -1,0 +1,41 @@
+Answer the following questions:
+
+1.) Using the command line, how do you:
+    a. change directories?
+    b. list the contents of a folder?
+    c. print the path of the current directory?
+    d. move a file from one location to the another?
+    e. copy a file from one location to another?
+    f. create a file?
+    g. create a folder?
+    h. delete a file?
+    i. delete a folder?
+    j. print the contents of a file?
+    k. edit the contents of a file?
+
+2.) Why do we use git and Github?
+
+3.) What is the general flow of git?
+
+4.) What is the purpose of adding a remote to a local git repository?
+
+5.) How do you print a message to the console?
+
+6.) Where does a program begin its execution?
+
+7.) What is a code block and how do you create one?
+
+8.) What is the idea of variable scope?
+
+9.) What are semicolons used for?
+
+10.) What are lines of code indented? When should a line be indented?
+
+11.) What does a .java file need to be complied to a .class file before running?
+
+
+
+
+
+
+

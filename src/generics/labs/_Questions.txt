@@ -1,0 +1,11 @@
+Answer the following questions:
+
+1.) Why do we use generics?
+
+2.) What is type erasure?
+
+3.) What is an example of a generic class that we have seen in the past?
+
+4.) Can an interface be generic?
+
+5.) What are bound and unbound generic types?

@@ -1,0 +1,19 @@
+Answer the following questions:
+
+1.) What is a byte stream?
+
+2.) What is a character stream?
+
+3.) What two classes are at the top of the the byte stream hierarchy?
+
+4.) What two classes are at the top of the the character stream hierarchy?
+
+5.) List at least three byte stream classes.
+
+6.) List at least three character stream classes.
+
+7.) What is a try-with-resources?
+
+8.) What makes the BufferedReader different from the BufferedInputStream?
+
+9.) When would you use the read() method vs. the readline() method?

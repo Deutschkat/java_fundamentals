@@ -1,0 +1,11 @@
+Answer the following questions:
+
+1.) What is a thread and why do we use them?
+
+2.) What are the two ways to create a thread?
+
+3.) How do you start a thread using the Runnable interface?
+
+4.) How do you start a thread using the Thread class?
+
+5.) How do you change a thread priority?

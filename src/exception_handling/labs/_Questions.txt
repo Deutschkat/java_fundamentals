@@ -1,0 +1,24 @@
+Answer the following questions:
+
+1.) What is exception handling?
+
+2.) What is the exception hierarchy? What is the difference between the Exception class and the Error class?
+
+3.) What is a try/catch?
+
+4.) What exceptions have you come across thus far?
+
+5.) How many catch statement can you have following a try?
+
+6.) How many try statements can you have preceding a catch?
+
+7.) What does the finally statement do in a try/catch/finally block?
+
+8.) Can you nest exceptions? If so, when would you nest an exception?
+
+9.) If you want to catch an ArrayIndexOutOfBounds exception and an Exception exception,
+    which should you catch first? Why?
+
+10.) How do you rethrow and exception? Why would you rethrow an exception?
+
+11.) What is the purpose of the throws keyword?

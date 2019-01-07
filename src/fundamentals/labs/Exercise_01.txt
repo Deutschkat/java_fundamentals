@@ -1,0 +1,24 @@
+Fundamentals Exercise 1: CLI
+     Perform the following tasks using the CLI and copy and paste the commands and results below
+
+     1. Navigate to CodingNomads folder (or the space you have create for this project)
+     2. Create new folder Terminal_testing
+     3. Inside of folder Terminal_testing,
+         a. create 3 new .txt files all with different names
+         b. print the directory path
+         c. list the contents of the folder
+     5. Inside of folder Terminal_testing, create a new folder
+     6. Copy a file from Terminal_testing to the new folder
+     7. Move a different file from Terminal testing to the new folder
+     8. Demonstrate removing:
+         a. A file
+         b. A folder
+     9. CHALLENGE:
+         a. Use $ vim to write some text inside a file
+         b. Use $ cat print contents of file
+         c. Use $ grep to search for a word inside file
+
+Example Output (pwd):
+    1. Cadens-MacBook-Pro:CodingNomads cadenmackenzie$ pwd
+       /Users/cadenmackenzie/Documents/CodingNomads
+

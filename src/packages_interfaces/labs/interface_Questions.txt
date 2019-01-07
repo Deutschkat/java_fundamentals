@@ -1,0 +1,21 @@
+Answer the following questions:
+
+1.) What is an interface?
+
+2.) Why are interfaces implemented?
+
+3.) What is the implement keyword used for?
+
+4.) How many interfaces can class implement?
+
+5.) Write a simple interface with one method.
+
+6.) Think of a real world application where interfaces are used. Describe it's purpose.
+
+7.) What is wrong with the following interface?
+
+    public interface IncorrectInterface{
+        int sum(int x, int y){
+            return x + y;
+        }
+    }

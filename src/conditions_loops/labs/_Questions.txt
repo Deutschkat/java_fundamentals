@@ -1,0 +1,17 @@
+Answer the following questions:
+
+1.) What is the if statement used for?
+
+2.) What is good real life application of a switch statement?
+
+3.) What is the difference between a while loop and a do-while loop?
+
+4.) What is the difference between a for loop and an enhanced for loop?
+
+5.) How do you create an infinite for loop?
+
+6.) What is the difference between the break statement and the continue statement?
+
+7.) Is there a limit to how many loops you can nest?
+
+8.) Is there a limit to how many conditional statements you can nest?
