@@ -1,8 +1,6 @@
 package fundamentals.examples;
 
 /*
-   Try This 1-1
-
    This program converts gallons to liters.
 
    Call this program GalToLit.java.

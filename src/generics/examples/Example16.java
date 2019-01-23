@@ -1,8 +1,6 @@
 package generics.examples;
 
 /*
-    Try This 13-1
-
     Demonstrate a generic queue class.
 */
 class GenQDemo {

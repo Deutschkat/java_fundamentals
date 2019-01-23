@@ -1,7 +1,6 @@
 package exception_handling.examples;
 
 /*
-    Try This 9-1
 
     Add exception handling to the queue classes.
 */

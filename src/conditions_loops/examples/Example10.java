@@ -1,8 +1,6 @@
 package conditions_loops.examples;
 
 /*
-   Try This 3-1
-
    A simple help system.
 */
 class Help {

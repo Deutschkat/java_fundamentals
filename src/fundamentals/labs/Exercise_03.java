@@ -14,7 +14,9 @@ public class Exercise_03 {
 
     public static void main(String[] args) {
 
-        // write code here
+        System.out.println("Hello World!");
+
+        // write code to print out "Check out my first program!" below
 
     }
 

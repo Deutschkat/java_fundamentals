@@ -1,7 +1,6 @@
 package datatypes_operators.examples;
 
 /*
-   Try This 2-2
 
    Print a truth table for the logical operators.
 */

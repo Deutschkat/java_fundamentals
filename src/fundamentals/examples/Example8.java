@@ -1,7 +1,6 @@
 package fundamentals.examples;
 
 /*
-   Try This 1-2
 
    This program displays a conversion
    table of gallons to liters.

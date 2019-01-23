@@ -1,7 +1,5 @@
 package inheritance.examples;
 
-// Try This 7-1
-//
 // Build a subclass of Vehicle for trucks.
 class Vehicle {
     private int passengers; // number of passengers

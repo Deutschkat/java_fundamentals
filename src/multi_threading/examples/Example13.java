@@ -1,8 +1,6 @@
 package multi_threading.examples;
 
 /*
-   Try This 11-2
-
    Controlling the main thread.
 */
 

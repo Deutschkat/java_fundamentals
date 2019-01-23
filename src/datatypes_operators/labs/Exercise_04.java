@@ -1,15 +1,25 @@
 package datatypes_operators.labs;
 
 /**
- * Data Types and Operators Exercise 4: Arrays calculator
+ * Please demonstrate the use of all relational operators below. These include:
  *
- *      Take in 10 numbers from the user. Place the numbers in an array. Using the loop of your choice,
- *      calculate the sum of all of the numbers in the array as well as the average.
- *
- *      Print the results to the console.
+ * less than, less than or equal to, greater than, greater than or equal to, and equal to
  *
  */
+class RelationalOperators {
 
-public class Exercise_04{
+    public static void main(String[] args) {
+
+        // example of "less than"
+        int a = 1;
+        int b = 2;
+        if (a < b){
+            System.out.println("a is less than b");
+        }
+
+        // write your code below
+
+    }
 
 }
+

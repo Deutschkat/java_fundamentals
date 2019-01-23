@@ -1,12 +1,5 @@
 package objects_classes_methods.examples;
 
-/*
-    Try This 4-1
-
-    Convert the help system from Try This 3-3 into
-    a Help class.
-*/
-
 class Help {
     void helpOn(int what) {
         switch(what) {

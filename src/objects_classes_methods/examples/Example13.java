@@ -1,7 +1,6 @@
 package objects_classes_methods.examples;
 
 /*
-   Try This 4-2
    Demonstrate garbage collection and the finalize() method.
 */
 

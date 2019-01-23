@@ -1,8 +1,6 @@
 package datatypes_operators.examples;
 
 /*
-   Try This 2-1
-
    Compute the distance to a lightening
    strke whose sound takes 7.2 seconds
    to reach you.

@@ -1,23 +1,18 @@
 package datatypes_operators.labs;
 
 /**
- * Data Types and Operators Exercise 3: Pig latin
+ * Please demonstrate the use of all arithmetic operators below. These include:
  *
- *      Take in the user's name and print out their name translated to pig latin.
- *      For the purpose of this program, we will say that any word or name can be
- *      translated to pig latin by moving the first letter to the end, followed by "ay".
- *      For example: ryan -> yanray, caden -> adencay
+ * addition, subtraction, multiplication, division and modulus
  *
- *      HINT: We will make use of the substring() method.
  */
-
-public class Exercise_03 {
+class ArithmeticOperators {
 
     public static void main(String[] args) {
 
-        // write code here
+        // write your code below
 
     }
-}
 
+}
 

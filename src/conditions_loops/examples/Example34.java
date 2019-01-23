@@ -1,7 +1,6 @@
 package conditions_loops.examples;
 
 /*
-   Try This 3-3
 
    The finished Java statement Help system
    that processes multiple requests.

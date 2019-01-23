@@ -1,8 +1,6 @@
 package multi_threading.examples;
 
 /*
-   Try This 11-1
-
    Extend Thread.
 */
 class MyThread3 extends Thread {

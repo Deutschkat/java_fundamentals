@@ -9,6 +9,7 @@ class Vehicle4 {
 
     private double interestRate = .05;
 
+    // notice that the variables below are private
     private int passengers; // number of passengers
     private int fuelcap;    // fuel capacity in gallons
     private int mpg;        // fuel consumption in miles per gallon
@@ -39,22 +40,24 @@ class VehicleDemo {
         double i = minivan.getInterestRate();
 
 
+        // UNCOMMENT THE LINES BELOW - WHY DO WE SEE ERRORS?
 
-//        minivan.passengers = 7;
-//        minivan.fuelcap = 16;
-//        minivan.mpg = 22;
-//       // minivan.val = 12;
-//
-//
-//        Vehicle4 corvette = new Vehicle4();
-//        corvette.passengers = 2;
-//        corvette.fuelcap = 15;
-//        corvette.mpg = 12;
-//
-//        range = minivan.mpg * minivan.fuelcap;
-//
-//        System.out.println("Minivan can carry " + minivan.passengers +
-//                " with a range of " + range);
+        /*
+        minivan.passengers = 7;
+        minivan.fuelcap = 16;
+        minivan.mpg = 22;
+
+
+        Vehicle4 corvette = new Vehicle4();
+        corvette.passengers = 2;
+        corvette.fuelcap = 15;
+        corvette.mpg = 12;
+
+        range = minivan.mpg * minivan.fuelcap;
+
+        System.out.println("Minivan can carry " + minivan.passengers +
+                " with a range of " + range);
+        */
 
         int val = sum(10,12);
 

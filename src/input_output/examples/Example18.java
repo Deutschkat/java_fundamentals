@@ -1,8 +1,6 @@
 package input_output.examples;
 
 /*
-   Try This 10-2
-
    A help program that uses a disk file
    to store help information.
 

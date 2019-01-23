@@ -1,8 +1,6 @@
 package input_output.examples;
 
 /*
-   Try This 10-1
-
    Compare two files.
 
    To use this program, specify the names

@@ -1,8 +1,6 @@
 package conditions_loops.examples;
 
 /*
-    Try This 3-2
-
     An improved Help system that uses a
     do-while to process a menu selection.
 */
