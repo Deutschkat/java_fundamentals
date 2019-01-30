@@ -1,4 +1,4 @@
-package packages.package_01;
+package packages.examples.package_01;
 
 
 public class Book2 {

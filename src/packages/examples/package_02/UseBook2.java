@@ -1,6 +1,6 @@
-package packages.package_02;
+package packages.examples.package_02;
 
-import packages.package_01.Book3;
+import packages.examples.package_01.Book3;
 
 // Use the Book Class from package_01.
 class UseBook2 {

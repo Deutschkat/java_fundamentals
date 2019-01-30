@@ -1,4 +1,4 @@
-package packages.package_02;
+package packages.examples.package_02;
 
 class IFExtend {
     public static void main(String arg[]) {

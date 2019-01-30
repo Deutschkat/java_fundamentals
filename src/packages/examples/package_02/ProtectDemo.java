@@ -1,4 +1,4 @@
-package packages.package_02;
+package packages.examples.package_02;
 
 class ProtectDemo {
     public static void main(String args[]) {

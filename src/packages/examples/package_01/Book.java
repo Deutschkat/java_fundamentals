@@ -1,4 +1,4 @@
-package packages.package_01;
+package packages.examples.package_01;
 
 /**
 * Created by ryandesmond on 3/27/17.

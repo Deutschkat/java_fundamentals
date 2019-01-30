@@ -1,6 +1,6 @@
-package packages.package_02;
+package packages.examples.package_02;
 
-import packages.package_01.Book3;
+import packages.examples.package_01.Book3;
 
 class ExtBook extends Book3 {
     private String publisher;

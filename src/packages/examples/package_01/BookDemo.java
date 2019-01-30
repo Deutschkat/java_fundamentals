@@ -1,12 +1,8 @@
-package packages.package_02;
+package packages.examples.package_01;
 
-
-import packages.package_01.*;
-
-// Use the Book Class from package_01.
-class UseBook {
+public class BookDemo {
     public static void main(String args[]) {
-        Book books[] = new Book [5];
+        Book books[] = new Book[5];
 
         books[0] = new Book("Java: A Beginner's Guide",
                 "Schildt", 2014);

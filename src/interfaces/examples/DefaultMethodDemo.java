@@ -1,7 +1,5 @@
 package interfaces.examples;
 
-import packages.package_02.MyIFImp;
-
 // Use the default method.
 class DefaultMethodDemo {
     public static void main(String args[]) {
