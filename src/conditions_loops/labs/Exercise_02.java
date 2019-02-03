@@ -14,14 +14,10 @@ public class Exercise_02 {
 
     public static void main(String[] args) {
 
-        // create scanner
-
-        // prompt user
-
-        // assign input to variable as int
-
-
-        // write completed code here
+        // 1) create scanner
+        // 2) prompt user
+        // 3) assign input to variable as int
+        // 4) write completed code here
 
     }
 }
