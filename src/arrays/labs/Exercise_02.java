@@ -1,7 +1,7 @@
 package arrays.labs;
 
 /**
- * Data Types and Operators Exercise 5: More arrays
+ *  More arrays
  *
  *      Using the array below, take in a number from 1-10 from the user and print out the index of that
  *      element.

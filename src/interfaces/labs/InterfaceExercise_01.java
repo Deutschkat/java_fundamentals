@@ -5,7 +5,7 @@ package interfaces.labs;
  *
  *      1) Write an interface with at least three methods. Write two classes that implement the
  *          interface in different ways.
- *      2) Write a class that extends one of the classes from the previous step. Overwrite the methods in
+ *      2) Write a class that extends one of the classes from the previous step. Override the methods in
  *          the parent class.
  *
  *      NOTE: We encourage you to be creative and try to think of an example of your own for this

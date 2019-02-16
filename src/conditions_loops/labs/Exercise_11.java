@@ -4,7 +4,7 @@ package conditions_loops.labs;
  * Conditions and Loops Exercise 11: Nested for loop
  *
  *      Use a nested for loop to generate a multiplication table for numbers 1-10.
- *      The output should look something like this:
+ *      The output should look something like this: (you don't need to worry about perfect alignment)
  *
  *      1 |2 |3 |4 |5 |6 |7 |8 |9 |10 |
  *      2 |4 |6 |8 |10|12|14|16|18|20 |

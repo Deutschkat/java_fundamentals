@@ -1,0 +1,8 @@
+
+Building off the previous classes we created in Exercise_01
+
+1) Create a toString() method in each POJO. You can do this by holding down the Control key and hitting
+enter at the same time. If you see a small menu choose toString() and generate from there. Otherwise you can
+select "Code" from the top most navbar of IntelliJ and then select "Generate" and choose toString();
+
+2) In the main() method you created in the controller classes demonstrate creating a number of Objects
