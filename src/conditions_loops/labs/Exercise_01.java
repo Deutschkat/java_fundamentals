@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Conditions and Loops Exercise 1: Even or Odd
  *
- *      Write a program that gets a number between 1 and 1,000,000,000
+ *      Write a program that gets a number between 1 and 1,000,000
  *      from the user and determines whether it is odd
  *      or even using an if statement. Print the result.
  *

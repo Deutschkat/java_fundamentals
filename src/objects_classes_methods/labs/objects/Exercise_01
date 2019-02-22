@@ -1,0 +1,3 @@
+
+Following the example in CarExample.java, please use Object Composition to model an Airplane class.
+The Airplane class must be composed of at least 4 other classes (as well as any primitive types you'd like)

@@ -75,24 +75,7 @@ class VehicleDemo {
         return number;
     }
 
-    public static Kitchen createKitchen(){
-        Kitchen kitchen = new Kitchen();
-        return kitchen;
-    }
-
     public static int sum(int a, int b){
         return a + b;
-    }
-}
-
-class Kitchen{
-    int burners;
-    int sinks;
-    int windows;
-
-    Kitchen(){
-        burners = 2;
-        sinks = 3;
-        windows = 5;
     }
 }

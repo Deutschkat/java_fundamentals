@@ -6,4 +6,9 @@ enter at the same time. If you see a small menu choose toString() and generate f
 select "Code" from the top most navbar of IntelliJ and then select "Generate" and choose toString();
 
 2) In the main() method you created in the controller classes demonstrate creating a number of Objects using a variety
-of constructors.
+of constructors that you created in the previous exercise.
+
+3) After creating these objects, print the status of these objects. For example:
+System.out.println(cardObj.toString())
+
+4) Delete all the code inside your main() method
