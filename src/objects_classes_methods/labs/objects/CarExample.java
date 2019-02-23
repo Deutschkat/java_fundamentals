@@ -19,6 +19,10 @@ class Example {
 
                 + myCar.stereo.brand + " stereo, and a " + myCar.engine.horsePower + " engine");
 
+        // OR
+
+        System.out.println(myCar.toString());
+
     }
 
 }
@@ -33,6 +37,12 @@ class Engine {
 
     }
 
+    @Override
+    public String toString() {
+        return "Engine{" +
+                "horsePower=" + horsePower +
+                '}';
+    }
 }
 
 class Stereo {
@@ -45,6 +55,12 @@ class Stereo {
 
     }
 
+    @Override
+    public String toString() {
+        return "Stereo{" +
+                "brand='" + brand + '\'' +
+                '}';
+    }
 }
 
 class Car {
@@ -69,5 +85,14 @@ class Car {
 
     }
 
+    @Override
+    public String toString() {
+        return "Car{" +
+                "engine=" + engine.toString() +
+                ",\n stereo=" + stereo.toString() +
+                ",\n model='" + model + '\'' +
+                ",\n color='" + color + '\'' +
+                '}';
+    }
 }
 
