@@ -11,18 +11,6 @@ public class Exercise_01 {
 
         // please create the methods as instructed below then
         // call each of those methods from here, within the main()
-        ArrayList<Integer> nums = new ArrayList();
-
-        for(int i = 10000; i >= 0; i--){
-            if(i % 3 == 0 && i % 8 == 0){
-                nums.add(i);
-            }
-        }
-
-        for (Integer i : nums) {
-            System.out.println(i);
-        }
-        System.out.println(nums.size());
 
     }
 
