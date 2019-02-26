@@ -5,11 +5,14 @@
 Initializing git folder
     1. In CodingNomads folder, create new folder git_practice
     2. Inside git_practice:
-        a. Initialize folder as a git folder (make sure you are in the correct folder when initializing)
+        a. Initialize folder as a git folder (make sure you are in the correct folder when initializing) by running
+            the "git init" command within the git_practice folder.
         b. Make new file
         c. Add file
         d. Commit file
         c. On Github, create new git_practice repository
+        d. Add this new GitHub repository as a new "remote" to your local Git repo. You can do this by using the command
+            git remote add <ANY_NAME> <URL_OF_NEW_GITHUB_REPO.git>
         d. Push commit file to Github
         e. Practice the following git flow until you feel comfortable:
             i.   Create or modify file
