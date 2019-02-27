@@ -25,8 +25,5 @@ public class Exercise_05 {
 
         // write completed code here
 
-
-        // testing change 2
-
     }
 }

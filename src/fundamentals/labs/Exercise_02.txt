@@ -1,6 +1,6 @@
 1) If you haven't already, please create a Github account if you have not already done so.
 
-2) Once complete practice the following on your own machine:
+2) Once complete, practice the following on your own machine and paste the commands you run for each step below.
 
 Initializing git folder
     1. In CodingNomads folder, create new folder git_practice

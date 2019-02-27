@@ -9,7 +9,7 @@ Fundamentals Exercise 1: CLI
          c. list the contents of the folder
      5. Inside of folder Terminal_testing, create a new folder
      6. Copy a file from Terminal_testing to the new folder
-     7. Move a different file from Terminal testing to the new folder
+     7. Move a different file from Terminal_testing to the new folder
      8. Demonstrate removing:
          a. A file
          b. A folder
