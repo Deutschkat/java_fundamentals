@@ -1,21 +1,32 @@
 
 In this section we'll be creating a small Object Oriented Application. The various exercises will build on each other.
 
-Let's model a blackjack game! The game we'll be creating will be very simple. It will be "first to 21".
+Let's model a blackjack game! The game we'll be creating will be very simple. It will be "closest to 21". The player
+who's hand value is closest to 21 without going over at the end of the game will win.
+
 It will not ask for bets. The user and the computer will each start with a small pot and bets will be taken automatically.
 
 1) Create four classes (each in their own file with the same name as the class):
     BlackjackController.java (this will contain the main())
+
     Player.java (POJO - this will contain player info)
         String name;
         Hand hand;
+        int potValue; (the amount of money they have)
+
     Card.java (POJO - this will hold card data)
         char[] suit = new char[]{'♠', '♦', '♥', '♣'};
+        int cardValue;
 
     Deck.java (POJO - this will hold deck data)
+        Card[] cards;
+        ArrayList<Integer> usedCards;
+
     Hand.java (POJO - this will hold Hand data)
+        ArrayList<Card> cards;
+        int handValue;
 
 
 2) Fill out each POJO above to the best of your ability. Also create a main() method in the BlackJackController class.
 
-3) Create at least two (overloaded) constructors for each of the POJO's above.
+3) Create at least two (overloaded) constructors for at least 2 of the POJO's above.

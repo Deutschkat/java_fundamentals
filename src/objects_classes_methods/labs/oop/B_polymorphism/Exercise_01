@@ -1,0 +1,13 @@
+
+1) Demonstrate the three forms of Polymorphism:
+    - Overloading
+    - Overriding
+    - Interfaces
+
+2) Demonstrate the three forms of polymorphism again - but in a new set of classes. We want to lock this in.
+Challenge yourself. Build something you're proud of.
+
+3) Demonstrate using an interface as an instance variable - have a constructor that takes in the interface as a
+parameter. Also have a setter that allows you to update the interface object. Through code, demonstrate that you
+understand how we can use Interfaces as dependencies (instance variables) and how useful and flexible they make our
+application.

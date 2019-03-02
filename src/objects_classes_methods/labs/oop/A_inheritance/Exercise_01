@@ -1,0 +1,16 @@
+
+1) Create at least 5 classes that demonstrate an inheritance hierachy. The depth of the hiearchy must be at least 3. Meaning:
+A extends B, B extends C. Classes A, B, and C define an inheritance hierachy with a depth of 3. Create a real-world
+inheritance hierachy. For instance you could create an inheritance hiearchy using animals, or food, or the solar system,
+or stores, restaurants, adventures, and really anything else you can imagine. Have some fun with it. Try to challenge
+yourself.
+
+2) Once you've created this hiearchy, demonstrate the use of non-default constructors in the parent classes. Meaning,
+use the super(arg1, arg2, ...) command from a subclass to invoke a parameterized constructor in the parent class. Do this
+at least once, several times over would be better.
+
+3) Create at least three methods that override a method in one or more parent classes.
+
+4) Create a controller class/method that will create objects of your hiearchy and demonstrate how you use this inheritance
+hiearchy. Demonstrate that your subclasses have set the variables in the parent classes, that you have called the parameterized
+super constructors from sub-classes, that you are indeed overriding methods.

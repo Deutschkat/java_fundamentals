@@ -1,0 +1,24 @@
+Building off the previous classes we created in Exercise_01 and Exercise_02
+
+1) In the Deck.java class, create a method that will populate the Card[] with 52 unique Card object. The cards
+should mimic an actual card deck. It should contain four aces (spades, hearts, diamonds, clubs), four 2's
+(spades, hearts, diamonds, clubs), four 3's (spades, hearts, diamonds, clubs), ... up through Jacks, Queens and Kings
+
+2) Create a deal() method that will take in a Player object and "deal" that player a random card out of the deck. To get
+the random card, generate a random number between 1 and 52 (inclusive). Then check the ArrayList of Integers to make sure
+that random number is not in there. If it is, that means the card has already been drawn. You need to generate new random
+numbers until you find a card that has not been drawn. If/when the random number has not yet been played add the card at the index
+of random num from the Cards[] to the player's "Hand" ArrayList, then add that random number to the ArrayList<Integer>
+called usedCards in the Deck class. This usedCards arraylist tracks the cards that have already been dealt.
+
+3) In the Hand class create a method that will return the score of the hand. The hand is an arraylist of Card objects.
+An ace is worth one, a 2 is worth two, a 3 is worth three, ... a jack is worth 10, a queen is worth 11,
+a king is worth 12.
+
+4) In the Hand class, create a method that will return true if the hand value is greater than 21 and false if the hand
+value is less than 21
+
+5) In the Player class, create a method named computerAI that will return true if the computer player wants another card.
+It will return false is the computer player does not want another card. If the computer player's hand currently has a
+value less than 16 it will want another card. If the hand value is greater than or equal to 16 the computer will not
+want another card.
