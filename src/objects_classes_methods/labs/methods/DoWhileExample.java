@@ -3,7 +3,7 @@ package objects_classes_methods.labs.methods;
 /**
  * Created by ryandesmond - https://codingnomads.co
  */
-public class doWhileExample {
+public class DoWhileExample {
 
     public static void main(String[] args) {
         int x = doWhileExample();
