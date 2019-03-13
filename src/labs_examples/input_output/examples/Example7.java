@@ -16,20 +16,18 @@ class CopyFile2 {
     {
         int i;
 
-        // First, confirm that both files has been specified.
-        if(args.length != 2) {
-            System.out.println("Usage: CopyFile from to");
-            return;
-        }
+        String fileReadPath = "src/labs_examples/input_output/files/char_data.txt";
+        String fileWritePath = "src/labs_examples/input_output/files/char_data_copy_2.txt";
 
         // Open and manage two files via the try statement.
-        try (FileInputStream fin = new FileInputStream(args[0]);
-             FileOutputStream fout = new FileOutputStream(args[1]))
+        try (FileInputStream fin = new FileInputStream(fileReadPath);
+             FileOutputStream fout = new FileOutputStream(fileWritePath))
         {
 
             do {
                 i = fin.read();
-                if(i != -1) fout.write(i);
+                if(i != -1)
+                    fout.write(i);
             } while(i != -1);
 
         } catch(IOException exc) {

@@ -11,6 +11,7 @@ class ReadChars {
             throws IOException
     {
         char c;
+
         BufferedReader br = new
                 BufferedReader(new InputStreamReader(System.in));
 
@@ -19,7 +20,7 @@ class ReadChars {
         // read characters
         do {
             c = (char) br.read();
-            System.out.println(c);
+            System.out.print(c);
         } while(c != '.');
     }
 }

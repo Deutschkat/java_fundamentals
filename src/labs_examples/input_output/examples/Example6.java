@@ -14,19 +14,16 @@ class ShowFile3 {
     {
         int i;
 
-        // First, make sure that a file name has been specified.
-        if(args.length != 1) {
-            System.out.println("Usage: ShowFile3 filename");
-            return;
-        }
+        String filePath = "src/labs_examples/input_output/files/char_data.txt";
 
         // The following code uses try-with resources to open a file
         // and then automatically close it when the try block is left.
-        try(FileInputStream fin = new FileInputStream(args[0])) {
+        try(FileInputStream fin = new FileInputStream(filePath)) {
 
             do {
                 i = fin.read();
-                if(i != -1) System.out.print((char) i);
+                if(i != -1)
+                    System.out.print((char) i);
             } while(i != -1);
 
         } catch(IOException exc) {

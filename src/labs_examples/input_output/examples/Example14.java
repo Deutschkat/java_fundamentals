@@ -14,19 +14,22 @@ class KtoD {
     {
 
         String str;
+        String filePath = "src/labs_examples/input_output/files/KtoD.txt";
+
         BufferedReader br =
                 new BufferedReader(
                         new InputStreamReader(System.in));
 
         System.out.println("Enter text ('stop' to quit).");
 
-        try (FileWriter fw = new FileWriter("test.txt"))
+        try (FileWriter fw = new FileWriter(filePath))
         {
             do {
                 System.out.print(": ");
                 str = br.readLine();
 
-                if(str.compareTo("stop") == 0) break;
+                if(str.compareTo("stop") == 0)
+                    break;
 
                 str = str + "\r\n"; // add newline
                 fw.write(str);

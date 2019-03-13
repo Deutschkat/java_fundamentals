@@ -14,9 +14,11 @@ class RWData {
         double d = 1023.56;
         boolean b = true;
 
+        String filePath = "src/labs_examples/input_output/files/RWData.dat";
+
         // Write some values.
         try (DataOutputStream dataOut =
-                     new DataOutputStream(new FileOutputStream("testdata")))
+                     new DataOutputStream(new FileOutputStream(filePath)))
         {
             System.out.println("Writing " + i);
             dataOut.writeInt(i);
@@ -39,7 +41,7 @@ class RWData {
 
         // Now, read them back.
         try (DataInputStream dataIn =
-                     new DataInputStream(new FileInputStream("testdata")))
+                     new DataInputStream(new FileInputStream(filePath)))
         {
             i = dataIn.readInt();
             System.out.println("Reading " + i);

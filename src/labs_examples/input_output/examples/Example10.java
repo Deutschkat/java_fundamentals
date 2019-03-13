@@ -13,8 +13,10 @@ class RandomAccessDemo {
         double data[] = { 19.4, 10.1, 123.54, 33.0, 87.9, 74.25 };
         double d;
 
+        String filePath = "src/labs_examples/input_output/files/random.dat";
+
         // Open and use a random access file.
-        try (RandomAccessFile raf = new RandomAccessFile("random.dat", "rw"))
+        try (RandomAccessFile raf = new RandomAccessFile(filePath, "rw"))
         {
             // Write values to the file.
             for(int i=0; i < data.length; i++) {

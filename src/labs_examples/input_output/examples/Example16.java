@@ -14,13 +14,16 @@ class AvgNums {
         // create a BufferedReader using System.in
         BufferedReader br = new
                 BufferedReader(new InputStreamReader(System.in));
+
         String str;
         int n;
         double sum = 0.0;
         double avg, t;
 
         System.out.print("How many numbers will you enter: ");
+
         str = br.readLine();
+
         try {
             n = Integer.parseInt(str);
         }
@@ -30,9 +33,12 @@ class AvgNums {
         }
 
         System.out.println("Enter " + n + " values.");
+
         for(int i=0; i < n ; i++)  {
             System.out.print(": ");
+
             str = br.readLine();
+
             try {
                 t = Double.parseDouble(str);
             } catch(NumberFormatException exc) {

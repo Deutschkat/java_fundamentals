@@ -12,8 +12,11 @@ class DtoS {
     public static void main(String args[]) {
         String s;
 
+        String filePath = "src/labs_examples/input_output/files/KtoD.txt";
+
+
         // Create and use a FileReader wrapped in a BufferedReader.
-        try (BufferedReader br = new BufferedReader(new FileReader("test.txt")))
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath)))
         {
             while((s = br.readLine()) != null) {
                 System.out.println(s);
