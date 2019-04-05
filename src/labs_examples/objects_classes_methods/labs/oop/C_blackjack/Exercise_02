@@ -1,4 +1,4 @@
-Building off the previous classes we created in Exercise_01 and Exercise_02
+Building off the previous classes we created in Exercise_01
 
 1) In the Deck.java class, create a method that will populate the Card[] with 52 unique Card object. The cards
 should mimic an actual card deck. It should contain four aces (spades, hearts, diamonds, clubs), four 2's
@@ -12,8 +12,8 @@ of random num from the Cards[] to the player's "Hand" ArrayList, then add that r
 called usedCards in the Deck class. This usedCards arraylist tracks the cards that have already been dealt.
 
 3) In the Hand class create a method that will return the score of the hand. The hand is an arraylist of Card objects.
-An ace is worth one, a 2 is worth two, a 3 is worth three, ... a jack is worth 10, a queen is worth 11,
-a king is worth 12.
+An ace is worth one, a 2 is worth two, a 3 is worth three, ... a jack is worth 10, a queen is worth 10,
+a king is worth 10.
 
 4) In the Hand class, create a method that will return true if the hand value is greater than 21 and false if the hand
 value is less than 21
