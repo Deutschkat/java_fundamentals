@@ -1,4 +1,4 @@
-package labs_examples.enumerations_annotations.examples;
+package labs_examples.enumerations.examples;
 
 enum Tools {
     SCREWDRIVER, WRENCH, HAMMER, PLIERS

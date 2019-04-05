@@ -1,4 +1,4 @@
-package labs_examples.enumerations_annotations.examples;
+package labs_examples.enumerations.examples;
 
 // An improved version of the traffic light simulation that
 // stores the light delay in TrafficLightColor.
@@ -25,14 +25,12 @@ class TrafficLightSimulator implements Runnable {
 
     TrafficLightSimulator(TrafficLightColor init) {
         tlc = init;
-
         thrd = new Thread(this);
         thrd.start();
     }
 
     TrafficLightSimulator() {
         tlc = TrafficLightColor.RED;
-
         thrd = new Thread(this);
         thrd.start();
     }

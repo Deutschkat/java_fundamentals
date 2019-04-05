@@ -13,5 +13,5 @@ package labs_examples.generics.labs;
  *
  *      4) Write a generic method to find the largest element within the range (begin, end) of a list.
  *
- *      5) 
+ *      5)
  */
