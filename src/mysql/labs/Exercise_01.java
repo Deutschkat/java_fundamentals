@@ -1,4 +1,4 @@
-package labs_examples.labs;
+package mysql.labs;
 
 /**
  * MySQL Exercise 1:

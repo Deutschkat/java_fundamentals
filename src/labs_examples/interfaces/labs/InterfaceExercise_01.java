@@ -13,7 +13,7 @@ package labs_examples.interfaces.labs;
  *
  *       - A Vehicle interface, that is advanced by a Tractor class and a Scooter class. Two of the methods could be
  *          turnOn() and brake().
- *       - A PersonalDevice interface that is advanced by a iPad class and a Computer class. Two of the methods could be
+ *       - A PersonalDevice interface that is implemented by an iPad class and a Computer class. Two of the methods could be
  *          playMusic() and turnOff().
  */
 
