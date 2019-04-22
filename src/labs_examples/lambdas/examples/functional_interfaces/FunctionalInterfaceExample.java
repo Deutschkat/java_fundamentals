@@ -1,4 +1,4 @@
-package labs_examples.lambdas.examples;
+package labs_examples.lambdas.examples.functional_interfaces;
 
 /**
  * Created by ryandesmond - https://codingnomads.co
