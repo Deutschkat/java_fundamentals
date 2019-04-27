@@ -28,5 +28,3 @@ It will not ask for bets. The user and the computer will each start with a small
 
 
 2) Fill out each POJO above to the best of your ability. Also create a main() method in the BlackJackController class.
-
-3) Create at least two (overloaded) constructors for at least 2 of the POJO's above.
