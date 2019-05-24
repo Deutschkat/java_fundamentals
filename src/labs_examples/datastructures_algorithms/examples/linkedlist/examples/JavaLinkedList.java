@@ -15,7 +15,7 @@ public class JavaLinkedList {
         // add elements to the end of the list
         words.add("Are");
         words.add("Cool!");
-        // push elements onto the top (front) of the list;
+        // push elements onto the top (front) of0(1) the list;
         words.push("Linked");
         words.push("Lists");
 
@@ -40,6 +40,7 @@ public class JavaLinkedList {
         words.add("used ");
         words.add("is a ");
         words.add("LinkedList");
+
 
         // iterate through the list forwards
         Iterator iter = words.iterator();

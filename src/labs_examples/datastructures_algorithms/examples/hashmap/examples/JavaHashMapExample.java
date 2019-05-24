@@ -29,6 +29,8 @@ public class JavaHashMapExample {
         peopleMap.put(martin.getEmail(), martin);
         peopleMap.put(caden.getEmail(), caden);
 
+
+
         // demonstrate "getting" an element out of the HashMap
         Person example = peopleMap.get("caden@codingnomads.co");
 

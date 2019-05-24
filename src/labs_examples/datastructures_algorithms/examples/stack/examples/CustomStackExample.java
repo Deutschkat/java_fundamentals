@@ -6,6 +6,7 @@ import labs_examples.datastructures_algorithms.examples.linkedlist.examples.Cust
  * Created by Kevin Graham - https://codingnomads.co
  */
 public class CustomStackExample<V> {
+
     private CustomLinkedList<V> list = new CustomLinkedList<>();
 
     /**

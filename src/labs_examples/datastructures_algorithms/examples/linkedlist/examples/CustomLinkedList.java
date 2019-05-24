@@ -48,8 +48,6 @@ public class CustomLinkedList<T> {
             // make a new reference to the head node that we can use to traverse the list
             // we do this so we NEVER lose a secure reference to the head node
             Node iterator = head;
-            // create an empty variable to track the "previous" node in the list as we traverse
-            Node previous = null;
 
             if (index == 0) {
 
@@ -58,6 +56,9 @@ public class CustomLinkedList<T> {
                 head = new Node(data, head);
 
             } else if (index < size()) {
+
+                // create an empty variable to track the "previous" node in the list as we traverse
+                Node previous = null;
 
                 // if we hit this "else" block, it means the user wants to insert the new node into the
                 // middle of this list (because "index" is < size)

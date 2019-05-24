@@ -41,7 +41,7 @@ public class CustomHashMap<K, V> {
         // go ahead and simply add the value to the array
         if (table[index] == null) {
 
-            table[index] = new Entry(key, value);
+            table[index] = entry;
         }
         // otherwise, there was a collision
         // we need iterate through the linked list at that index
@@ -154,15 +154,15 @@ public class CustomHashMap<K, V> {
      */
     public V get(K key) {
         // call the hash() method to get the index for the key
-        int hash = hash(key);
+        int index = hash(key);
 
         // nothing at key - return null
-        if (table[hash] == null) {
+        if (table[index] == null) {
             return null;
         }
 
         // otherwise, get the Entry at the index
-        Entry<K, V> entry = table[hash];
+        Entry<K, V> entry = table[index];
 
         // if the key of the current entry is not the key we're looking for
         // that means we're looking at a linked list and we need to traverse it
@@ -228,6 +228,7 @@ public class CustomHashMap<K, V> {
  class Entry<K, V> {
     private K key;
     private V value;
+    // it means this is a LinkedList
     Entry next = null;
 
     Entry(K key, V value) {
