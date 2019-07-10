@@ -8,10 +8,13 @@ import java.util.PriorityQueue;
 public class JavaQueue {
 
     public static void main(String[] args) {
+        JavaQueue.queueTest();
+    }
+    public static void queueTest() {
 
         // a priority queue orders it's elements by their natural order
         // by default with Strings this will be alphabetically
-        PriorityQueue<String> myQueue = new PriorityQueue();
+        PriorityQueue<String> myQueue = new PriorityQueue<String>();
 
         // add elements to the Queue
         myQueue.add("java");
@@ -24,7 +27,7 @@ public class JavaQueue {
         System.out.println(myQueue.peek());
 
         // demonstrate contains() method
-        boolean hasJava = myQueue.contains("Queue");
+        boolean hasJava = myQueue.contains("queue");
         System.out.println("Contains \"Queue\"? -> " + hasJava);
 
         System.out.println();
