@@ -1,5 +1,8 @@
 package labs_examples.generics.labs;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 /**
  * Generics Exercise 3:
  *
@@ -15,3 +18,7 @@ package labs_examples.generics.labs;
  *
  *      5)
  */
+
+public class Exercise_03 {
+    
+}
