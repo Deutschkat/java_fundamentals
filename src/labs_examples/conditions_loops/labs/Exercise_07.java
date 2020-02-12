@@ -7,7 +7,7 @@ package labs_examples.conditions_loops.labs;
  *      Once you find the vowel, print out the word and the first vowel.
  *
  *      Hints:
- *          - there is a helpful method in the String class called length(), charAt() and contains()
+ *          - there are a few helpful methods in the String class called length(), charAt() and contains()
  *          - you'll likely want to use a String that contains all the vowels:
  *              - ie: String vowels = "aeiou";
  *
