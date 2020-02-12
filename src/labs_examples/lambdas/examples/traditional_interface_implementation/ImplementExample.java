@@ -9,6 +9,7 @@ public class ImplementExample implements FunctionalInterfaceExample {
 
     @Override
     public double calculate(double a, double b) {
+
         return (a * a) * (b * b);
     }
 }

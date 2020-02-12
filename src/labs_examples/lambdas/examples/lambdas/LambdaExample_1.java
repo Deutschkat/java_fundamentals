@@ -15,6 +15,10 @@ public class LambdaExample_1 {
 
         obj.someMethod();
 
-    }
+        obj = () -> {
+            System.out.println("done with lambda");
+        };
 
+        obj.someMethod();
+    }
 }

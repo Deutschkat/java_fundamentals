@@ -20,5 +20,5 @@ import java.util.Collection;
  */
 
 public class Exercise_03 {
-    
+
 }

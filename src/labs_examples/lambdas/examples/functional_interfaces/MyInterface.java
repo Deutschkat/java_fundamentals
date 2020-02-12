@@ -7,5 +7,4 @@ package labs_examples.lambdas.examples.functional_interfaces;
 public interface MyInterface {
 
     public void someMethod();
-
 }

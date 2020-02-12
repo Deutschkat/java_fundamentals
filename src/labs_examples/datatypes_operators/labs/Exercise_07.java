@@ -1,4 +1,4 @@
-package labs_examples.fundamentals.labs;
+package labs_examples.datatypes_operators.labs;
 
 import java.util.Scanner;
 
@@ -12,7 +12,7 @@ import java.util.Scanner;
  *
  */
 
-public class Exercise_05 {
+public class Exercise_07 {
 
     public static void main(String[] args) {
 

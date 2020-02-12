@@ -1,4 +1,4 @@
-package labs_examples.fundamentals.labs;
+package labs_examples.datatypes_operators.labs;
 
 /**
  * Fundamentals Exercise 4: Volume and Surface Area
@@ -8,7 +8,7 @@ package labs_examples.fundamentals.labs;
  *
  */
 
-public class Exercise_04 {
+public class Exercise_06 {
 
     public static void main(String[] args) {
 
