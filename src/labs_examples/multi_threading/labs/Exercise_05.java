@@ -5,3 +5,4 @@ package labs_examples.multi_threading.labs;
  *
  *      Demonstrate the use of a wait() and notify()
  */
+
