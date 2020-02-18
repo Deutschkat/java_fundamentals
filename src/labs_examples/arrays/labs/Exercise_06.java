@@ -19,6 +19,7 @@ public class Exercise_06 {
 
         int temp;
 
+        // Question: in the for loop below, why do we dive nums.length by 2?
         for(int i = 0; i < nums.length / 2; i++){
             // swap elements at indexes in array
             // you have two indices readily available for you to use "i" and ".length"
