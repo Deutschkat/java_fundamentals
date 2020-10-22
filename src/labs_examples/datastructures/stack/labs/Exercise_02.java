@@ -6,7 +6,7 @@ package labs_examples.datastructures.stack.labs;
  *      Write a new custom (Generic) Stack class that uses a traditional Array as the underlying data structure
  *      rather than the LinkedList as in the example we have already seen.
  *
- *      Your custom Stack class must also do the following:
+ *      Your custom Stack class must also do the following: (Ryan)
  *
  *      1) throw a custom exception when trying to pop an element from an empty Stack
  *      2) resize the Stack (the underlying array) to be twice the size when the Stack is more than 3/4 full
