@@ -17,5 +17,7 @@ class StringDemo {
         System.out.println(str1);
         System.out.println(str2);
         System.out.println(str3);
+        System.out.println(test);
+        System.out.println(b);
     }
 }

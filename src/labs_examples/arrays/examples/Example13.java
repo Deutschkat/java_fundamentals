@@ -11,9 +11,6 @@ class ForEach {
             System.out.print("Index is: " + count);
             System.out.println(" - Value is: " + x);
 
-            if (x == 5){
-                nums[x-1] = 10;
-            }
             count++;
         }
 

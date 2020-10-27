@@ -7,7 +7,6 @@ class StrOps {
         String str2 = "When it comes to programming, Java is #1.";
         String str3 = "Java strings are powerful.";
         int result, idx;
-        char ch;
 
         if (str1.equalsIgnoreCase(str2)){
             System.out.println("this shouldn't print");
@@ -19,6 +18,7 @@ class StrOps {
         // display str1, one char at a time.
         for(int i=0; i < str1.length(); i++)
             System.out.print(str1.charAt(i));
+
         System.out.println();
 
         if(str1.equals(str2))
