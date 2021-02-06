@@ -1,0 +1,28 @@
+
+/*
+*  MySQL Exercise 2:
+*
+*   Let's get creative :)
+*
+*   Please create a new database to manage air travel. You can have some fun with this.
+*
+*   At a minimum, we want to be able to track:
+*       - Flights
+*       - Planes
+*       - Locations/Destinations
+*       - Airlines
+*       - Passengers
+*       - Tickets
+*
+*   Take some time to think through this. Pulling out a pen and paper and drawing a basic diagram of the tables and
+*   associations is always a great idea. See this link for inspiration: https://images.megapixl.com/1682/16827854.jpg
+*
+*   After you've designed the database on paper, you can also feel free to explore tools like https://dbdiagram.io/d
+*   to create fancy diagrams (and nice SQL exports). You can also explore the EER Diagram Tool within MySQLWorkbench.
+*
+*   Next, create the schema, create the tables, create all the primary keys and all appropriate foriegn keys, and
+*   populate the database with a enough information to make it interesting.
+*
+*   In the next exercise, we'll dig into querying this database.
+*
+*/
