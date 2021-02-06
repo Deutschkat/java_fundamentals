@@ -10,6 +10,9 @@ public class CustomHashMap<K, V> {
     // create the underlying Entry array with the initial size of 10
     private Entry<K, V>[] table = new Entry[10];
 
+    // track the current number of elements in the hashmap
+    private int numElements = 0;
+
 
     /**
      * Hashes the given key and returns a table index
@@ -42,6 +45,7 @@ public class CustomHashMap<K, V> {
         if (table[index] == null) {
 
             table[index] = entry;
+            numElements++;
         }
         // otherwise, there was a collision
         // we need iterate through the linked list at that index
@@ -57,10 +61,11 @@ public class CustomHashMap<K, V> {
             // after we exit the while loop above, we'll be at the end of the linked list
             // this is where we can add the new Entry
             p.next = entry;
+            numElements++;
         }
 
         // check for resize
-        if (keys().size() > table.length * .75) {
+        if (numElements > table.length * .75) {
             // the resize method will create a bigger underlying array and
             // add all values in the existing array to the new, larger array
             resize();
@@ -120,6 +125,8 @@ public class CustomHashMap<K, V> {
         // if this entry has the matching key, remove the element at this index
         if (entry.getKey().equals(key)){
             table[index] = null;
+            numElements--;
+            return;
         }
 
         // otherwise, if the next element in the linked list is not null
@@ -139,10 +146,14 @@ public class CustomHashMap<K, V> {
         // a -> c
         if(entry.next.next != null){
             entry.next = entry.next.next;
+            numElements--;
+            return;
         }
         // otherwise, entry.next is the end of the list so we can just chop it off
         else {
             entry.next = null;
+            numElements--;
+            return;
         }
     }
 
@@ -180,35 +191,6 @@ public class CustomHashMap<K, V> {
 
         // if we get here, that means the key has been found, return the value
         return entry.getValue();
-    }
-
-    /**
-     * Returns all the keys in the hashmap
-     *
-     * @return a CustomLinkedList of keys
-     */
-    public CustomLinkedList<K> keys() {
-        CustomLinkedList<K> keys = new CustomLinkedList<>();
-
-        // iterate through all indexes of the table
-        for (int i = 0; i < table.length; i++) {
-            // if the element at the index of "i" is not null
-            if (table[i] != null) {
-
-                // get the element at the index of "i"
-                Entry<K, V> p = table[i];
-
-                // check to see if this is the beginning of a linked list
-                while (p != null) {
-                    // if it is, traverse the list and add all keys
-                    keys.add(p.getKey());
-                    p = p.next;
-                }
-
-            }
-        }
-
-        return keys;
     }
 
     /**
