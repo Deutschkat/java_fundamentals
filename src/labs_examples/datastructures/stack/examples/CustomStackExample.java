@@ -15,7 +15,7 @@ public class CustomStackExample<V> {
      */
     public void push(V item) {
         // insert item into front of list
-        list.insert(item, 0);
+        list.insert(item);
     }
 
     /**
