@@ -58,7 +58,7 @@ public class CustomLinkedList<T> {
             // once we exit the loop above, "iterator.next" will be referencing the final node in the list
             // at this point we can attach the new Node to the "next" variable of the final node in th list
             iterator.next = new Node(data);
-            }
+            
         }
     }
 
