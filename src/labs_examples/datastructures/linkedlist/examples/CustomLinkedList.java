@@ -43,29 +43,21 @@ public class CustomLinkedList<T> {
         if (head == null) {
             head = new Node(data);
         } else {
+            // if we hit this "else" block, it means the user wants to attach the new node to the end of the list
 
             // make a new reference to the head node that we can use to traverse the list
             // we do this so we NEVER lose a secure reference to the head node
             Node iterator = head;
 
-            if (head == null) {
+            // so we need to iterate all the way through list to find last node
+            // we'll know we've hit the last node when "iterator.next" is equal to null
+            while (iterator.next != null) {
+                iterator = iterator.next;
+            }
 
-                // if we hit this "if" block it means the user wants to insert a new node
-                // to the front of the list, insert new node in front
-                head = new Node(data, head);
-            } else {
-
-                // if we hit this "else" block, it means the user wants to attach the new node to the end of the list
-
-                // so we need to iterate all the way through list to find last node
-                // we'll know we've hit the last node when "iterator.next" is equal to null
-                while (iterator.next != null) {
-                    iterator = iterator.next;
-                }
-
-                // once we exit the loop above, "iterator.next" will be referencing the final node in the list
-                // at this point we can attach the new Node to the "next" variable of the final node in th list
-                iterator.next = new Node(data);
+            // once we exit the loop above, "iterator.next" will be referencing the final node in the list
+            // at this point we can attach the new Node to the "next" variable of the final node in th list
+            iterator.next = new Node(data);
             }
         }
     }
