@@ -1,5 +1,10 @@
 package labs_examples.lambdas.labs;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.stream.Stream;
+
 /**
  * Lambdas Exercise 4:
  *
@@ -22,3 +27,7 @@ package labs_examples.lambdas.labs;
  *      11) Demonstrate the collect() terminal operation to store resulting values into a List
  *      
  */
+
+class Example {
+    
+}

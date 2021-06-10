@@ -1,17 +1,14 @@
 package labs_examples.conditions_loops.examples;
 
-// Using break to exit a loop.
-class BreakDemo {
+// Use continue.
+class ContDemo {
     public static void main(String args[]) {
-        int num;
+        int i;
 
-        num = 100;
-
-        // loop while i-squared is less than num
-        for(int i=0; i < num; i++) {
-            if(i*i >= num) break; // terminate loop if i*i >= 100
-            System.out.print(i + " ");
+        // print even number between 0 and 100
+        for(i = 0; i<=100; i++) {
+                if((i%2) != 0) continue; // iterate
+            System.out.println(i);
         }
-        System.out.println("Loop complete.");
     }
 }

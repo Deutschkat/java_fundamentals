@@ -1,7 +1,7 @@
 package labs_examples.datastructures.hashmap.labs;
 
 /**
- *      HashMaps Exercise_03
+ *      HashMaps Exercise_02
  *
  *      Create a new class that does the following:
  *

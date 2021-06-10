@@ -1,29 +1,17 @@
 package labs_examples.conditions_loops.examples;
 
-// Using break with a  label.
-class Break4 {
+/*
+   Use nested loops to find factors of numbers
+   between 2 and 100.
+*/
+class FindFac {
     public static void main(String args[]) {
-        int i;
 
-        for(i=1; i<4; i++) {
-            one:  {
-                two:    {
-                    three:    {
-                        System.out.println("\ni is " + i);
-                        if(i==1) break one;
-                        if(i==2) break two;
-                        if(i==3) break three;
-
-                        // this is never reached
-                        System.out.println("won't print");
-                    }
-                    System.out.println("After block three.");
-                }
-                System.out.println("After block two.");
-            }
-            System.out.println("After block one.");
+        for(int i=2; i <= 100; i++) {
+            System.out.print("Factors of " + i + ": ");
+            for(int j = 2; j < i; j++)
+                if((i%j) == 0) System.out.print(j + " ");
+            System.out.println();
         }
-        System.out.println("After for.");
-
     }
 }
