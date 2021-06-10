@@ -30,70 +30,35 @@ public class CustomLinkedList<T> {
     public void add(T data) {
         // call the insert() method, pass in the data as well as the current size of the LinkedList
         // by calling the size() method which will return the length of the LinkedList
-        insert(data, size());
+        insert(data);
     }
 
     /**
      * Inserts a new Node with the given data at the given index
      *
      * @param data  to be added
-     * @param index to put the Node
      */
-    public void insert(T data, int index) {
+    public void insert(T data) {
         // if "head" is null, create new root node
         if (head == null) {
             head = new Node(data);
         } else {
+            // if we hit this "else" block, it means the user wants to attach the new node to the end of the list
 
             // make a new reference to the head node that we can use to traverse the list
             // we do this so we NEVER lose a secure reference to the head node
             Node iterator = head;
 
-            if (index == 0) {
-
-                // if we hit this "if" block it means the user wants to insert a new node
-                // to the front of the list, insert new node in front
-                head = new Node(data, head);
-
-            } else if (index < size()) {
-
-                // create an empty variable to track the "previous" node in the list as we traverse
-                Node previous = null;
-
-                // if we hit this "else" block, it means the user wants to insert the new node into the
-                // middle of this list (because "index" is < size)
-
-                // simple variable to use while traversing to the proper index
-                int count = 0;
-
-                // this while loops traverses the LinkedList till we get to the desired index
-                // notice how we keep assiging the iterator to "previous" so that we always know the previous node
-                // before we assign the iterator variable to "iterator.next"
-                while (count != index) {
-                    previous = iterator;
-                    iterator = iterator.next;
-                    count++;
-                }
-
-                // create new node linked to the previous node by connecting "previous.next" to the new node
-                // and connecting the rest of the LinkedList (currently stored in "iterator") to the
-                // "next" variable of the new Node
-                previous.next = new Node(data, iterator);
-
-            } else {
-
-                // if we hit this "else" block, it means the user wants to attach the new node to the end of the list
-
-                // so we need to iterate all the way through list to find last node
-                // we'll know we've hit the last node when "iterator.next" is equal to null
-                while (iterator.next != null) {
-                    iterator = iterator.next;
-                }
-
-                // once we exit the loop above, "iterator.next" will be referencing the final node in the list
-                // at this point we can attach the new Node to the "next" variable of the final node in th list
-                iterator.next = new Node(data);
+            // so we need to iterate all the way through list to find last node
+            // we'll know we've hit the last node when "iterator.next" is equal to null
+            while (iterator.next != null) {
+                iterator = iterator.next;
             }
+
+            // once we exit the loop above, "iterator.next" will be referencing the final node in the list
+            // at this point we can attach the new Node to the "next" variable of the final node in th list
+            iterator.next = new Node(data);
+            
         }
     }
 

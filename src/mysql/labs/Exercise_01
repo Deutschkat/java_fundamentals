@@ -1,6 +1,6 @@
 /**
  *
- * MySQL Exercise 2:
+ * MySQL Exercise 1:
  *
  *      Using MySQLWorkbench,
  *
@@ -22,9 +22,12 @@
  *          c. last_name
  *          d. subject
  *
- *      5.) Populate each table with at least 5 records.
+ *      5.) Create the appropriate foreign key constraints in the "teachers_students" table.
  *
- *      6.) Write queries (and paste them below) for each of the following tasks:
+ *      6.) Populate each table with at least 5 records. Use the "teachers_students" to associate various
+ *          teachers with various students.
+ *
+ *      7.) Write queries (and paste them below) for each of the following tasks:
  *          a. select all students
  *          b. select all teacher who teach "Math" (choose a subject you included)
  *          c. use a join query to select all students with a certain teacher
@@ -32,7 +35,7 @@
  *          e. update a record in the student table
  *          f. add a record to the teacher table
  *
- *       7.) Export the schema to a dump file and copy it to this folder.
+ *       8.) Export the schema to a dump file and copy it to this folder.
  *
  *
  */
