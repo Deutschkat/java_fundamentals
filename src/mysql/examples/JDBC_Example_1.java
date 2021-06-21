@@ -2,6 +2,9 @@ package mysql.examples;
 
 import java.sql.*;
 
+// NOTE: This is more or less a copy of the example shown here on the platform
+// here: https://platform.codingnomads.co/learn/mod/page/view.php?id=2132
+
 public class JDBC_Example_1 {
 
 
@@ -13,12 +16,15 @@ public class JDBC_Example_1 {
 
         try {
             // This will load the MySQL driver, each DB has its own driver
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
+
+            String connectionString = "jdbc:mysql://localhost/college?"
+                    + "user=<YOUR_MYSQL_USERNAME>&password=<YOUR_MYSQL_PASSWORD>"
+                    + "&useSSL=false&allowPublicKeyRetrieval=true";
 
             // Setup the connection with the DB
             connection = DriverManager
-                    .getConnection("jdbc:mysql://localhost/college?"
-                            + "user=ryan&password=CodingNomadsFoEva!&useSSL=false");
+                    .getConnection(connectionString);
 
             // Statements allow to issue SQL queries to the database
             statement = connection.createStatement();
