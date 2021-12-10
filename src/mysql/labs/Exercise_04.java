@@ -17,7 +17,7 @@ package mysql.labs;
 *
 *   Caution: Before you push this code to GitHub, be sure to REMOVE or REPLACE your DATBASE PASSWORD. You do not 
 *   want to push your database password to GitHub. If you do push your password to GitHub you'll need to delete
-*   the commit from your Git history. See: 
+*   the commit from your Git history. See, for instance: https://medium.com/multinetinventiv/removing-commits-from-git-history-4e2340288484 
 *
  */
 
