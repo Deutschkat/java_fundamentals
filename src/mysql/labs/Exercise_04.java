@@ -14,6 +14,11 @@ package mysql.labs;
 *       2.) CRUD new passengers
 *       3.) Bonus: flex those JDBC muscles! How nice, clean, useful can you make this? Show us what you've got!
 *
+*
+*   Caution: Before you push this code to GitHub, be sure to REMOVE or REPLACE your DATBASE PASSWORD. You do not 
+*   want to push your database password to GitHub. If you do push your password to GitHub you'll need to delete
+*   the commit from your Git history. See: 
+*
  */
 
 public class Exercise_04 {
