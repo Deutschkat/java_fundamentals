@@ -18,7 +18,7 @@ public class Exercise_02 {
         // 1) create scanner (don't forget to import Scanner!)
         // 2) prompt user
         // 3) assign input to variable as int
-        // 4) write completed code here
+        // 4) print the int
 
     }
 }
