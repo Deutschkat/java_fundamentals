@@ -1,5 +1,7 @@
 package labs_examples.arrays.labs;
 
+import java.util.Arrays;
+
 /**
  * Arrays calculator
  *

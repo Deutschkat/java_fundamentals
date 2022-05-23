@@ -18,7 +18,8 @@ Fundamentals Exercise 1: CLI
          b. Use $ cat print contents of file
          c. Use $ grep to search for a word inside file
 
-Example Output (pwd):
-    1. Cadens-MacBook-Pro:CodingNomads cadenmackenzie$ pwd
-       /Users/cadenmackenzie/Documents/CodingNomads
+Example Output:
+    1. cd ~/Documents/CodingNomads/
+    2. mkdir Terminal_testing
+    3. //...
 
