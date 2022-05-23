@@ -73,7 +73,7 @@ public class CustomBinarySearchTree {
         }
         // start the recursive insert() method, passing the data and the "root" node
         else {
-            insert(data, root);
+            root = insert(data, root);
         }
     }
 
