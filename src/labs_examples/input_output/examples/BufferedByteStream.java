@@ -35,7 +35,7 @@ public class BufferedByteStream {
             exc.printStackTrace();
         } finally {
             // there's a possibility that closing these streams can throw an exception
-            // we be using the Try-With-Resources shortly to avoid the need for this
+            // you'll be using the Try-With-Resources shortly to avoid the need for this
             try {
                 inputStream.close();
                 bufferedInputStream.close();
