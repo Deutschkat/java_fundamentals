@@ -1,5 +1,7 @@
 package labs_examples.variables;
 
+import java.sql.SQLOutput;
+
 public class variables2 {
 
     //global variable. not commonly used, but sometimes needed.
@@ -17,6 +19,7 @@ public class variables2 {
         System.out.println(myPerson.toString());
         System.out.println(yourPerson.toString());
         System.out.println(einstein.toString());
+
 
 
       //  double x = multiply(val, val * 2);
