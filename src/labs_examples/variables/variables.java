@@ -2,8 +2,6 @@ package labs_examples.variables;
 
 public class variables {
 
-    static double val = 123.45; // could be used everywhere. stopped 8 min into video.
-
     public static void main(String[] args) {
         int x = multiply(2,3);
     }
