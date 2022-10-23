@@ -8,7 +8,18 @@ public class variables2 {
     static double val = 123.45;
 
     public static void main(String[] args) {
-        double x = multiply(val, val * 2);
+
+        person myPerson = new person("Kat", 29);
+        myPerson.age = 30;
+        person yourPerson = new person("Till", 50);
+        person einstein = new person("Einstein", 110);
+
+        System.out.println(myPerson.toString());
+        System.out.println(yourPerson.toString());
+        System.out.println(einstein.toString());
+
+
+      //  double x = multiply(val, val * 2);
     }
 
 
