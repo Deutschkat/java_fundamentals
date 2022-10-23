@@ -16,6 +16,9 @@ public class variables2 {
     }
 
     public static void printNum(double numToPrint){
+
         System.out.println(numToPrint);
+        System.out.println(val);
     }
+
 }
