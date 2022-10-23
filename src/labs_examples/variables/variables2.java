@@ -15,10 +15,12 @@ public class variables2 {
         myPerson.age = 30;
         person yourPerson = new person("Till", 50);
         person einstein = new person("Einstein", 110);
+        person chris = new person("Chris",37);
 
         System.out.println(myPerson.toString());
         System.out.println(yourPerson.toString());
         System.out.println(einstein.toString());
+        System.out.println(chris.toString());
 
 
 
