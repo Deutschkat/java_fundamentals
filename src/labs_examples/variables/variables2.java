@@ -1,7 +1,4 @@
 package labs_examples.variables;
-
-import java.sql.SQLOutput;
-
 public class variables2 {
 
     //global variable. not commonly used, but sometimes needed.
