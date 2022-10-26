@@ -23,7 +23,16 @@ public class Exercise_02 {
 
     public static void main(String[] args) {
 
-        // write code here
+        int x = 10;
+        double y = x;
 
+        System.out.println(y);
+
+        double t = 10.5;
+        int s = (int) t;
+
+        System.out.println(s);
+
+        //Information is lost when going from a double to an int, with casting or narrowing.
     }
 }
