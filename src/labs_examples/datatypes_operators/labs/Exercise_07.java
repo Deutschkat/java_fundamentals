@@ -23,7 +23,8 @@ public class Exercise_07 {
         // assign input to variable as int
         int days = scanner.nextInt();
 
-        // write completed code here
+        int sec = days * 86400;
+        System.out.println("That would equal " + sec + " seconds.");
 
     }
 }
