@@ -4,13 +4,17 @@ public class WhileLoop {
 
     public static void main(String[] args) {
 
-        int count = 0;
+        int outerCount = 0;
+        int innerCount = 0;
 
-        while(count < 10){
-            System.out.println("count is " + count);
-            count++;
+        while(outerCount < 10) {
+            while (innerCount < 10) {
+                System.out.println("outer count is " + outerCount + " and inner count = " + innerCount);
+                innerCount++;
+            }
+            outerCount++;
+
         }
-
         System.out.println("all done with while loop!");
     }
         }
