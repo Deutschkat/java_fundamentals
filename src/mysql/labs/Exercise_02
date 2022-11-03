@@ -20,7 +20,7 @@
 *   After you've designed the database on paper, you can also feel free to explore tools like https://dbdiagram.io/d
 *   to create fancy diagrams (and nice SQL exports). You can also explore the EER Diagram Tool within MySQLWorkbench.
 *
-*   Next, create the schema, create the tables, create all the primary keys and all appropriate foriegn keys, and
+*   Next, create the schema, create the tables, create all the primary keys and all appropriate foreign keys, and
 *   populate the database with a enough information to make it interesting.
 *
 *   In the next exercise, we'll dig into querying this database.
