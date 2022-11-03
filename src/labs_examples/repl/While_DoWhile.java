@@ -8,7 +8,7 @@ public class While_DoWhile {
 
         do {
             System.out.println(x);
-            x = x + 5;
+            x += 5;
         } while (x <= 100);
 
         System.out.println();
