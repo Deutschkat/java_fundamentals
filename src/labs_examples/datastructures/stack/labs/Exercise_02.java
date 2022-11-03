@@ -15,6 +15,6 @@ package labs_examples.datastructures.stack.labs;
  *      5) contain a size() method
  *      6) contain a method to print out the data of all elements in the Stack
  *
- *      TIP: To initialize an new array of a Generic type you can use this:
+ *      TIP: To initialize a new array of a Generic type you can use this:
  *           T[] data = (T[]) new Object[10];
  */
