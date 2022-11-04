@@ -20,7 +20,28 @@ import java.util.Scanner;
 public class Exercise_05 {
     public static void main(String[] args) {
 
-     // STILL WORKING ON THIS ONE
+        Scanner scanner = new Scanner(System.in);
 
+        System.out.println("Please enter low number: ");
+
+        int lowerBound = scanner.nextInt();
+
+        Scanner scanner2 = new Scanner(System.in);
+
+        System.out.println("Please enter higher number: ");
+
+        int upperBound = scanner2.nextInt();
+
+        int sum = 0;
+
+        for(int num = lowerBound; num <= upperBound; ++num){
+            sum += num;
+        }
+
+        System.out.println("The sum is " + sum);
+
+        System.out.println("The average is " + (sum % upperBound));
     }
 }
+
+//HELP WITH THIS ONE
