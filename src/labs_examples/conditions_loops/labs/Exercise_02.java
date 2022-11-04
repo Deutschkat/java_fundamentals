@@ -1,5 +1,7 @@
 package labs_examples.conditions_loops.labs;
 
+import java.util.Scanner;
+
 /**
  * Conditions and Loops Exercise 2: Days of the week
  *
@@ -14,8 +16,30 @@ package labs_examples.conditions_loops.labs;
 public class Exercise_02 {
 
     public static void main(String[] args) {
-    
-        // write completed here
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Please enter a number that coordinates with that specific day of the week: ");
+
+        int day = scanner.nextInt();
+
+        if(day == 1){
+            System.out.println("Sunday");
+        }else if(day == 2){
+            System.out.println("Monday");
+        }else if(day == 3){
+            System.out.println("Tuesday");
+        }else if(day == 4){
+            System.out.println("Wednesday");
+        }else if(day == 5){
+            System.out.println("Thursday");
+        }else if(day == 6){
+            System.out.println("Friday");
+        }else if(day ==7){
+            System.out.println("Saturday");
+        }else{
+            System.out.println("Please enter a number from 1 - 7");
+        }
 
     }
 }
