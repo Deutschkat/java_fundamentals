@@ -21,9 +21,16 @@ public class Exercise_01 {
         // prompt user
         System.out.print("Enter a number between 1 and 1,000,000,000 to determine whether it is odd or even: ");
         // assign input to variable as int
+
         int number = scanner.nextInt();
 
-        // write completed code here
 
+        if(number % 2 == 0 && number <= 1000000){
+            System.out.println("Number is even");
+
+        }else if(number % 2 != 0 && number <= 1000000) {
+            System.out.println("Number is odd.");
+
+        }
     }
 }
