@@ -21,23 +21,23 @@ public class Exercise_01 {
 
         Scanner scanner = new Scanner(System.in);
 
-        int[] calc = new int [10];
+        double[] calc = new double [10];
 
-        calc[0] = scanner.nextInt();
-        calc[1] = scanner.nextInt();
-        calc[2] = scanner.nextInt();
-        calc[3] = scanner.nextInt();
-        calc[4] = scanner.nextInt();
-        calc[5] = scanner.nextInt();
-        calc[6] = scanner.nextInt();
-        calc[7] = scanner.nextInt();
-        calc[8] = scanner.nextInt();
-        calc[9] = scanner.nextInt();
+        calc[0] = scanner.nextDouble();
+        calc[1] = scanner.nextDouble();
+        calc[2] = scanner.nextDouble();
+        calc[3] = scanner.nextDouble();
+        calc[4] = scanner.nextDouble();
+        calc[5] = scanner.nextDouble();
+        calc[6] = scanner.nextDouble();
+        calc[7] = scanner.nextDouble();
+        calc[8] = scanner.nextDouble();
+        calc[9] = scanner.nextDouble();
 
         // sum
 
-        int sum = 0;
-        for(int indexValue : calc){
+        double sum = 0;
+        for(double indexValue : calc){
             sum += indexValue;
         }
 
@@ -48,7 +48,7 @@ public class Exercise_01 {
 
         //average
 
-        int average = sum / 10;
+        double average = sum / calc.length;
 
         System.out.println("The average of the numbers you have entered is: " + average);
 
