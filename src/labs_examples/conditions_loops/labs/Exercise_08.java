@@ -10,12 +10,12 @@ package labs_examples.conditions_loops.labs;
 public class Exercise_08 {
     public static void main(String[] args) {
 
-        int x =1000;
+        int x = 1000;
 
         do {
             System.out.println(x);
             x -= 3;
-        }while(x > 1);
+        }while(x >= 1);
 
     }
 }
