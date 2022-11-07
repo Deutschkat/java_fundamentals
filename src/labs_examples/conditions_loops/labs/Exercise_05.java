@@ -24,24 +24,22 @@ public class Exercise_05 {
 
         System.out.println("Please enter low number: ");
 
-        int lowerBound = scanner.nextInt();
+        double lowerBound = scanner.nextDouble();
 
         Scanner scanner2 = new Scanner(System.in);
 
         System.out.println("Please enter higher number: ");
 
-        int upperBound = scanner2.nextInt();
+        double upperBound = scanner2.nextDouble();
 
-        int sum = 0;
+        double sum = 0;
 
-        for(int num = lowerBound; num <= upperBound; ++num){
+        for(double num = lowerBound; num <= upperBound; ++num){
             sum += num;
         }
 
         System.out.println("The sum is " + sum);
 
-        System.out.println("The average is " + (sum % upperBound));
+        System.out.println("The average is " + (sum / upperBound));
     }
 }
-
-//HELP WITH THIS ONE
