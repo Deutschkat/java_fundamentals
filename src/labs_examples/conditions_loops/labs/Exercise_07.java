@@ -24,7 +24,15 @@ public class Exercise_07 {
 
         String userWord = scanner.next();
 
-        //DONT UNDERSTAND //
+        int length = userWord.length();
+
+        for(int i = 0; i < length; i++){
+            char v = userWord.charAt(i);
+            if(v == 'a' || v == 'e' || v == 'i' || v == 'o' || v == 'u') {
+                System.out.println("The first vowel in the word " + userWord + " is " + v);
+                break;
+            }
+            }
 
     }
 }
