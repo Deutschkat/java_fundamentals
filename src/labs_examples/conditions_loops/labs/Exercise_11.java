@@ -24,7 +24,17 @@ package labs_examples.conditions_loops.labs;
 public class Exercise_11 {
     public static void main(String[] args) {
 
+        int[][] multiTable = new int [11][11];
 
+        for (int i = 1; i < multiTable.length; i++){
+            for(int x = 1; x < multiTable[i].length; x++){
+                multiTable[i][x] = i * x;
+                System.out.print(multiTable[i][x] + " | ");
+            }
+            System.out.println();
+        }
+
+// Why did i have to change it to 11? If I have time for this question.
 
     }
 
