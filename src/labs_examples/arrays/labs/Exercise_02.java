@@ -2,6 +2,7 @@ package labs_examples.arrays.labs;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -16,7 +17,11 @@ public class Exercise_02 {
 
     public static void main(String[] args) {
 
-        int[] array = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+        int[] array = new int[10];
+
+        for(int i = 0; i < array.length; i++){
+            array[i] = i + 1;
+        }
 
         System.out.println("Please select a number 1 - 10 to be given the index of: ");
 
@@ -24,9 +29,16 @@ public class Exercise_02 {
 
         int userChoice = scanner.nextInt();
 
-        int indexOfNum = Arrays.asList(array).indexOf(userChoice);
+        for(int i = 0; i < array.length; i++){
 
-        System.out.println("The index of " + userChoice + " is " + indexOfNum);
+            int element = array[i]; // array at i
+
+            if(element == userChoice)
+                System.out.println("The index of " + userChoice + " is " + i);
+        }
+
+
+
 
 
 
