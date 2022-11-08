@@ -23,7 +23,7 @@ public class Exercise_01 {
 
         double[] calc = new double [10];
 
-        calc[0] = scanner.nextDouble();
+     /*    calc[0] = scanner.nextDouble();
         calc[1] = scanner.nextDouble();
         calc[2] = scanner.nextDouble();
         calc[3] = scanner.nextDouble();
@@ -33,8 +33,12 @@ public class Exercise_01 {
         calc[7] = scanner.nextDouble();
         calc[8] = scanner.nextDouble();
         calc[9] = scanner.nextDouble();
-
+        */
         // sum
+
+        for(int i = 0; i < calc.length; i++){
+            calc[i] = scanner.nextDouble();
+        }
 
         double sum = 0;
         for(double indexValue : calc){
