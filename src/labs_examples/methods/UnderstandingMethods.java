@@ -14,10 +14,9 @@ public class UnderstandingMethods {
         System.out.println("Now, we are finishing up.");
     }
 
-    public static String printCurrentTime(){
+    public static void printCurrentTime(){
         System.out.println("Now, we are here.");
         String time = new SimpleDateFormat("HH:mm:ss").format(new Date());
         System.out.println("The current time is: " + time);
-        return time; // WHY DOES THIS RETURN HAVE TO BE HERE?
     }
 }
