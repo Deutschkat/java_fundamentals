@@ -2,6 +2,16 @@ package labs_examples.access_modifiers;
 
 public class ClassOne {
 
+    public int publicVar;
+    protected int protectedVar;
+    private int privateVar;
+
+    public void changePrivateVar(int val) {
+        if (val >= 0 && val <= 1000) {
+            privateVar = val;
+        }
+    }
+
     /* ACCESS MODIFIERS -affect classes, instance variables and methods
         they play a large role in Encapsulation - one of the primary
         tenants of Object-Oriented Programming
