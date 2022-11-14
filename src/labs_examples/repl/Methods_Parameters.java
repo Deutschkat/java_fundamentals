@@ -1,5 +1,7 @@
 package labs_examples.repl;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.Scanner;
 
 public class Methods_Parameters {
@@ -10,7 +12,10 @@ public class Methods_Parameters {
         System.out.println("Please enter a phrase followed by any number. The application will determine if the number is odd or even");
         String inputWords = scanner.next();
         int inputNum = scanner.nextInt();
+
+
         isOdd(inputNum);
+        System.out.println(isOdd(inputNum));
 
     }
 
@@ -23,12 +28,11 @@ public class Methods_Parameters {
     }
 
     public static boolean isOdd(int inputNum) {
-        if (inputNum % 2 != 0) {
+        if(inputNum % 2 != 0){
             return true;
-        } else {
+        }else{
             return false;
         }
-
     }
 }
 /// HELP WITH REPL METHOD PARAMETERS
