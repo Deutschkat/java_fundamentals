@@ -1,7 +1,5 @@
 package labs_examples.repl;
 
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.Scanner;
 
 public class Methods_Parameters {
@@ -9,14 +7,15 @@ public class Methods_Parameters {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Please enter a phrase followed by any number. The application will determine if the number is odd or even");
-        String inputWords = scanner.next();
+        System.out.println("Please enter a phrase.");
+        String inputWords = scanner.nextLine();
+        System.out.println("Please enter a number.");
         int inputNum = scanner.nextInt();
 
 
-        isOdd(inputNum);
         System.out.println(isOdd(inputNum));
-
+        String returnString = reverse(inputWords); //setting a method return result as a variable
+        System.out.println("After reverse is called: " + returnString);
     }
 
     public static int multiply(int a, int b) {
@@ -34,6 +33,21 @@ public class Methods_Parameters {
             return false;
         }
     }
+
+    public static String reverse(String inputWords){
+        String reversedString = "";
+        char character;
+
+        for(int i =0; i < inputWords.length(); i++){
+            character = inputWords.charAt(i);
+            reversedString = character + reversedString;
+        }
+
+        System.out.println("Before the return statement: " + reversedString);
+
+        return reversedString;
+    }
+
 }
-/// HELP WITH REPL METHOD PARAMETERS
+
 
