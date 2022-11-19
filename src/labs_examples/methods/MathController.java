@@ -5,9 +5,14 @@ public class MathController {
 
         int a = 2;
         int b = 3;
-        int x = CustomMath.multiply(a, b);
+        double x = 12.34;
+        double y = 45.67;
 
-        System.out.println(x);
+        int c = CustomMath.multiply(a, b);
+        double z = CustomMath.multiply(x, y);
+
+        System.out.println(z);
+        System.out.println(c);
 
     }
 }
