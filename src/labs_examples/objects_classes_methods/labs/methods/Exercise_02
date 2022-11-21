@@ -1,15 +1,15 @@
 
 Create a new class called MethodTraining.java and in this class please do the following:
 
-    1) Demonstrate method overloading in this class
+    1) Demonstrate method overloading in this class // done
 
-    2) Demonstrate the difference between "pass by value" and "pass by reference"
+    2) Demonstrate the difference between "pass by value" and "pass by reference" //done
 
-    3) Create a method that will return the largest of 4 numbers (all of which are passed in as arguments)
+    3) Create a method that will return the largest of 4 numbers (all of which are passed in as arguments) // done
 
-    4) Write a method to count all consonants (the opposite of vowels) in a String
+    4) Write a method to count all consonants (the opposite of vowels) in a String // done
 
-    5) Write a method that will determine whether or not a number is prime
+    5) Write a method that will determine whether or not a number is prime //done
 
     6) Write a method that will return a small array containing the highest and lowest numbers in a given numeric array,
             which is passed in as an argument
