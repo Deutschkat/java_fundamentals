@@ -1,5 +1,7 @@
 package labs_examples.objects_classes_methods.labs.methods;
 
+import java.util.Scanner;
+
 /**
  * Create a recursive method named factorial that will return the factorial of any number passed to it.
  *
@@ -10,13 +12,27 @@ package labs_examples.objects_classes_methods.labs.methods;
 public class Exercise_03 {
 
     public static void main(String[] args) {
-//        int x = factorial(5);
-//        System.out.println(x);
-//        should print 120
+
+        System.out.println("What number do you want to find the factorial of?");
+        Scanner factorScanner = new Scanner(System.in);
+
+        int x = factorial(factorScanner.nextInt());
+        System.out.println(x);
+    }
+
+    public static int factorial(int x) {
+        int total;
+
+        if (x == 1)
+            return 1;
+
+        total = x * factorial(x - 1);
+
+        return total;
+    }
+
     }
 
 
 
-
-}
 
