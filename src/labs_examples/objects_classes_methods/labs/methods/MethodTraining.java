@@ -84,6 +84,22 @@ public class MethodTraining {
 
         returnHighLow(intArray);
 
+        System.out.println();
+        System.out.println();
+
+        //3 Arguments Returns Array List (7) HELP
+
+        System.out.println();
+        System.out.println();
+
+
+        // (8) Reverse an Array In Place
+
+        System.out.println("Please enter an array of 5 numbers to have the computer reverse.");
+
+        int[] reverseArray = {scanner.nextInt(), scanner.nextInt(), scanner.nextInt(), scanner.nextInt(), scanner.nextInt()};
+        reverseFunction(reverseArray);
+
     }
 
     //Method Overloading (1)
@@ -188,6 +204,28 @@ public class MethodTraining {
 
 
         }
+
+        // 7 HELP
+        public static void arrayList(int maxNum, int divisor1, int divisor2){
+
+
+        }
+
+        public static void reverseFunction(int[] reverseArray){
+
+        for(int i = 0; i < reverseArray.length / 2; i++){
+            int temp = reverseArray[i];
+            reverseArray[i] = reverseArray[reverseArray.length - 1 - i];
+            reverseArray[reverseArray.length - 1 - i] = temp;
+        }
+            System.out.println("The reverse order of the array you have written out is: ");
+            for(int i : reverseArray){
+                System.out.print(i + " ");
+            }
+
+
+    }
+
 
 }
 
