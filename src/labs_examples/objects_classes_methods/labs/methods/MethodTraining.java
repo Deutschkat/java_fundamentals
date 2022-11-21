@@ -2,6 +2,7 @@ package labs_examples.objects_classes_methods.labs.methods;
 
 import labs_examples.classes.Person;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class MethodTraining {
@@ -69,6 +70,20 @@ public class MethodTraining {
         //Space
         System.out.println();
         System.out.println();
+
+        // Array (6)
+
+        System.out.println("Please give 5 numbers for an array, the highest and lowest will be found.");
+
+        int[] intArray = new int[5];
+        intArray[0] = scanner.nextInt();
+        intArray[1] = scanner.nextInt();
+        intArray[2] = scanner.nextInt();
+        intArray[3] = scanner.nextInt();
+        intArray[4] = scanner.nextInt();
+
+        returnHighLow(intArray);
+
     }
 
     //Method Overloading (1)
@@ -155,6 +170,22 @@ public class MethodTraining {
                 return false;
 
         return true;
+
+        }
+
+        // I found this online, and used it for my purposes, help understanding.
+        public static void returnHighLow(int[] intArray){
+
+        int max = Arrays.stream(intArray)
+                .max()
+                .getAsInt();
+            System.out.println("The highest number is: " + max);
+
+        int min = Arrays.stream(intArray)
+                .min()
+                .getAsInt();
+            System.out.println("The lowest number is: " + min);
+
 
         }
 
