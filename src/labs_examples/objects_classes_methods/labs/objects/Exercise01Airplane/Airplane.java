@@ -1,9 +1,9 @@
-/*package labs_examples.objects_classes_methods.labs.objects.Exercise01Airplane;
+package labs_examples.objects_classes_methods.labs.objects.Exercise01Airplane;
 
 public class Airplane {
     public static void main(String[] args) {
 
-        System.out.println(Propeller.toString());
+
 
     }
 
@@ -39,7 +39,7 @@ public class Airplane {
                 '}';
     }
 
-    public class Propeller {
+    public static class Propeller {
         private int numBlades;
         private String material;
 
@@ -68,7 +68,7 @@ public class Airplane {
         }
     }
 
-    public class Fuselage {
+    public static class Fuselage {
         private String bodyMaterial;
         private int numPassengers;
         private int numDecks;
@@ -113,7 +113,7 @@ public class Airplane {
         }
     }
 
-    public class Machinery {
+    public static class Machinery {
         private double engineHorsePower;
         private String engineType;
 
@@ -147,7 +147,7 @@ public class Airplane {
         }
     }
 
-    public class Cockpit {
+    public static class Cockpit {
         private int numSeats;
         private boolean airConditioned;
         private String avionicType;
@@ -193,4 +193,4 @@ public class Airplane {
     }
 }
 
-*/
+

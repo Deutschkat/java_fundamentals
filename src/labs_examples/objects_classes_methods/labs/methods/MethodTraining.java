@@ -2,6 +2,7 @@ package labs_examples.objects_classes_methods.labs.methods;
 
 import labs_examples.classes.Person;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -88,6 +89,12 @@ public class MethodTraining {
         System.out.println();
 
         //3 Arguments Returns Array List (7) HELP
+        ArrayList<Integer> arrayListResult = arrayList(20, 2, 5);
+        System.out.println(arrayListResult);
+        System.out.println(arrayListResult.size());
+
+
+
 
         System.out.println();
         System.out.println();
@@ -206,7 +213,29 @@ public class MethodTraining {
         }
 
         // 7 HELP
-        public static void arrayList(int maxNum, int divisor1, int divisor2){
+        // Write a method that takes 3 arguments (int maxNum, int divisor1, int divisor2) and returns an Integer Arraylist. *done*
+        //        In this method create an Integer ArrayList and populate it with each number between zero and maxNum that is
+        //        divisible by both divisor1 and divisor2. Then return this ArrayList. After calling this method, print out the
+        //        length of the returned list
+
+        public static ArrayList<Integer> arrayList(int maxNum, int divisor1, int divisor2){
+
+        ArrayList<Integer> arrayList = new ArrayList(); //Create an Integer ArrayList
+
+            //Populate array list. For loop.
+           for(int x = 0; x <= maxNum; x++){
+               // Use an if to see if num divisible by div1 and div2
+               if(x % divisor1 == 0 && x % divisor2 == 0){
+                   // add number to array list
+                   arrayList.add(x);
+               }
+
+               //return this arraylist
+               // print out length
+           }
+
+          return arrayList;
+
 
 
         }
