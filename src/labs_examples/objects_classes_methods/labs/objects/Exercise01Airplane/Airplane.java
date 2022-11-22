@@ -10,6 +10,8 @@ public class Airplane {
     private double fuelCapacity;
     private double currentFuelLevel;
 
+    private Propeller newPropeller; // adding an object as a variable type
+
     public Airplane(double fuelCapacity, double currentFuelLevel) {
         this.fuelCapacity = fuelCapacity;
         this.currentFuelLevel = currentFuelLevel;

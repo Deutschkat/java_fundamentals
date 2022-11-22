@@ -3,3 +3,8 @@ Following the example in CarExample.java, please use Object Composition to model
 The Airplane class must be composed of at least 4 other classes (as well as any primitive types you'd like).
 The Airplane class itself should have a fuel capacity (double) variable, as well as a currentFuelLevel variable.
 We'll use these a bit later.
+
+// Create the airplane class with variables fuel capacity and currentfuellevel
+
+// 4 other classes (not in airplane class)
+

@@ -13,14 +13,15 @@ public class JavaConstructors {
 
     }
 
-    static class Person {
 
-        String name;
-        int age;
+}
+class Person {
 
-        public Person(String name, int age) {
-            this.name = name;
-            this.age = age;
-        }
+    String name;
+    int age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
 }
