@@ -8,12 +8,12 @@ public class Person {
    public String name;
 
 
-    // constructors
-    public Person(){}
+    // constructors // a method with no return that gets called when the keyword "new" is used.
+    public Person(){} // for a default constructor to use with
 
     public Person(int age, double height, String name) {
         this.age = age;
-        this.height = height;
+        this.height = height; //parameterized constructor
         this.name = name;
     }
 
