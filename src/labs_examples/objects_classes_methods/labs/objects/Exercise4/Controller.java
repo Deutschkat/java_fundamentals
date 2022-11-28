@@ -6,9 +6,9 @@ public class Controller {
         //Default Constructor
         RockBand testBand = new RockBand();
 
-        testBand.name = "null";
-        testBand.numMembers = 0;
-        testBand.countryOfOrigin = "null";
+        testBand.name = "Wintersun";
+        testBand.numMembers = 4;
+        testBand.countryOfOrigin = "Finland";
 
 
         System.out.println(testBand.name);
@@ -28,10 +28,15 @@ public class Controller {
 
         System.out.println("They play " + bandOne.typeOfBand + ".");
 
+        System.out.println();
+        System.out.println();
 
+        RockBand bandThree = new RockBand();
+        bandThree.name = "Finntroll";
+        bandThree.typeOfBand = "folk metal";
 
-
-
-        System.out.println(testBand);
+        System.out.println(bandThree.name + " is a " + bandThree.typeOfBand + " band.");
     }
 }
+
+//Still don't know if this was 3 constructors or if I needed to be able to pull 3 names in different ways. Had issues.
