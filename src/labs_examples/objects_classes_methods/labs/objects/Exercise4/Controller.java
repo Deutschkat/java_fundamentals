@@ -31,9 +31,8 @@ public class Controller {
         System.out.println();
         System.out.println();
 
-        RockBand bandThree = new RockBand();
+        RockBand bandThree = new RockBand("folk metal");
         bandThree.name = "Finntroll";
-        bandThree.typeOfBand = "folk metal";
 
         System.out.println(bandThree.name + " is a " + bandThree.typeOfBand + " band.");
     }
