@@ -1,7 +1,7 @@
 
 Without running the code below, please tell me what will print. Why?
 
-
+Answer: This isn't going to print anything. There was nothing called, you just created a new Child object?
 
 
 public class InheritanceTest
