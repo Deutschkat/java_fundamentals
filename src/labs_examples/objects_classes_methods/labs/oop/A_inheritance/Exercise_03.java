@@ -4,7 +4,7 @@ package labs_examples.objects_classes_methods.labs.oop.A_inheritance;
  * Why does the output print in the order it does?
  *
  * You answer:
- *
+ * Because they are a hierarchy and it trickles downward? ** Not sure if right**
  */
 
 class A_1 {

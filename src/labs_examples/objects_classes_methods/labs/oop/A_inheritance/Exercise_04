@@ -1,7 +1,7 @@
 
 Without running the code below, please tell me what it will print.
 
-
+Answer: "Child called."
 
 public class InheritanceTest
 {
