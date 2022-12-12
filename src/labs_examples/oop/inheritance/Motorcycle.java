@@ -30,6 +30,11 @@ public class Motorcycle extends Vehicle {
         this.twoSeat = twoSeat;
     }
 
+//    public void demonstrateThisSuper(){
+//        this.accelerate(20);
+//        super.accelerate(30);
+//    }
+
     @Override // shows how this overrode the parent accelerate method
     public void accelerate(double mph){
         System.out.println("motorcycle accelerating");

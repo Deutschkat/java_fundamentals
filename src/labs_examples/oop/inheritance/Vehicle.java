@@ -5,13 +5,14 @@ public class Vehicle {
     protected String make;
     protected String model;
     protected double miles;
+    public final double PI = 3.1417; // final variables always capitalized
 
     public Vehicle(String make, String model, double miles) {
         this.make = make;
         this.model = model;
         this.miles = miles;
     }
-
+// if you were to put "Final" before void, the override would break
     public void accelerate(double mph){
         System.out.println("Vehicle accelerating by " + mph + " mph");
     }
