@@ -1,6 +1,8 @@
 package labs_examples.oop.inheritance;
 
-public class Vehicle {
+import labs_examples.oop.Polymorphism.MotorizedTransport;
+
+public class Vehicle implements MotorizedTransport {
 
     protected String make;
     protected String model;
@@ -13,8 +15,28 @@ public class Vehicle {
         this.miles = miles;
     }
 // if you were to put "Final" before void, the override would break
-    public void accelerate(double mph){
-        System.out.println("Vehicle accelerating by " + mph + " mph");
+
+
+    @Override
+    public boolean start() {
+        System.out.println("starting vehicle");
+        return true;
+    }
+
+    @Override
+    public void stop() {
+        System.out.println("stopping vehicle");
+    }
+
+    @Override
+    public void accelerate(double mph) {
+        System.out.println("accelerating vehicle");
+    }
+
+    @Override
+    public void decelerate(double mph) {
+        System.out.println("decelerating vehicle");
+
     }
 
     public String getMake() {

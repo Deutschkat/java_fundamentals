@@ -1,5 +1,7 @@
 package labs_examples.oop.inheritance;
 
+import labs_examples.oop.Polymorphism.Scooter;
+
 public class CarController {
 
     public static void main(String[] args) {
@@ -20,6 +22,16 @@ public class CarController {
         moto.accelerate(30);
 
       //  moto.demonstrateThisSuper(); here just for reference
+
+
+        //Overriding examples below utilizing interfaces
+        Scooter scoot = new Scooter();
+
+        moto.start();
+        scoot.start();
+
+        moto.accelerate(20);
+        scoot.accelerate(40);
 
     }
 }
