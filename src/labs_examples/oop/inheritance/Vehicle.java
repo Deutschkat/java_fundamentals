@@ -12,6 +12,10 @@ public class Vehicle {
         this.miles = miles;
     }
 
+    public void accelerate(double mph){
+        System.out.println("Vehicle accelerating by " + mph + " mph");
+    }
+
     public String getMake() {
         return make;
     }
