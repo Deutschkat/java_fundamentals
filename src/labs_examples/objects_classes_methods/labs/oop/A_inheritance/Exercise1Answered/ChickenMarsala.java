@@ -3,10 +3,12 @@ package labs_examples.objects_classes_methods.labs.oop.A_inheritance.Exercise1An
 public class ChickenMarsala extends MenuItem{
 
     private boolean addExtraMushrooms;
+    private int numServings; // I know this should have been in MenuItem, but I found this near the end of the exercise.
 
-    public ChickenMarsala(String name, String culturalOrigin, int calories, String foodCategory, boolean addExtraMushrooms) {
+    public ChickenMarsala(String name, String culturalOrigin, int calories, String foodCategory, boolean addExtraMushrooms, int numServings) {
         super(name, culturalOrigin, calories, foodCategory);
         this.addExtraMushrooms = addExtraMushrooms;
+        this.numServings = numServings;
     }
 
     public boolean isAddExtraMushrooms() {
@@ -15,6 +17,14 @@ public class ChickenMarsala extends MenuItem{
 
     public void setAddExtraMushrooms(boolean addExtraMushrooms) {
         this.addExtraMushrooms = addExtraMushrooms;
+    }
+
+    public int getNumServings() {
+        return numServings;
+    }
+
+    public void setNumServings(int numServings) {
+        this.numServings = numServings;
     }
 
     @Override

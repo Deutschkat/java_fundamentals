@@ -13,4 +13,4 @@ at least once, several times over would be better. (check)
 
 4) Create a controller class/method that will create objects of your hiearchy and demonstrate how you use this labs_examples.inheritance
 hiearchy. Demonstrate that your subclasses have set the variables in the parent classes, that you have called the parameterized
-super constructors from sub-classes, that you are indeed overriding methods.
+super constructors from sub-classes, that you are indeed overriding methods. (check)
