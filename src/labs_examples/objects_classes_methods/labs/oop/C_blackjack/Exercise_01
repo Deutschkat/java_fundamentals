@@ -15,12 +15,13 @@ It will not ask for bets. The user and the computer will each start with a small
         int potValue; (the amount of money they have)
 
     Card.java (POJO - this will hold card data)
-        char[] suit = new char[]{'♠', '♦', '♥', '♣'};
         int cardValue;
+        char suit;
 
     Deck.java (POJO - this will hold deck data)
         Card[] cards;
         ArrayList<Integer> usedCards;
+        char[] suit = new char[]{'♠', '♦', '♥', '♣'};
 
     Hand.java (POJO - this will hold Hand data)
         ArrayList<Card> cards;

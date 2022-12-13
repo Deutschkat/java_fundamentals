@@ -2,11 +2,11 @@ package labs_examples.oop.Polymorphism;
 
 public class Dependency {
 //Dependency injection
-    MotorizedTransport transport;
+    MotorizedTransport transport; //instance variable
 
     public Dependency(MotorizedTransport transport) {
         this.transport = transport;
-    }
+    } //constructor using interface as a parameter
 
     public void testMethods(){
         transport.start();
