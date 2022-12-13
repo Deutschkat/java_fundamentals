@@ -4,7 +4,7 @@ package labs_examples.objects_classes_methods.labs.oop.A_inheritance;
  * Run the class below and study the output. What prints and why?
  *
  * Your answer:
- * Because it didn't override the parent class initializing i = 10. The print line calles to print a.i after stating that a is a new object B. (Which pulls from class A) ?
+ * Because it didn't override the parent class initializing i = 10. Class A is what matters when making that object.
  */
 class A {
     int i = 10;
