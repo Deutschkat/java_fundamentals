@@ -29,3 +29,4 @@ It will not ask for bets. The user and the computer will each start with a small
 
 
 2) Fill out each POJO above to the best of your ability. Also create a main() method in the BlackJackController class.
+// adding getters and setters for each variable and a to String.

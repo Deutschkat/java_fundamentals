@@ -4,7 +4,7 @@ Building off the previous classes we created in Exercise_01
 should mimic an actual card deck. It should contain four aces (spades, hearts, diamonds, clubs), four 2's
 (spades, hearts, diamonds, clubs), four 3's (spades, hearts, diamonds, clubs), ... up through Jacks, Queens and Kings
 
-2) Create a deal() method that will take in a Player object and "deal" that player a random card out of the deck. To get
+2)** Create a deal() method that will take in a Player object and "deal" that player a random card out of the deck. To get
 the random card, generate a random number between 1 and 52 (inclusive). Then check the ArrayList of Integers to make sure
 that random number is not in there. If it is, that means the card has already been drawn. You need to generate new random
 numbers until you find a card that has not been drawn. If/when the random number has not yet been played add the card at the index
