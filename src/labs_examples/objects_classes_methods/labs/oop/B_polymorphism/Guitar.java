@@ -13,7 +13,7 @@ public class Guitar extends Instrument {
     @Override
     public void scan() {
         System.out.println("---------------------------------------------");
-        System.out.println("Scanned " + getNumInstruments() + " " + getBrand() + " " + getNumStrings() + " " + getName() + "(s).");
+        System.out.println("Scanned " + getNumInstruments() + " " + getBrand() + " " + getNumStrings() + " string " + getName() + "(s).");
     }
 
     @Override
