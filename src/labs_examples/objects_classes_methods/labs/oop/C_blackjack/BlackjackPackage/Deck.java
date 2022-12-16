@@ -19,6 +19,12 @@ public class Deck {
         this.suit = suit;
     }
 
+    // Method that will populate Card[] with 52 unique card objects.
+
+
+
+
+
     //Getter and Setters
 
 
