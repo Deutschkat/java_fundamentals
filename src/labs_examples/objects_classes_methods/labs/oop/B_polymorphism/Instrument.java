@@ -7,29 +7,34 @@ public class Instrument implements StoreInterface {
     private int numInstruments;
     private double cost;
 
-    public Instrument(String name, String brand, int numInstruments, double cost) {
+    private double totalPaid;
+
+
+    public Instrument(String name, String brand, int numInstruments, double cost, double totalPaid) {
         this.name = name;
         this.brand = brand;
         this.numInstruments = numInstruments;
         this.cost = cost;
+        this.totalPaid = totalPaid;
     }
 
     public void scan() {
-        System.out.println("Item scanned.");
+        System.out.println("---------------------------------------------");
+        System.out.println("Scanned " + getNumInstruments() + " " + getBrand() + " " + getName() + "(s).");
     }
 
-    public void total(double totalCost) {
-        System.out.println("Total cost is: ");
+    public void total(double cost) {
+        System.out.println("Total cost is: " + (getNumInstruments() * getCost()));
     }
 
-    public void paid(){
-        System.out.println("This much has been paid.");
+    public void paid(double totalPaid){
+        System.out.println("Amount paid : $" + getTotalPaid());
+        System.out.println("Change owed: $" + (getTotalPaid() - (getNumInstruments() * getCost())));
     }
 
     public void bye(){
-        System.out.println("Have a good day!");
+        System.out.println("Have a good day! Enjoy your instrument(s)!");
     }
-
 
 
     public String getName() {
@@ -62,5 +67,13 @@ public class Instrument implements StoreInterface {
 
     public void setCost(double cost) {
         this.cost = cost;
+    }
+
+    public double getTotalPaid() {
+        return totalPaid;
+    }
+
+    public void setTotalPaid(double totalPaid) {
+        this.totalPaid = totalPaid;
     }
 }

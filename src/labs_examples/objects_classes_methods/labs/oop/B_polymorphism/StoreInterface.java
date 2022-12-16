@@ -4,7 +4,7 @@ public interface StoreInterface {
 
     public void scan();
     public void total(double totalCost);
-    public void paid();
+    public void paid(double totalPaid);
     public void bye();
 
 }
