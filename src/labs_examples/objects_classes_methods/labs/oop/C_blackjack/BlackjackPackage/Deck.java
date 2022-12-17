@@ -21,6 +21,15 @@ public class Deck {
 
     // Method that will populate Card[] with 52 unique card objects.
 
+    public void populate() {
+
+
+
+
+
+
+
+    }
 
 
 
