@@ -15,6 +15,12 @@ public class Hand {
         this.handValue = handValue;
     }
 
+    //add card to hand
+    public void addCardToHand(Card dealtCard){
+        cards.add(dealtCard);
+    }
+
+
     //Getter and Setters
     public ArrayList<Card> getCards() {
         return cards;

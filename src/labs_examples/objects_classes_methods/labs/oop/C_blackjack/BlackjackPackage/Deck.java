@@ -7,11 +7,15 @@ public class Deck {
 
     // Holds Deck Data
 
-    Card[] cards;
+    Card[] cards = new Card[52];
     ArrayList<Integer> usedCards;
     char[] suit = new char[]{'♠', '♦', '♥', '♣'};
+    int[] values = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11};
 
     //Constructor
+
+    public Deck(){
+    }
 
     public Deck(Card[] cards, ArrayList<Integer> usedCards, char[] suit) {
         this.cards = cards;
@@ -22,14 +26,29 @@ public class Deck {
     // Method that will populate Card[] with 52 unique card objects.
 
     public void populate() {
+            for(int j = 0; j < suit.length; j++){
+                for(int v = 0; v < values.length; v++){
+                    Card card1 = new Card(values[v], suit[j]);
+                    System.out.println(card1);
+                }
+            }
+        }
 
+    public void deal(Player player){
 
-
-
-
-
+        // Generating random number between 1 & 52
+        // Get value from cards array
+        // Take that card and add it to players.hand (in hand) *Finished*
 
     }
+
+
+
+
+
+
+
+
 
 
 
