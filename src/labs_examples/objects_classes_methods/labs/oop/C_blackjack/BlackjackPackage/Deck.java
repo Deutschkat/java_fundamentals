@@ -8,18 +8,19 @@ public class Deck {
 
     // Holds Deck Data
 
-    Card[] cards = new Card[52];
+    Card[] deckOfCards = new Card[52]; //Changed this to deckOfCards because it is a deck.. is that ok?
     ArrayList<Integer> usedCards;
     char[] suit = new char[]{'♠', '♦', '♥', '♣'};
     int[] values = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11};
+
 
     //Constructor
 
     public Deck(){
     }
 
-    public Deck(Card[] cards, ArrayList<Integer> usedCards, char[] suit, int[] values) {
-        this.cards = cards;
+    public Deck(Card[] deckOfCards, ArrayList<Integer> usedCards, char[] suit, int[] values) {
+        this.deckOfCards = deckOfCards;
         this.usedCards = usedCards;
         this.suit = suit;
         this.values = values;
@@ -52,15 +53,16 @@ public class Deck {
 
 
 
+
+
     //Getter and Setters
 
-
-    public Card[] getCards() {
-        return cards;
+    public Card[] getDeckOfCards() {
+        return deckOfCards;
     }
 
-    public void setCards(Card[] cards) {
-        this.cards = cards;
+    public void setDeckOfCards(Card[] deckOfCards) {
+        this.deckOfCards = deckOfCards;
     }
 
     public ArrayList<Integer> getUsedCards() {
@@ -87,12 +89,13 @@ public class Deck {
         this.values = values;
     }
 
+
     //To String (if needed)
 
     @Override
     public String toString() {
         return "Deck{" +
-                "cards=" + Arrays.toString(cards) +
+                "cards=" + Arrays.toString(deckOfCards) +
                 ", usedCards=" + usedCards +
                 ", suit=" + Arrays.toString(suit) +
                 ", values=" + Arrays.toString(values) +
