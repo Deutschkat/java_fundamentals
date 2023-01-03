@@ -30,10 +30,6 @@ public class Card {
         this.suit = suit;
     }
 
-    // Right or wrong?
-
-
-
 
     @Override
     public String toString() {

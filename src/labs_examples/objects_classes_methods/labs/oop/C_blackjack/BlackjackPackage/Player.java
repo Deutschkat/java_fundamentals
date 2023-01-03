@@ -16,6 +16,7 @@ public class Player {
         this.potValue = potValue;
     }
 
+
     // Getter and Setters
 
     public String getName() {

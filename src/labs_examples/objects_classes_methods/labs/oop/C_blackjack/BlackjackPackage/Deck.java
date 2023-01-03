@@ -11,7 +11,7 @@ public class Deck {
     Card[] deckOfCards = new Card[52]; //Changed this to deckOfCards because it is a deck.. is that ok?
     ArrayList<Integer> usedCards;
     char[] suit = new char[]{'♠', '♦', '♥', '♣'};
-    int[] values = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11};
+    int[] values = new int[]{2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11};
 
 
     //Constructor
@@ -29,31 +29,37 @@ public class Deck {
     // Method that will populate Card[] with 52 unique card objects.
 
     public void populate() {
+        int counter = 0;
+
             for(int j = 0; j < suit.length; j++){
                 for(int v = 0; v < values.length; v++){
                     Card card1 = new Card(values[v], suit[j]);
+
+                    deckOfCards[counter++] = card1;
                     System.out.println(card1);
                 }
             }
         }
 
-        //Random number not using Math.Random... not working super well
-    Random randomNumGenerator = new Random();
-    int randomCard = randomNumGenerator.nextInt(52);
-
-
-    public void deal(Player playerName, int randomCard){
-        deal(playerName, randomCard);
-
-        // Generating random number between 1 & 52
-        // Get value from cards array
-        // Take that card and add it to players.hand (in hand)
-
+        //
+    public int generateRandomNum(){
+        return (int)(Math.random()*deckOfCards.length-1);
+        //check randomNum in arraylist used cards
+        //if yes, generate different number
+        //if else loop
     }
 
 
+    public void deal(Player myPlayer, int randomNum){
+        System.out.println(randomNum);
 
+        Card randomCard = deckOfCards[randomNum];
+        Hand playerHand = myPlayer.getHand();
 
+        playerHand.addCardToHand(randomCard);
+
+        System.out.println(randomCard);
+    }
 
     //Getter and Setters
 
