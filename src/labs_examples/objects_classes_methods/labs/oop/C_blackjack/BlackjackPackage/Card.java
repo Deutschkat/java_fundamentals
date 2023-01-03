@@ -30,7 +30,10 @@ public class Card {
         this.suit = suit;
     }
 
-    // To string (if needed)
+    // Right or wrong?
+
+
+
 
     @Override
     public String toString() {

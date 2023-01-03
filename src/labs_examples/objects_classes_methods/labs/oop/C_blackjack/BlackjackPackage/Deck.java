@@ -2,6 +2,7 @@ package labs_examples.objects_classes_methods.labs.oop.C_blackjack.BlackjackPack
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Random;
 
 public class Deck {
 
@@ -17,10 +18,11 @@ public class Deck {
     public Deck(){
     }
 
-    public Deck(Card[] cards, ArrayList<Integer> usedCards, char[] suit) {
+    public Deck(Card[] cards, ArrayList<Integer> usedCards, char[] suit, int[] values) {
         this.cards = cards;
         this.usedCards = usedCards;
         this.suit = suit;
+        this.values = values;
     }
 
     // Method that will populate Card[] with 52 unique card objects.
@@ -34,22 +36,19 @@ public class Deck {
             }
         }
 
-    public void deal(Player player){
+        //Random number not using Math.Random... not working super well
+    Random randomNumGenerator = new Random();
+    int randomCard = randomNumGenerator.nextInt(52);
+
+
+    public void deal(Player playerName, int randomCard){
+        deal(playerName, randomCard);
 
         // Generating random number between 1 & 52
         // Get value from cards array
-        // Take that card and add it to players.hand (in hand) *Finished*
+        // Take that card and add it to players.hand (in hand)
 
     }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -80,13 +79,23 @@ public class Deck {
         this.suit = suit;
     }
 
+    public int[] getValues() {
+        return values;
+    }
+
+    public void setValues(int[] values) {
+        this.values = values;
+    }
+
     //To String (if needed)
+
     @Override
     public String toString() {
         return "Deck{" +
                 "cards=" + Arrays.toString(cards) +
                 ", usedCards=" + usedCards +
                 ", suit=" + Arrays.toString(suit) +
+                ", values=" + Arrays.toString(values) +
                 '}';
     }
 }

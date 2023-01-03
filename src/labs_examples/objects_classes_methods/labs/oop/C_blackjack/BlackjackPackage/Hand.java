@@ -10,6 +10,7 @@ public class Hand {
     int handValue;
 
     //Constructor
+
     public Hand(ArrayList<Card> cards, int handValue) {
         this.cards = cards;
         this.handValue = handValue;
