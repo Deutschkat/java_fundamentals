@@ -2,14 +2,13 @@ package labs_examples.objects_classes_methods.labs.oop.C_blackjack.BlackjackPack
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Random;
 
 public class Deck {
 
     // Holds Deck Data
 
     Card[] deckOfCards = new Card[52]; //Changed this to deckOfCards because it is a deck.. is that ok?
-    ArrayList<Integer> usedCards;
+    ArrayList<Card> usedCards;
     char[] suit = new char[]{'♠', '♦', '♥', '♣'};
     int[] values = new int[]{2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11};
 
@@ -19,7 +18,7 @@ public class Deck {
     public Deck(){
     }
 
-    public Deck(Card[] deckOfCards, ArrayList<Integer> usedCards, char[] suit, int[] values) {
+    public Deck(Card[] deckOfCards, ArrayList<Card> usedCards, char[] suit, int[] values) {
         this.deckOfCards = deckOfCards;
         this.usedCards = usedCards;
         this.suit = suit;
@@ -44,6 +43,7 @@ public class Deck {
         //
     public int generateRandomNum(){
         return (int)(Math.random()*deckOfCards.length-1);
+
         //check randomNum in arraylist used cards
         //if yes, generate different number
         //if else loop
@@ -51,6 +51,8 @@ public class Deck {
 
 
     public void deal(Player myPlayer, int randomNum){
+
+        // I did get 0 as a random number... why?
         System.out.println(randomNum);
 
         Card randomCard = deckOfCards[randomNum];
@@ -59,6 +61,12 @@ public class Deck {
         playerHand.addCardToHand(randomCard);
 
         System.out.println(randomCard);
+
+        //This is what I have added.
+        if(usedCards.contains(randomCard)){
+            generateRandomNum();}
+        else {usedCards.add(randomCard);
+        }
     }
 
     //Getter and Setters
@@ -71,11 +79,11 @@ public class Deck {
         this.deckOfCards = deckOfCards;
     }
 
-    public ArrayList<Integer> getUsedCards() {
+    public ArrayList<Card> getUsedCards() {
         return usedCards;
     }
 
-    public void setUsedCards(ArrayList<Integer> usedCards) {
+    public void setUsedCards(ArrayList<Card> usedCards) {
         this.usedCards = usedCards;
     }
 
