@@ -62,6 +62,7 @@ public class Deck {
 
         System.out.println(randomCard);
 
+
         //This is what I have added.
 
         if(usedCards.isEmpty()){
@@ -70,7 +71,6 @@ public class Deck {
             generateRandomNum();
         }
         else {usedCards.add(randomNum);
-
         }
 
         System.out.println(usedCards);
