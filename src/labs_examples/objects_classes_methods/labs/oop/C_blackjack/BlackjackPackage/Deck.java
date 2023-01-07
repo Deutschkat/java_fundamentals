@@ -25,6 +25,7 @@ public class Deck {
         this.values = values;
     }
 
+
     // Method that will populate Card[] with 52 unique card objects.
 
     public void populate() {
@@ -55,7 +56,6 @@ public class Deck {
 
         System.out.println(randomNum);
 
-
         Card randomCard = deckOfCards[randomNum];
         Hand playerHand = myPlayer.getHand();
 
@@ -66,7 +66,6 @@ public class Deck {
         usedCards.add(randomNum);
 
         //This is what I have added.
-
         if(usedCards.isEmpty()){
             usedCards.add(randomNum);
         }else if(usedCards.contains(randomNum)){
