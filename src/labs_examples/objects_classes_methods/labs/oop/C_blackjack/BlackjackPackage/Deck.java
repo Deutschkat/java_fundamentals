@@ -52,7 +52,7 @@ public class Deck {
 
     public void deal(Player myPlayer, int randomNum){
 
-        // I did get 0 as a random number... why?
+
         System.out.println(randomNum);
 
         Card randomCard = deckOfCards[randomNum];
@@ -63,10 +63,17 @@ public class Deck {
         System.out.println(randomCard);
 
         //This is what I have added.
-        if(usedCards.contains(randomNum)){
-            generateRandomNum();}
-        else {usedCards.add(randomNum);
+
+        if(usedCards.isEmpty()){
+            usedCards.add(randomNum);
+        }else if(usedCards.contains(randomNum)){
+            generateRandomNum();
         }
+        else {usedCards.add(randomNum);
+
+        }
+
+        System.out.println(usedCards);
     }
 
     //Getter and Setters
