@@ -55,6 +55,7 @@ public class Deck {
 
         System.out.println(randomNum);
 
+
         Card randomCard = deckOfCards[randomNum];
         Hand playerHand = myPlayer.getHand();
 
@@ -62,6 +63,7 @@ public class Deck {
 
         System.out.println(randomCard);
 
+        usedCards.add(randomNum);
 
         //This is what I have added.
 
