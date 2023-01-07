@@ -8,7 +8,7 @@ public class Deck {
     // Holds Deck Data
 
     Card[] deckOfCards = new Card[52]; //Changed this to deckOfCards because it is a deck.. is that ok?
-    ArrayList<Card> usedCards;
+    ArrayList<Integer> usedCards;
     char[] suit = new char[]{'♠', '♦', '♥', '♣'};
     int[] values = new int[]{2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11};
 
@@ -18,7 +18,7 @@ public class Deck {
     public Deck(){
     }
 
-    public Deck(Card[] deckOfCards, ArrayList<Card> usedCards, char[] suit, int[] values) {
+    public Deck(Card[] deckOfCards, ArrayList<Integer> usedCards, char[] suit, int[] values) {
         this.deckOfCards = deckOfCards;
         this.usedCards = usedCards;
         this.suit = suit;
@@ -63,9 +63,9 @@ public class Deck {
         System.out.println(randomCard);
 
         //This is what I have added.
-        if(usedCards.contains(randomCard)){
+        if(usedCards.contains(randomNum)){
             generateRandomNum();}
-        else {usedCards.add(randomCard);
+        else {usedCards.add(randomNum);
         }
     }
 
@@ -79,11 +79,11 @@ public class Deck {
         this.deckOfCards = deckOfCards;
     }
 
-    public ArrayList<Card> getUsedCards() {
+    public ArrayList<Integer> getUsedCards() {
         return usedCards;
     }
 
-    public void setUsedCards(ArrayList<Card> usedCards) {
+    public void setUsedCards(ArrayList<Integer> usedCards) {
         this.usedCards = usedCards;
     }
 
