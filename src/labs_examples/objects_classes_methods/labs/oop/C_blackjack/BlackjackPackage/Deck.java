@@ -63,6 +63,7 @@ public class Deck {
 
         System.out.println(randomCard);
 
+        //This was a test I was running... I think
         usedCards.add(randomNum);
 
         //This is what I have added.
