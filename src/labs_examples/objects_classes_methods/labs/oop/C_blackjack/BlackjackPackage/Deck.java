@@ -7,7 +7,7 @@ public class Deck {
 
     // Holds Deck Data
 
-    Card[] deckOfCards = new Card[52]; //Changed this to deckOfCards because it is a deck.. is that ok?
+    Card[] deckOfCards = new Card[52];
     ArrayList<Integer> usedCards;
     char[] suit = new char[]{'♠', '♦', '♥', '♣'};
     int[] values = new int[]{2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11};
