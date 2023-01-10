@@ -67,12 +67,16 @@ public class Deck {
         usedCards.add(randomNum);
 
         //This is what I have added.
-        if(usedCards.isEmpty()){
-            usedCards.add(randomNum);
-        }else if(usedCards.contains(randomNum)){
+
+        while(usedCards.isEmpty()) {
             generateRandomNum();
-        }
-        else {usedCards.add(randomNum);
+            if (usedCards.isEmpty()) {
+                usedCards.add(randomNum);
+            } else if (usedCards.contains(randomNum)) {
+                generateRandomNum();
+            } else {
+                usedCards.add(randomNum);
+            }
         }
 
         System.out.println(usedCards);
