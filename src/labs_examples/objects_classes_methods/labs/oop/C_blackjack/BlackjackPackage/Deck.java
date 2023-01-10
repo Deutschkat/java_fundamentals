@@ -15,14 +15,8 @@ public class Deck {
 
     //Constructor
 
-    public Deck(){
-    }
-
-    public Deck(Card[] deckOfCards, ArrayList<Integer> usedCards, char[] suit, int[] values) {
-        this.deckOfCards = deckOfCards;
+    public Deck(ArrayList<Integer> usedCards) {
         this.usedCards = usedCards;
-        this.suit = suit;
-        this.values = values;
     }
 
 
@@ -53,33 +47,25 @@ public class Deck {
 
     public void deal(Player myPlayer, int randomNum){
 
+        while(usedCards.contains(randomNum)) {
+            randomNum = generateRandomNum();
+        }
 
         System.out.println(randomNum);
 
-        Card randomCard = deckOfCards[randomNum];
+        Card randomCard = deckOfCards[randomNum]; //Gets the card
         Hand playerHand = myPlayer.getHand();
 
-        playerHand.addCardToHand(randomCard);
+        playerHand.addCardToHand(randomCard); //Puts card in hand
 
+        System.out.println("Card Added To Hand: ");
         System.out.println(randomCard);
 
-        //This was a test I was running... I think
         usedCards.add(randomNum);
 
-        //This is what I have added.
 
-        while(usedCards.isEmpty()) {
-            generateRandomNum();
-            if (usedCards.isEmpty()) {
-                usedCards.add(randomNum);
-            } else if (usedCards.contains(randomNum)) {
-                generateRandomNum();
-            } else {
-                usedCards.add(randomNum);
-            }
-        }
-
-        System.out.println(usedCards);
+        System.out.println("ArrayList of usedCards: ");
+        System.out.println(usedCards); // The arraylist
     }
 
     //Getter and Setters

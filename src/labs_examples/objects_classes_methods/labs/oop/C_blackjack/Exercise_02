@@ -28,7 +28,7 @@ want another card.
 
 What I need to do (In simple english):
 [x] Create deal method to generate random number between 1 and 52.
-[] Check ArrayList of integers to make sure number is not there, if it is, it has been drawn. ?
-[] Generate numbers until number has been drawn. ?
-[] If generated number has not been played, add card at index of random number from Cards[] to hand ArrayList.
+[x] Check ArrayList of integers to make sure number is not there, if it is, it has been drawn. ?
+[x] Generate numbers until number has been drawn. ?
+[x] If generated number has not been played, add card at index of random number from Cards[] to hand ArrayList.
 [] Add that random number to ArrayList<Integer> usedCards.

@@ -7,7 +7,7 @@ public class BlackjackController {
     public static void main(String[] args) {
 
         //Filled Deck
-        Deck testDeck = new Deck();
+        Deck testDeck = new Deck(new ArrayList<Integer>());
         testDeck.populate();
 
 
@@ -16,6 +16,7 @@ public class BlackjackController {
         Player testPlayer = new Player("Player 1",testHand,100);
         testDeck.deal(testPlayer, testDeck.generateRandomNum());
 
+        testHand.returnScore();
 
 
 

@@ -21,6 +21,17 @@ public class Hand {
         cards.add(dealtCard);
     }
 
+    public int returnScore(){
+        int score = 0;
+
+        for(int x = 0; x < cards.size(); x++){
+            Card card = cards.get(x); //Get card at index of x
+            score += card.getCardValue();
+        }
+        System.out.println(score);
+        return score;
+    }
+
 
     //Getter and Setters
     public ArrayList<Card> getCards() {
