@@ -32,6 +32,13 @@ public class Hand {
         return score;
     }
 
+    //ADDITIONAL THINGS IVE BEEN MESSING WITH
+    public boolean isOver21(){
+        if(returnScore() > 21){
+        }
+        System.out.println("Hand is over 21.");
+        return true;
+    }
 
     //Getter and Setters
     public ArrayList<Card> getCards() {
