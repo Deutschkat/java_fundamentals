@@ -16,6 +16,8 @@ public class Player {
         this.potValue = potValue;
     }
 
+    //This part seems too easy, and I'm sure I did it wrong.
+    public boolean computerAI(){}
 
     // Getter and Setters
 

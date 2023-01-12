@@ -17,6 +17,7 @@ public class BlackjackController {
         testDeck.deal(testPlayer, testDeck.generateRandomNum());
 
         testHand.returnScore();
+        testHand.isOver21();
 
 
 
