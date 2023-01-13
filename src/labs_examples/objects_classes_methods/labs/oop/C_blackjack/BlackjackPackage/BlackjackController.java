@@ -59,23 +59,27 @@ public class BlackjackController {
         System.out.println("=======================");
 
 
-        System.out.println("Would you like another card?"); // Card Prompt
-        String answerInput = scanner.nextLine();
+            System.out.println("Would you like another card?"); // Card Prompt
+            String answerInput = scanner.nextLine();
 
 
-            if (answerInput.equals("yes") | answerInput.equals("Yes")| answerInput.equals("y")) {
+            if (answerInput.equals("yes") | answerInput.equals("Yes") | answerInput.equals("y")) {
                 System.out.println("*** " + playerNameInput + " hits ***");
                 System.out.println("------------------------");
                 testDeck.deal(player2, testDeck.generateRandomNum());
-                hand2.returnScore(); // Return player score again.
-                System.out.println("------------------------");
+
             }
 
+            System.out.println(playerNameInput + "'s score is: "+ hand2.returnScore());
+            System.out.println("------------------------");
+
             testPlayer.computerAI();
-            if(true){
+            if (true) {
                 testDeck.deal(testPlayer, testDeck.generateRandomNum());
-                testHand.returnScore();
             }
+
+            System.out.println(testPlayer.getName() + "'s score is: "+ testHand.returnScore());
+            System.out.println("------------------------");
 
 
 
