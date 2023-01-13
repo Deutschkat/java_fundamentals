@@ -78,7 +78,6 @@ public class BlackjackController {
             System.out.println(playerNameInput + "'s score is: " + hand2.returnScore());
             System.out.println("------------------------");
 
-            testPlayer.computerAI();
             if (testPlayer.computerAI() == true) {
                 testDeck.deal(testPlayer, testDeck.generateRandomNum());
                 if(testHand.isOver21() == true){
