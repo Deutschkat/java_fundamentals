@@ -28,7 +28,7 @@ public class Hand {
             Card card = cards.get(x); //Get card at index of x
             score += card.getCardValue();
         }
-        System.out.println("Current score is: " + score);
+
         System.out.println();
 
         handValue = score;

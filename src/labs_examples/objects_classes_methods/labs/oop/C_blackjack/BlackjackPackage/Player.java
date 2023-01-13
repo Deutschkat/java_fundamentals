@@ -18,8 +18,10 @@ public class Player {
 
     public boolean computerAI(){
         while(hand.getHandValue() < 16){
+            System.out.println("*** Dealer hits ***");
             return true;
         }
+        System.out.println("*** Dealer stands ***");
         return false;
     }
 

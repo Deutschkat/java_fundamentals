@@ -38,28 +38,44 @@ public class BlackjackController {
         Hand testHand = new Hand(new ArrayList<>(),0);
         Hand hand2 = new Hand(new ArrayList<>(), 0);
 
-        Player testPlayer = new Player("Computer Player",testHand,100);
+        Player testPlayer = new Player("Dealer",testHand,100);
         Player player2 = new Player(playerNameInput,hand2, 100);
 
         Deck testDeck = new Deck(new ArrayList<Integer>()); // Populate Deck
         testDeck.populate();
 
+        System.out.println("=======================");
         testDeck.deal(testPlayer, testDeck.generateRandomNum()); // Deal two cards to computer
         testDeck.deal(testPlayer, testDeck.generateRandomNum());
-        testHand.returnScore(); // Return computer score
+        System.out.println(testPlayer.getName() + "'s score is: "+ testHand.returnScore());
+        System.out.println("=======================");
 
         testDeck.deal(player2, testDeck.generateRandomNum()); // Deal two cards to player
         testDeck.deal(player2, testDeck.generateRandomNum());
 
-        hand2.returnScore(); //Return player score
+        System.out.println(playerNameInput + "'s score is: "+ hand2.returnScore());
+        //Return player score
 
-        System.out.println("Would you like another card?");
+        System.out.println("=======================");
+
+
+        System.out.println("Would you like another card?"); // Card Prompt
         String answerInput = scanner.nextLine();
 
-        if(answerInput.equals("yes")|answerInput.equals("Yes")){
-            testDeck.deal(player2, testDeck.generateRandomNum());
-            hand2.returnScore(); // Return player score again.
-        }
+
+            if (answerInput.equals("yes") | answerInput.equals("Yes")| answerInput.equals("y")) {
+                System.out.println("*** " + playerNameInput + " hits ***");
+                System.out.println("------------------------");
+                testDeck.deal(player2, testDeck.generateRandomNum());
+                hand2.returnScore(); // Return player score again.
+                System.out.println("------------------------");
+            }
+
+            testPlayer.computerAI();
+            if(true){
+                testDeck.deal(testPlayer, testDeck.generateRandomNum());
+                testHand.returnScore();
+            }
 
 
 
