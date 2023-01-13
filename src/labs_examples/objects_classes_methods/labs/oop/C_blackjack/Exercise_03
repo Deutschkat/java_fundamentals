@@ -12,3 +12,6 @@ this until both the user and the computer say "no" to another card, or until bot
 
 3) When both players say "no" to another card (or when both players have "busted" (gone over 21)) print out both the users
 hand and hand value as well as the computers hand and hand value and indicate who won, or whether you both lost.
+
+
+I cant get it to end when both say no? How should i do this.
