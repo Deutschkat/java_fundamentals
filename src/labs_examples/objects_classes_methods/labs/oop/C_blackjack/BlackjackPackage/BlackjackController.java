@@ -59,6 +59,8 @@ public class BlackjackController {
         System.out.println("=======================");
 
 
+
+        do {
             System.out.println("Would you like another card?"); // Card Prompt
             String answerInput = scanner.nextLine();
 
@@ -67,20 +69,35 @@ public class BlackjackController {
                 System.out.println("*** " + playerNameInput + " hits ***");
                 System.out.println("------------------------");
                 testDeck.deal(player2, testDeck.generateRandomNum());
+                    if(hand2.isOver21() == true){
+                        break;
+                    }
 
             }
 
-            System.out.println(playerNameInput + "'s score is: "+ hand2.returnScore());
+            System.out.println(playerNameInput + "'s score is: " + hand2.returnScore());
             System.out.println("------------------------");
 
             testPlayer.computerAI();
-            if (true) {
+            if (testPlayer.computerAI() == true) {
                 testDeck.deal(testPlayer, testDeck.generateRandomNum());
+                if(testHand.isOver21() == true){
+                    break;
+                }
             }
 
-            System.out.println(testPlayer.getName() + "'s score is: "+ testHand.returnScore());
+            System.out.println(testPlayer.getName() + "'s score is: " + testHand.returnScore());
             System.out.println("------------------------");
+        }while(hand2.isOver21() == false | testHand.isOver21() == false);
 
+
+
+        System.out.println("GAME OVER");
+        System.out.println();
+        System.out.println(testPlayer.getName() + "'s score is: " + testHand.returnScore());
+        System.out.println();
+        System.out.println(playerNameInput + "'s score is: " + hand2.returnScore());
+        System.out.println("=======================");
 
 
     }

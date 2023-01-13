@@ -21,7 +21,6 @@ public class Player {
             System.out.println("*** Dealer hits ***");
             return true;
         }
-        System.out.println("*** Dealer stands ***");
         return false;
     }
 
