@@ -1,7 +1,7 @@
 
 1) In the BlackJackController, create a method named playBlackJack(). This method will interact with the user by printing
 out questions and using a Scanner to get answers. First, create two Player objects. One should have the name of the user
-(that they enter through the console) and the other will be the computer player.
+(that they enter through the console) and the other will be the computer player. **
 
 2) After you have created both players, deal them each two cards from the deck. These cards should be added to the
 players "hand" objects. Print the two cards the user received and their current hand value to the console and ask them

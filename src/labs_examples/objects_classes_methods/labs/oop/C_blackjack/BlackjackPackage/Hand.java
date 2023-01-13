@@ -28,17 +28,20 @@ public class Hand {
             Card card = cards.get(x); //Get card at index of x
             score += card.getCardValue();
         }
-        System.out.println(score);
+        System.out.println("Current score is: " + score);
+        System.out.println();
+
+        handValue = score;
         return score;
     }
 
-    //ADDITIONAL THINGS IVE BEEN MESSING WITH
+    //THINGS IVE ADDED SINCE LAST MEETING #4
     public boolean isOver21(){
         if(returnScore() > 21){
             System.out.println("Hand is over 21.");
-
+            return true;
         }
-        return true; // I had to put the return here? It was throwing an error...?
+        return false;
     }
 
     //Getter and Setters
@@ -57,6 +60,8 @@ public class Hand {
     public void setHandValue(int handValue) {
         this.handValue = handValue;
     }
+
+
 
     //To String (if needed)
 

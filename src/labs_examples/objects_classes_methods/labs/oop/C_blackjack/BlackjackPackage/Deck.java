@@ -51,21 +51,20 @@ public class Deck {
             randomNum = generateRandomNum();
         }
 
-        System.out.println(randomNum);
-
         Card randomCard = deckOfCards[randomNum]; //Gets the card
         Hand playerHand = myPlayer.getHand();
 
         playerHand.addCardToHand(randomCard); //Puts card in hand
 
+        System.out.println(myPlayer.getName());
         System.out.println("Card Added To Hand: ");
         System.out.println(randomCard);
 
         usedCards.add(randomNum);
+        System.out.println();
 
-
-        System.out.println("ArrayList of usedCards: ");
-        System.out.println(usedCards); // The arraylist
+//        System.out.println("ArrayList of usedCards: ");
+//        System.out.println(usedCards); // The arraylist (for my benefit only)
     }
 
     //Getter and Setters

@@ -21,7 +21,7 @@ a king is worth 10.
 value is less than 21 **
 
 5) In the Player class, create a method named computerAI that will return true if the computer player wants another card.
-It will return false is the computer player does not want another card. If the computer player's hand currently has a
+It will return false if the computer player does not want another card. If the computer player's hand currently has a
 value less than 16 it will want another card. If the hand value is greater than or equal to 16 the computer will not
 want another card. **
 

@@ -16,8 +16,12 @@ public class Player {
         this.potValue = potValue;
     }
 
-    //This part seems too easy, and I'm sure I did it wrong.
-    public boolean computerAI(){}
+    public boolean computerAI(){
+        while(hand.getHandValue() < 16){
+            return true;
+        }
+        return false;
+    }
 
     // Getter and Setters
 
