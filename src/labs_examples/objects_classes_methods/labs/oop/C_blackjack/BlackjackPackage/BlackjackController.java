@@ -6,20 +6,6 @@ import java.util.Random;
 public class BlackjackController {
     public static void main(String[] args) {
 
-
-        //Test Hand, Player, and Deck
-
-
-      /*  testHand.returnScore();
-        testHand.isOver21();
-
-        testPlayer.computerAI();
-        boolean computerTest = testPlayer.computerAI();
-        if(computerTest == true){
-            testDeck.deal(testPlayer, testDeck.generateRandomNum());
-        }
-*/
-
         BlackjackController blackjackController = new BlackjackController();
         blackjackController.playBlackJack();
 
