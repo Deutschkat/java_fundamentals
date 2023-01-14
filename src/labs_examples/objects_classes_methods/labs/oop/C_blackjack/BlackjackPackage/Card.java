@@ -33,9 +33,26 @@ public class Card {
 
     @Override
     public String toString() {
-        return "Card{" +
-                "cardValue=" + cardValue +
-                ", suit=" + suit +
-                '}';
+        if(cardValue <=9) {
+            return ".------.\n" +
+                    "|" + cardValue + ".--. |\n" +
+                    "| :" + suit + ": |\n" +
+                    "| :" + suit + ": |\n" +
+                    "| '-'" + cardValue + " |\n" +
+                    "`------' " + "Card{" +
+                    "cardValue=" + cardValue +
+                    ", suit=" + suit +
+                    '}';
+        }else{
+            return ".------.\n" +
+            "|" + cardValue + ".--.|\n" +
+                    "| :" + suit + " :|\n" +
+                    "| :" + suit + " :|\n" +
+                    "| '-'" + cardValue + "|\n" +
+                    "`------' " + "Card{" +
+                    "cardValue=" + cardValue +
+                    ", suit=" + suit +
+                    '}';
+        }
     }
 }
