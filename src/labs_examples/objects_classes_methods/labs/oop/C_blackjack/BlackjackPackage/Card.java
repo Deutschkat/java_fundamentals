@@ -43,8 +43,8 @@ public class Card {
         }else{
             return ".------.\n" +
             "|" + cardValue + ".--.|\n" +
-                    "| :" + suit + " :|\n" +
-                    "| :" + suit + " :|\n" +
+                    "| :" + suit + ": |\n" +
+                    "| :" + suit + ": |\n" +
                     "| '-'" + cardValue + "|\n" +
                     "`------' " ;
         }
