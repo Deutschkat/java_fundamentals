@@ -86,6 +86,9 @@ public class BlackjackController {
                 testDeck.deal(player2, testDeck.generateRandomNum());
                     if(hand2.isOver21() == true){
                         break;
+                    }else if(hand2.returnScore() == 21){
+                        System.out.println("21! YOU WIN!");
+                        break;
                     }
 
             }
@@ -96,6 +99,9 @@ public class BlackjackController {
             if (testPlayer.computerAI() == true) {
                 testDeck.deal(testPlayer, testDeck.generateRandomNum());
                 if(testHand.isOver21() == true){
+                    break;
+                }else if(testHand.returnScore() == 21){
+                    System.out.println("Dealer has 21!! You lose.");
                     break;
                 }
             }
