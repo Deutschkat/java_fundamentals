@@ -16,7 +16,7 @@ public class BlackjackController {
         String playGame = gameScanner.nextLine();
         if(playGame.equals("Yes")| playGame.equals("yes")| playGame.equals("y")){
             blackjackController.playBlackJack();
-        }else {
+        }else{
             System.exit(0);
         }
     }
