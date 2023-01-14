@@ -39,20 +39,14 @@ public class Card {
                     "| :" + suit + ": |\n" +
                     "| :" + suit + ": |\n" +
                     "| '-'" + cardValue + " |\n" +
-                    "`------' " + "Card{" +
-                    "cardValue=" + cardValue +
-                    ", suit=" + suit +
-                    '}';
+                    "`------' " ;
         }else{
             return ".------.\n" +
             "|" + cardValue + ".--.|\n" +
                     "| :" + suit + " :|\n" +
                     "| :" + suit + " :|\n" +
                     "| '-'" + cardValue + "|\n" +
-                    "`------' " + "Card{" +
-                    "cardValue=" + cardValue +
-                    ", suit=" + suit +
-                    '}';
+                    "`------' " ;
         }
     }
 }

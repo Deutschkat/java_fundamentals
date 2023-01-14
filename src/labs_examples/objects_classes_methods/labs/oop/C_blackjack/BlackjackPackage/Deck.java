@@ -30,7 +30,7 @@ public class Deck {
                     Card card1 = new Card(values[v], suit[j]);
 
                     deckOfCards[counter++] = card1;
-                    System.out.println(card1);
+                 //   System.out.println(card1);
                 }
             }
         }

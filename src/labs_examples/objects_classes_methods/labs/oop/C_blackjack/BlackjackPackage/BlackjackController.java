@@ -49,22 +49,31 @@ public class BlackjackController {
 
         Deck testDeck = new Deck(new ArrayList<Integer>()); // Populate Deck
         testDeck.populate();
+        System.out.println("Welcome, " + playerNameInput + "!");
 
-        System.out.println("=======================");
-        testDeck.deal(testPlayer, testDeck.generateRandomNum()); // Deal two cards to computer
-        testDeck.deal(testPlayer, testDeck.generateRandomNum());
-        System.out.println(testPlayer.getName() + "'s score is: "+ testHand.returnScore());
-        System.out.println("=======================");
+        System.out.println("If you are ready to play, just say 'deal'");
 
-        testDeck.deal(player2, testDeck.generateRandomNum()); // Deal two cards to player
-        testDeck.deal(player2, testDeck.generateRandomNum());
-
-        System.out.println(playerNameInput + "'s score is: "+ hand2.returnScore());
-        //Return player score
-
-        System.out.println("=======================");
+        String startGame = scanner.nextLine();
+            if(startGame.equals("deal")| startGame.equals("Deal")) {
 
 
+                System.out.println("Dealing cards...");
+
+                System.out.println("========================================================================================");
+                testDeck.deal(testPlayer, testDeck.generateRandomNum()); // Deal two cards to computer
+                testDeck.deal(testPlayer, testDeck.generateRandomNum());
+                System.out.println(testPlayer.getName() + "'s score is: " + testHand.returnScore());
+                System.out.println("========================================================================================");
+
+                testDeck.deal(player2, testDeck.generateRandomNum()); // Deal two cards to player
+                testDeck.deal(player2, testDeck.generateRandomNum());
+
+                System.out.println(playerNameInput + "'s score is: " + hand2.returnScore());
+                //Return player score
+
+                System.out.println("========================================================================================");
+
+            }
 
         do {
             System.out.println("Would you like another card?"); // Card Prompt
@@ -102,7 +111,7 @@ public class BlackjackController {
         System.out.println(testPlayer.getName() + "'s score is: " + testHand.returnScore());
         System.out.println();
         System.out.println(playerNameInput + "'s score is: " + hand2.returnScore());
-        System.out.println("=======================");
+        System.out.println("========================================================================================");
 
 
     }
