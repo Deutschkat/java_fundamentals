@@ -6,12 +6,19 @@ import java.util.Random;
 public class BlackjackController {
     public static void main(String[] args) {
 
-
+        Scanner gameScanner = new Scanner(System.in);
 
         BlackjackController blackjackController = new BlackjackController();
         blackjackController.playBlackJack();
 
+        System.out.println("Would you like to play again?");
 
+        String playGame = gameScanner.nextLine();
+        if(playGame.equals("Yes")| playGame.equals("yes")| playGame.equals("y")){
+            blackjackController.playBlackJack();
+        }else {
+            System.exit(0);
+        }
     }
 
     public void playBlackJack(){
@@ -121,6 +128,7 @@ public class BlackjackController {
 
 
     }
+
 
 
 }
