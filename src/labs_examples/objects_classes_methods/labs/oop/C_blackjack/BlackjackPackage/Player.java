@@ -1,5 +1,7 @@
 package labs_examples.objects_classes_methods.labs.oop.C_blackjack.BlackjackPackage;
 
+import java.util.Scanner;
+
 public class Player {
 
     // Player Info
@@ -23,6 +25,23 @@ public class Player {
         }
         return false;
     }
+
+//    **MIGHT DELETE THIS***
+
+  //  public int placeABet(int potValue){
+    //    Scanner scanner = new Scanner(System.in);
+
+      //  System.out.println("How much would you like to bet?");
+      //  int betAmount = scanner.nextInt();
+
+//        System.out.println("$"+betAmount+ " bet placed! Good luck!");
+//        int playerBet = potValue - betAmount;
+
+//        System.out.println(getName()+"'s wallet contains: $" + playerBet);
+
+
+//        return betAmount;
+//    }
 
     // Getter and Setters
 

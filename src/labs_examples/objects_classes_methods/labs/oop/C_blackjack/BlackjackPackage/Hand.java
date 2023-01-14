@@ -35,7 +35,8 @@ public class Hand {
         return score;
     }
 
-    //THINGS IVE ADDED SINCE LAST MEETING #4
+
+
     public boolean isOver21(){
         if(returnScore() > 21){
             System.out.println("PLAYER BUSTS");

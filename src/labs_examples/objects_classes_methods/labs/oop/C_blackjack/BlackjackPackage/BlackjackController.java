@@ -75,6 +75,10 @@ public class BlackjackController {
 
             }
 
+            //Working on this Might Delete ************
+         //   player2.placeABet(100);
+
+
         do {
             System.out.println("Would you like another card?"); // Card Prompt
             String answerInput = scanner.nextLine();
