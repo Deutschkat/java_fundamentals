@@ -110,6 +110,16 @@ public class BlackjackController {
                 }
             }
 
+            if(answerInput.equals("no")|answerInput.equals("No")|answerInput.equals("n")&& testPlayer.computerAI() == false){
+                if(hand2.handValue > testHand.handValue){
+                    System.out.println("You were closer to 21! You win!");
+                    break;
+                } else if (testHand.handValue > hand2.handValue) {
+                    System.out.println("Dealer was closer to 21! Dealer wins!");
+                    break;
+                }
+            }
+
             System.out.println(testPlayer.getName() + "'s score is: " + testHand.returnScore());
             System.out.println("------------------------");
         }while(hand2.isOver21() == false | testHand.isOver21() == false);
