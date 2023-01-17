@@ -83,7 +83,7 @@ public class BlackjackController {
             System.out.println("Would you like another card?"); // Card Prompt
             String answerInput = scanner.nextLine();
 
-
+            //Player turn
             if (answerInput.equals("yes") | answerInput.equals("Yes") | answerInput.equals("y")) {
                 System.out.println("*** " + playerNameInput + " hits ***");
                 System.out.println("------------------------");
@@ -99,7 +99,7 @@ public class BlackjackController {
 
             System.out.println(playerNameInput + "'s score is: " + hand2.returnScore());
             System.out.println("------------------------");
-
+                //Computer turn
             if (testPlayer.computerAI() == true) {
                 testDeck.deal(testPlayer, testDeck.generateRandomNum());
                 if(testHand.isOver21() == true){
@@ -110,6 +110,7 @@ public class BlackjackController {
                 }
             }
 
+            // So that when we both dont want a card, the higher value hand wins.
             if(answerInput.equals("no")|answerInput.equals("No")|answerInput.equals("n")&& testPlayer.computerAI() == false){
                 if(hand2.handValue > testHand.handValue){
                     System.out.println("You were closer to 21! You win!");
