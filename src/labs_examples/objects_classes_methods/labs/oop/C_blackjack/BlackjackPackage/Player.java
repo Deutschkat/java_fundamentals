@@ -28,7 +28,7 @@ public class Player {
 
 //    **MIGHT DELETE THIS***
 
-  //  public int placeABet(int potValue){
+  //  public int placeABet(){
     //    Scanner scanner = new Scanner(System.in);
 
       //  System.out.println("How much would you like to bet?");
