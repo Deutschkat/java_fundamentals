@@ -39,7 +39,7 @@ public class Hand {
 
     public boolean isOver21(){
         if(returnScore() > 21){
-            System.out.println("PLAYER BUSTS");
+            System.out.println("BUST!!");
             return true;
         }
         return false;

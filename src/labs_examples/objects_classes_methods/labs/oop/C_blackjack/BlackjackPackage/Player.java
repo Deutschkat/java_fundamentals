@@ -27,22 +27,22 @@ public class Player {
         return false;
     }
 
-//    **MIGHT DELETE THIS***
+   //BET - Work in progress
 
-  //  public int placeABet(){
-    //    Scanner scanner = new Scanner(System.in);
+    public int placeABet(){
+        Scanner scanner = new Scanner(System.in);
 
-      //  System.out.println("How much would you like to bet?");
-      //  int betAmount = scanner.nextInt();
+        System.out.println("How much would you like to bet?");
+        int betAmount = scanner.nextInt();
 
-//        System.out.println("$"+betAmount+ " bet placed! Good luck!");
-//        int playerBet = potValue - betAmount;
+        System.out.println("$"+betAmount+ " bet placed! Good luck!");
+        int playerBet = potValue - betAmount;
 
-//        System.out.println(getName()+"'s wallet contains: $" + playerBet);
+        System.out.println(getName()+"'s wallet contains: $" + playerBet);
 
 
-//        return betAmount;
-//    }
+         return betAmount;
+     }
 
     // Getter and Setters
 

@@ -14,20 +14,3 @@ this until both the user and the computer say "no" to another card, or until bot
 hand and hand value as well as the computers hand and hand value and indicate who won, or whether you both lost.
 
 
-I cant get it to end when both say no? How should i do this.
-
-
-code references
-
-  //Test Hand, Player, and Deck
-
-
-      /*  testHand.returnScore();
-        testHand.isOver21();
-
-        testPlayer.computerAI();
-        boolean computerTest = testPlayer.computerAI();
-        if(computerTest == true){
-            testDeck.deal(testPlayer, testDeck.generateRandomNum());
-        }
-*/
