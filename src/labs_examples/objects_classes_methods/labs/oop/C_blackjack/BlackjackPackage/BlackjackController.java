@@ -17,7 +17,8 @@ public class BlackjackController {
         blackjackController.blackJackSetUp();
 
 
-        do{blackjackController.playBlackJack();
+        do{blackjackController.blackJackSetUpReplay();
+            blackjackController.playBlackJack();
         }while(blackjackController.playAgain() == true);
 
 
@@ -58,6 +59,17 @@ public class BlackjackController {
         testDeck = new Deck(new ArrayList<Integer>()); // Populate Deck
         testDeck.populate();
         System.out.println("Welcome, " + playerNameInput + "!");
+
+
+    }
+    // This method resets the hand values... trying to use it to carry over the potvalues of each player as well...
+    public void blackJackSetUpReplay() {
+        testHand = new Hand(new ArrayList<>(), 0);
+        hand2 = new Hand(new ArrayList<>(), 0);
+
+        testPlayer = new Player("Dealer", testHand, testPlayer.potValue);
+        player2 = new Player(player2.getName(), hand2, player2.potValue);
+
 
 
     }
