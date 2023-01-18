@@ -98,7 +98,7 @@ public class BlackjackController {
 
             int gameLevelPot = 0;
             gameLevelPot += player2.placeABet();
-            gameLevelPot += testPlayer.cpuBetPlace();
+            System.out.println(gameLevelPot += testPlayer.addCpuBetToPot());
 
 
             do {
