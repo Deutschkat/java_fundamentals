@@ -98,7 +98,7 @@ public class BlackjackController {
 
             int gameLevelPot = 0;
             gameLevelPot += player2.placeABet();
-            gameLevelPot += testPlayer.placeABet();
+            gameLevelPot += testPlayer.cpuBetPlace();
 
 
             do {
@@ -121,7 +121,7 @@ public class BlackjackController {
                     }
 
                 }
-
+                System.out.println("                        " + player2.getName() + "'s wallet contains: $" + player2.potValue);
                 System.out.println(player2.getName() + "'s score is: " + hand2.returnScore());
                 System.out.println("------------------------");
                 //Computer turn
@@ -152,7 +152,7 @@ public class BlackjackController {
                         break;
                     }
                 }
-
+                System.out.println("                        " + testPlayer.getName() + "'s wallet contains: $" + testPlayer.potValue);
                 System.out.println(testPlayer.getName() + "'s score is: " + testHand.returnScore());
                 System.out.println("------------------------");
             } while (hand2.isOver21() == false | testHand.isOver21() == false);

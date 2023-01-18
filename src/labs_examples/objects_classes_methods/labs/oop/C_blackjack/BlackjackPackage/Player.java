@@ -37,11 +37,17 @@ public class Player {
 
         System.out.println("$"+betAmount+ " bet placed! Good luck!");
         int playerBet = potValue - betAmount;
+        setPotValue(playerBet);
 
         System.out.println(getName()+"'s wallet contains: $" + playerBet);
 
 
          return betAmount;
+     }
+
+     public int cpuBetPlace(){
+         return (int)(Math.random()*potValue-1);
+
      }
 
     // Getter and Setters
