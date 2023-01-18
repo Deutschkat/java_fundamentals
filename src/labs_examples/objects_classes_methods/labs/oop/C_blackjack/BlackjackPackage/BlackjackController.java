@@ -17,14 +17,9 @@ public class BlackjackController {
         BlackjackController blackjackController = new BlackjackController();
         blackjackController.blackJackSetUp();
 
-        System.out.println("Would you like to play again? (please enter 'yes' or 'no')");
-
-        Scanner gameScanner = new Scanner(System.in);
-
-        String playGame = gameScanner.nextLine();
 
         do{blackjackController.playBlackJack();
-        }while(playGame.equals("yes"));
+        }while(blackjackController.playAgain() == true);
 
 
     }
@@ -162,15 +157,26 @@ public class BlackjackController {
                 System.out.println("------------------------");
             } while (hand2.isOver21() == false | testHand.isOver21() == false);
 
+        System.out.println("GAME OVER");
+        System.out.println();
+        System.out.println(testPlayer.getName() + "'s score is: " + testHand.returnScore());
+        System.out.println(player2.getName() + "'s score is: " + hand2.returnScore());
+        System.out.println("========================================================================================");
+        System.out.println();
+        System.out.println();
+        }
 
-            System.out.println("GAME OVER");
-            System.out.println();
-            System.out.println(testPlayer.getName() + "'s score is: " + testHand.returnScore());
-            System.out.println(player2.getName() + "'s score is: " + hand2.returnScore());
-            System.out.println("========================================================================================");
-            System.out.println();
-            System.out.println();
+        public boolean playAgain(){
+            System.out.println("Would you like to play again? (please enter 'yes' or 'no')");
 
+            Scanner gameScanner = new Scanner(System.in);
+
+            String playGame = gameScanner.nextLine();
+
+            if(playGame.equals("Yes")|playGame.equals("yes")|playGame.equals("y")){
+                return true;
+            }
+        return false;
         }
 
     }
