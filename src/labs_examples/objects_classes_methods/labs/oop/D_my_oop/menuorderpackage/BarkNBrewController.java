@@ -27,14 +27,18 @@ public class BarkNBrewController {
 
         String partyInputName = scanner.nextLine();
 
+        System.out.println("Excellent! Your party will be known as the " + partyInputName + " party.");
+
         System.out.println("How many humans are in the party?");
         int numParty = scanner.nextInt();
+        System.out.println("Okay. So you have " + numParty + " humans altogether.");
 
-        System.out.println("Is everyone in the party over 21?");
 
-        boolean yesOrNo = scanner.nextBoolean();
 
-        CustomerParty party1 = new CustomerParty(partyInputName,numParty,yesOrNo );
+        CustomerParty party1 = new CustomerParty(partyInputName,numParty);
+        System.out.println(party1.partyName);
+        System.out.println(party1.numCustomers);
+
 
 
 
