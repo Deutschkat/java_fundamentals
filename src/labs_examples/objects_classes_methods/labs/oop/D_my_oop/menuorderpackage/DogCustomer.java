@@ -1,19 +1,23 @@
 package labs_examples.objects_classes_methods.labs.oop.D_my_oop.menuorderpackage;
 
-public class DogCustomer {
+public class DogCustomer extends CustomerParty {
 
-    protected String dogName;
+    String dogName;
 
-    protected int numDogs;
+    int numDogs;
 
-    protected boolean isVaccinated;
+    boolean isVaccinated;
 
     //Constructor
-    public DogCustomer(String dogName, int numDogs, boolean isVaccinated) {
-        this.dogName = dogName;
+
+    public DogCustomer(String partyName, int numCustomers, , int numDogs, String dogName boolean isVaccinated) {
+        super(partyName, numCustomers);
         this.numDogs = numDogs;
+        this.dogName = dogName;
+
         this.isVaccinated = isVaccinated;
     }
+
 
     //Getters and Setters
 

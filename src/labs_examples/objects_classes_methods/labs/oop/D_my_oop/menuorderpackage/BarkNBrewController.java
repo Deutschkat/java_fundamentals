@@ -33,11 +33,14 @@ public class BarkNBrewController {
         int numParty = scanner.nextInt();
         System.out.println("Okay. So you have " + numParty + " humans altogether.");
 
+        System.out.println("How many pups did you bring this evening?");
+
+        int numDoggos = scanner.nextInt();
 
 
-        CustomerParty party1 = new CustomerParty(partyInputName,numParty);
-        System.out.println(party1.partyName);
-        System.out.println(party1.numCustomers);
+
+
+        DogCustomer party1 = new DogCustomer(partyInputName, numParty,numDoggos, )
 
 
 
