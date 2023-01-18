@@ -11,7 +11,9 @@ public class BarkNBrewController {
     public void welcomeInfo(){
         System.out.println("Welcome To Bark N' Brew!");
         System.out.println();
-        System.out.println("-------------------------------------------------------");
+        System.out.println("------------------------");
+
+        System.out.println();
 
 
     }
