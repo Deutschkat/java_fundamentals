@@ -104,13 +104,15 @@ public class BlackjackController {
 
             }
 
-            //Working on this Might Delete ************
+            //Creating game pot and increasing it.
 
             int gameLevelPot = 0;
             gameLevelPot += player2.placeABet();
 
+            //There was no good place to pull this from, so I created the CPU bet here and set their potValue here too.
             int computerBet = (int) (Math.random()*testPlayer.potValue-1);
             gameLevelPot += computerBet;
+            System.out.println("Dealer bets: $" + computerBet);
 
             int cpuPotValue = (testPlayer.potValue - computerBet);
             testPlayer.setPotValue(cpuPotValue);
