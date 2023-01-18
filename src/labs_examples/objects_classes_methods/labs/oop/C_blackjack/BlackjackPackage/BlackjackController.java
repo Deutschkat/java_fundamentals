@@ -62,15 +62,13 @@ public class BlackjackController {
 
 
     }
-    // This method resets the hand values... trying to use it to carry over the potvalues of each player as well...
+    // This method resets the hand values... trying to use it to carry over the potValues of each player as well...
     public void blackJackSetUpReplay() {
         testHand = new Hand(new ArrayList<>(), 0);
         hand2 = new Hand(new ArrayList<>(), 0);
 
         testPlayer = new Player("Dealer", testHand, testPlayer.potValue);
         player2 = new Player(player2.getName(), hand2, player2.potValue);
-
-
 
     }
 
@@ -110,9 +108,11 @@ public class BlackjackController {
 
             int gameLevelPot = 0;
             gameLevelPot += player2.placeABet();
-            System.out.println(gameLevelPot += testPlayer.randomCpuBet());
 
-            int cpuPotValue = (testPlayer.potValue - testPlayer.randomCpuBet());
+            int computerBet = (int) (Math.random()*testPlayer.potValue-1);
+            gameLevelPot += computerBet;
+
+            int cpuPotValue = (testPlayer.potValue - computerBet);
             testPlayer.setPotValue(cpuPotValue);
 
             do {

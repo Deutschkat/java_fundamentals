@@ -46,9 +46,7 @@ public class Player {
      }
 
      //Cpu Bet
-     public int randomCpuBet(){
-         return(int)(Math.random()*potValue-1);
-     }
+
 
 
     // Getter and Setters
