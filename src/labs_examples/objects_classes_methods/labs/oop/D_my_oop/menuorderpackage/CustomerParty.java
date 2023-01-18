@@ -8,16 +8,20 @@ public class CustomerParty {
 
     int numCustomers;
 
+    boolean ofAge;
+
 
     //Constructor
 
 
-    public CustomerParty(String partyName, int numCustomers) {
+    public CustomerParty(String partyName, int numCustomers, boolean ofAge) {
         this.partyName = partyName;
         this.numCustomers = numCustomers;
+        this.ofAge = ofAge;
     }
 
     //Getters and Setters
+
     public String getPartyName() {
         return partyName;
     }
@@ -32,6 +36,14 @@ public class CustomerParty {
 
     public void setNumCustomers(int numCustomers) {
         this.numCustomers = numCustomers;
+    }
+
+    public boolean isOfAge() {
+        return ofAge;
+    }
+
+    public void setOfAge(boolean ofAge) {
+        this.ofAge = ofAge;
     }
 }
 

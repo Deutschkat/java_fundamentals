@@ -13,6 +13,7 @@ public class BarkNBrewController {
 
         BarkNBrewController barkNBrewController = new BarkNBrewController();
         barkNBrewController.welcomeInfo();
+        barkNBrewController.takeOrder();
 
     }
 
@@ -35,6 +36,13 @@ public class BarkNBrewController {
         System.out.println("Okay. So you have " + numParty + " humans altogether.");
         //
 
+        System.out.println("Is everyone 21? (true/false)");
+        boolean ofAgeYesOrNo = scanner.nextBoolean();
+            if(ofAgeYesOrNo==true){
+                System.out.println("Great! You have access to the full bar.");
+            }else{
+                System.out.println("That's alright. We have plenty of non-alcoholic options.");
+            }
 
         System.out.println("How many pups did you bring this evening?");
 
@@ -52,7 +60,8 @@ public class BarkNBrewController {
                 System.out.println("I'm sorry, the pups have to have proof of vaccination.");
             }
 
-        DogCustomer party1 = new DogCustomer(partyInputName, numParty, numDoggos, yesOrNo);
+        DogCustomer party1 = new DogCustomer(partyInputName, numParty,ofAgeYesOrNo, numDoggos, yesOrNo);
+        party1.toString();
 
     }
 

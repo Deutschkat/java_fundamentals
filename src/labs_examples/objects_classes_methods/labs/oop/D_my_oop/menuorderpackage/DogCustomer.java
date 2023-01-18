@@ -11,8 +11,8 @@ public class DogCustomer extends CustomerParty {
 
     //Constructor
 
-    public DogCustomer(String partyName, int numCustomers, int numDogs, boolean isVaccinated) {
-        super(partyName, numCustomers);
+    public DogCustomer(String partyName, int numCustomers, boolean ofAge,  int numDogs, boolean isVaccinated) {
+        super(partyName, numCustomers, ofAge);
 
         this.numDogs = numDogs;
         this.isVaccinated = isVaccinated;
@@ -36,5 +36,16 @@ public class DogCustomer extends CustomerParty {
 
     public void setVaccinated(boolean vaccinated) {
         isVaccinated = vaccinated;
+    }
+
+    @Override
+    public String toString() {
+        return "DogCustomer{" +
+                "numDogs=" + numDogs +
+                ", isVaccinated=" + isVaccinated +
+                ", partyName='" + partyName + '\'' +
+                ", numCustomers=" + numCustomers +
+                ", ofAge=" + ofAge +
+                '}';
     }
 }
