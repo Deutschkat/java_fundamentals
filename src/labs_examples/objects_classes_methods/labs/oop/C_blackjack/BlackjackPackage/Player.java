@@ -45,14 +45,12 @@ public class Player {
          return betAmount;
      }
 
-     public int cpuBetPlace(){
+     //Cpu Bet
+     public int randomCpuBet(){
          return(int)(Math.random()*potValue-1);
      }
 
-     public int addCpuBetToPot(){
-         setPotValue(potValue - cpuBetPlace());
-         return getPotValue();
-     }
+
     // Getter and Setters
 
     public String getName() {

@@ -1,7 +1,6 @@
 package labs_examples.objects_classes_methods.labs.oop.C_blackjack.BlackjackPackage;
 import java.util.*;
 import java.util.ArrayList;
-import java.util.Random;
 
 public class BlackjackController {
     Player testPlayer;
@@ -77,13 +76,13 @@ public class BlackjackController {
                 System.out.println("Dealing cards...");
 
                 System.out.println("========================================================================================");
-                System.out.println("                        " + testPlayer.getName() + "'s wallet contains: $" + testPlayer.potValue);
+                System.out.println("                        " + testPlayer.getName() + "'s wallet contains: $" + testPlayer.getPotValue());
                 testDeck.deal(testPlayer, testDeck.generateRandomNum()); // Deal two cards to computer
                 testDeck.deal(testPlayer, testDeck.generateRandomNum());
                 System.out.println(testPlayer.getName() + "'s score is: " + testHand.returnScore());
 
                 System.out.println("========================================================================================");
-                System.out.println("                        " + player2.getName() + "'s wallet contains: $" + player2.potValue);
+                System.out.println("                        " + player2.getName() + "'s wallet contains: $" + player2.getPotValue());
                 testDeck.deal(player2, testDeck.generateRandomNum()); // Deal two cards to player
                 testDeck.deal(player2, testDeck.generateRandomNum());
 
@@ -99,8 +98,10 @@ public class BlackjackController {
 
             int gameLevelPot = 0;
             gameLevelPot += player2.placeABet();
-            System.out.println(gameLevelPot += testPlayer.addCpuBetToPot());
+            System.out.println(gameLevelPot += testPlayer.randomCpuBet());
 
+            int cpuPotValue = (testPlayer.potValue - testPlayer.randomCpuBet());
+            testPlayer.setPotValue(cpuPotValue);
 
             do {
 
