@@ -1,8 +1,9 @@
 package labs_examples.objects_classes_methods.labs.oop.D_my_oop.menuorderpackage;
 
-public class DogCustomer extends CustomerParty {
+import java.util.ArrayList;
+import java.util.Scanner;
 
-    String dogName;
+public class DogCustomer extends CustomerParty {
 
     int numDogs;
 
@@ -10,24 +11,16 @@ public class DogCustomer extends CustomerParty {
 
     //Constructor
 
-    public DogCustomer(String partyName, int numCustomers, , int numDogs, String dogName boolean isVaccinated) {
+    public DogCustomer(String partyName, int numCustomers, int numDogs, boolean isVaccinated) {
         super(partyName, numCustomers);
-        this.numDogs = numDogs;
-        this.dogName = dogName;
 
+        this.numDogs = numDogs;
         this.isVaccinated = isVaccinated;
     }
 
 
+
     //Getters and Setters
-
-    public String getDogName() {
-        return dogName;
-    }
-
-    public void setDogName(String dogName) {
-        this.dogName = dogName;
-    }
 
     public int getNumDogs() {
         return numDogs;
