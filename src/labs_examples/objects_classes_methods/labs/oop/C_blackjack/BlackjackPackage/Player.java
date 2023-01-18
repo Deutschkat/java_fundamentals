@@ -50,8 +50,8 @@ public class Player {
      }
 
      public int addCpuBetToPot(){
-         return setPotValue(potValue - cpuBetPlace());
-
+         setPotValue(potValue - cpuBetPlace());
+         return getPotValue();
      }
     // Getter and Setters
 

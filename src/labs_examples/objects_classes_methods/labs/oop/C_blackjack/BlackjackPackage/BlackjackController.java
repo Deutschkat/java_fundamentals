@@ -65,6 +65,7 @@ public class BlackjackController {
 
     public void playBlackJack() {
 
+
         Scanner scanner = new Scanner(System.in);
 
             System.out.println("If you are ready to play, just say 'deal'");
