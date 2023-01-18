@@ -56,6 +56,11 @@ public class BarkNBrewController {
 
     }
 
+    public void takeOrder(){
+
+
+    }
+
 
 
 
