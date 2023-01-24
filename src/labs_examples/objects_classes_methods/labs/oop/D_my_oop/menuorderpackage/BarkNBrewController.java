@@ -39,6 +39,10 @@ public class BarkNBrewController {
         DrinkItem tea = new DrinkItem("Tea", 2.00, "Drink", false, 1);
         DrinkItem pupShake = new DrinkItem("Pup-Shake", 3.50, "Drink", false, 1);
 
+
+        // Testing how it prints out to call the items individually, so I may completely get rid of the printMenu() prompt
+        // and just print individual items in that method.
+
         System.out.println(saltyDog);
         System.out.println();
         System.out.println(nachos);
@@ -49,6 +53,11 @@ public class BarkNBrewController {
         barkNBrewController.welcomeInfo();
         barkNBrewController.printMenu();
     }
+
+    // welcomeInfo() establishes how many people are in the party
+    // orders will be stuck together for ONE party, not per guest
+    // also determines if alcohol can be served
+    // most of this was just to add for practice with booleans and creating the dog customer class
 
     public void welcomeInfo() {
         System.out.println("Welcome To Bark N' Brew!");
