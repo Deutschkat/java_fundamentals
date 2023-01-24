@@ -35,6 +35,6 @@ public class DrinkItem extends MenuItem{
 
     @Override
     public String toString() {
-        return (itemName + "        " + "$" + costOfItem + "         " + "       " + category);
+        return (itemName + "            " + "$" + costOfItem);
     }
 }

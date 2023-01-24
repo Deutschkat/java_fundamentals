@@ -40,7 +40,9 @@ public class BarkNBrewController {
         DrinkItem pupShake = new DrinkItem("Pup-Shake", 3.50, "Drink", false, 1);
 
         System.out.println(saltyDog);
+        System.out.println();
         System.out.println(nachos);
+        System.out.println();
         System.out.println(pretzel);
         System.out.println(water);
 
