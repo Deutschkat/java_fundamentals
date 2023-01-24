@@ -6,16 +6,20 @@ public class MenuItem {
     double costOfItem;
     String category;
 
+    int numServings;
+
     //Constructor
 
-
-    public MenuItem(String itemName, double costOfItem, String category) {
+    public MenuItem(String itemName, double costOfItem, String category, int numServings) {
         this.itemName = itemName;
         this.costOfItem = costOfItem;
         this.category = category;
+        this.numServings = numServings;
     }
 
+
     //Getters and Setters
+
 
     public String getItemName() {
         return itemName;
@@ -39,5 +43,13 @@ public class MenuItem {
 
     public void setCategory(String category) {
         this.category = category;
+    }
+
+    public int getNumServings() {
+        return numServings;
+    }
+
+    public void setNumServings(int numServings) {
+        this.numServings = numServings;
     }
 }

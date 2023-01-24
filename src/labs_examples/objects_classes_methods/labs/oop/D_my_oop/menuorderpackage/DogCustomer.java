@@ -11,16 +11,15 @@ public class DogCustomer extends CustomerParty {
 
     //Constructor
 
-    public DogCustomer(String partyName, int numCustomers, boolean ofAge,  int numDogs, boolean isVaccinated) {
-        super(partyName, numCustomers, ofAge);
-
+    public DogCustomer(String partyName, int numCustomers, boolean ofAge, ArrayList<MenuItem> customerOrder, int numDogs, boolean isVaccinated) {
+        super(partyName, numCustomers, ofAge, customerOrder);
         this.numDogs = numDogs;
         this.isVaccinated = isVaccinated;
     }
 
 
-
     //Getters and Setters
+
 
     public int getNumDogs() {
         return numDogs;
