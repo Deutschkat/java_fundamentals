@@ -12,6 +12,8 @@ public class BarkNBrewController {
 
         BarkNBrewController barkNBrewController = new BarkNBrewController();
 
+        //Creating menu items and assigning them attributes
+
         FoodItem classicPupCup = new FoodItem("Classic Pup Cup", 1.50, "Food", "for dogs", 1);
         FoodItem pupPizzaBites = new FoodItem("Pup Pizza Bites", 2.50, "Food", "for dogs", 1);
         FoodItem rowdyRawhideRinds = new FoodItem("Rowdy Rawhide Rinds", 2.00, "Food", "for dogs", 1);
