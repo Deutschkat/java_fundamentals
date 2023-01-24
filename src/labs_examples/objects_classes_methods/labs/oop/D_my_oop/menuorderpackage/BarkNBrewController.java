@@ -119,19 +119,19 @@ public class BarkNBrewController {
         System.out.println("  Item" + "              " + "Cost" + "              " + "Type Of Drink");
         System.out.println("Salty Dog" + "          " + "  $" + 11 + "            " + "   Cocktail");
         System.out.println("Greyhound" + "          " + "  $" + 10 + "            " + "   Cocktail");
-        System.out.println("The Pit Bull" + "          " + "  $" + 11 + "            " + "   Cocktail");
-        System.out.println("Mastiff Martini" + "          " + "  $" + 12 + "            " + "   Cocktail");
-        System.out.println("The Doberman" + "          " + "  $" + 10.75 + "            " + "   Cocktail");
-        System.out.println("Husky Colada" + "          " + "  $" + 13.75 + "            " + "   Cocktail");
-        System.out.println("Moscow Mutt" + "          " + "  $" + 9.75 + "            " + "   Cocktail");
-        System.out.println("Puppers Lager" + "          " + "  $" + 4 + "            " + "   Beer/Cider/IPA");
-        System.out.println("Dirty Dog IPA" + "          " + "  $" + 4.75 + "            " + "   Beer/Cider/IPA");
-        System.out.println("Tailwagger Hefeweizen" + "          " + "  $" + 5.75 + "            " + "   Beer/Cider/IPA");
-        System.out.println("Sea Dog - Blue Paw" + "          " + "  $" + 5 + "            " + "   Beer/Cider/IPA");
-        System.out.println("Water" + "          " + "  $" + 0 + "            " + "   Non-Alcoholic");
-        System.out.println("Fountain Drink" + "          " + "  $" + 2 + "            " + "   Non-Alcoholic");
-        System.out.println("Tea" + "          " + "  $" + 2 + "            " + "   Non-Alcoholic");
-        System.out.println("Pup-Shake" + "          " + "  $" + 3.50 + "            " + "   Non-Alcoholic");
+        System.out.println("The Pit Bull" + "       " + "  $" + 11 + "            " + "   Cocktail");
+        System.out.println("Mastiff Martini" + "    " + "  $" + 12 + "            " + "   Cocktail");
+        System.out.println("The Doberman" + "       " + "  $" + 10.75 + "         " + "   Cocktail");
+        System.out.println("Husky Colada" + "       " + "  $" + 13.75 + "         " + "   Cocktail");
+        System.out.println("Moscow Mutt" + "         " + "  $" + 9.75 + "         " + "   Cocktail");
+        System.out.println("Puppers Lager" + "       " + "  $" + 4 + "            " + "   Beer/Cider/IPA");
+        System.out.println("Dirty Dog IPA" + "       " + "  $" + 4.75 + "         " + "   Beer/Cider/IPA");
+        System.out.println("Tailwagger Hefeweizen" + " " + "  $" + 5.75 +"       " + "   Beer/Cider/IPA");
+        System.out.println("Sea Dog - Blue Paw" + "  " + "  $" + 5.00 + "         " + "   Beer/Cider/IPA");
+        System.out.println("Water" + "               " + "  $" + 0.00 + "         " + "   Non-Alcoholic");
+        System.out.println("Fountain Drink" + "      " + "  $" + 2.00 + "         " + "   Non-Alcoholic");
+        System.out.println("Tea" + "                 " + "  $" + 2.00 + "         " + "   Non-Alcoholic");
+        System.out.println("Pup-Shake" + "           " + "  $" + 3.50 + "         " + "   Non-Alcoholic");
 
         System.out.println();
         System.out.println("----------------------------------");
@@ -139,19 +139,26 @@ public class BarkNBrewController {
         System.out.println("  Item" + "              " + "Cost");
         System.out.println("Classic Pup Cup" + "          " + "  $" + 1.50);
         System.out.println("Pup Pizza Bites" + "          " + "  $" + 2.50);
-        System.out.println("Rowdy Rawhide Rinds" + "          " + "  $" + 2);
+        System.out.println("Rowdy Rawhide Rinds" + "      " + "  $" + 2.00);
         System.out.println("Pumpkin Pupcake" + "          " + "  $" + 2.25);
-        System.out.println("Pooch Creamery Ice Cream" + "          " + "  $" + 3.50);
+        System.out.println("Pooch Creamery Ice Cream" + " " + "  $" + 3.50);
 
         System.out.println();
         System.out.println("----------------------------------");
         System.out.println("HUMAN SNACK MENU");
         System.out.println("  Item" + "              " + "Cost");
-        System.out.println("Pretzel" + "          " + "  $" + 1.75);
+        System.out.println("Pretzel" + "         " + "  $" + 1.75);
         System.out.println("Nachos" + "          " + "  $" + 1.50);
-        System.out.println("Pizza Slice" + "          " + "  $" + 1);
-        System.out.println("Chicken Wings" + "          " + "  $" + 4.50);
-        System.out.println("Mozzarella Sticks" + "          " + "  $" + 2.25);
+        System.out.println("Pizza Slice" + "     " + "  $" + 1.00);
+        System.out.println("Chicken Wings" + "   " + "  $" + 4.50);
+        System.out.println("Mozzarella Sticks" + " " + "  $" + 2.25);
+
+    }
+
+    //Hopefully, where whatever the person orders will be added to the group order using an arraylist?
+    // Added using a scanner, a (contains)?, and the pre-made objects.
+
+    public void customerOrder(){
 
     }
 
