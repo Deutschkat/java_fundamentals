@@ -110,7 +110,7 @@ public class BarkNBrewController {
 
 
     }
-
+    //Strictly for "customer" viewing purposes. Does not store any data or anything... may replace with print methods of objects.
     public void printMenu(){
         System.out.println("BARK N' BREW MENU");
         System.out.println("----------------------------------");
