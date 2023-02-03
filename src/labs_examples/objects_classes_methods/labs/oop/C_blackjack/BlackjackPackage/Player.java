@@ -10,6 +10,8 @@ public class Player {
     Hand hand;
     int potValue;
 
+    private int numGamesWon;
+
     //Constructor
 
     public Player(String name, Hand hand, int potValue) {
@@ -25,6 +27,11 @@ public class Player {
         }
         System.out.println("***Dealer stands ***");
         return false;
+    }
+
+    public void increaseWonGames(){
+        numGamesWon++;
+        System.out.println("Num games won: " + numGamesWon);
     }
 
    //BET - Work in progress
@@ -73,6 +80,14 @@ public class Player {
 
     public void setPotValue(int potValue) {
         this.potValue = potValue;
+    }
+
+    public int getNumGamesWon() {
+        return numGamesWon;
+    }
+
+    public void setNumGamesWon(int numGamesWon) {
+        this.numGamesWon = numGamesWon;
     }
 
     // To string (if needed)

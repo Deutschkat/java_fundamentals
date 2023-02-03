@@ -9,6 +9,8 @@ public class BlackjackController {
     Hand testHand;
     Hand hand2;
 
+    int numGamesPlayed;
+
 
     public static void main(String[] args) {
 
@@ -135,6 +137,7 @@ public class BlackjackController {
                 } else if (hand2.returnScore() == 21) {
                     player2.setPotValue(player2.getPotValue() + gameLevelPot);
                     System.out.println("21! YOU WIN!");
+                    player2.increaseWonGames();
                     break;
                 }
 
@@ -151,6 +154,7 @@ public class BlackjackController {
                 } else if (testHand.returnScore() == 21) {
                     testPlayer.setPotValue(testPlayer.getPotValue() + gameLevelPot);
                     System.out.println("Dealer has 21!! You lose.");
+                    testPlayer.increaseWonGames();
                     break;
                 }
             }
@@ -160,10 +164,12 @@ public class BlackjackController {
                 if (hand2.handValue > testHand.handValue) {
                     player2.setPotValue(player2.getPotValue() + gameLevelPot);
                     System.out.println("You were closer to 21! You win!");
+                    player2.increaseWonGames();
                     break;
                 } else if (testHand.handValue > hand2.handValue) {
                     testPlayer.setPotValue(testPlayer.getPotValue() + gameLevelPot);
                     System.out.println("Dealer was closer to 21! Dealer wins!");
+                    testPlayer.increaseWonGames();
                     break;
                 } else if (testHand.handValue == hand2.handValue) {
                     System.out.println("It's a tie! Nobody wins.");
@@ -174,6 +180,8 @@ public class BlackjackController {
             System.out.println(testPlayer.getName() + "'s score is: " + testHand.returnScore());
             System.out.println("------------------------");
         } while (hand2.isOver21() == false | testHand.isOver21() == false);
+        increaseGamesPlayed();
+
 
         System.out.println("GAME OVER");
         System.out.println();
@@ -182,6 +190,11 @@ public class BlackjackController {
         System.out.println("========================================================================================");
         System.out.println();
         System.out.println();
+    }
+
+    public void increaseGamesPlayed(){
+        numGamesPlayed++;
+        System.out.println("Number of total games played: " + numGamesPlayed);
     }
 
     public boolean playAgain() {
