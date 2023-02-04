@@ -7,32 +7,32 @@ public class BarkNBrewController {
 
     Scanner scanner = new Scanner(System.in);
 
-//    FoodItem classicPupCup = new FoodItem("Classic Pup Cup", 1.50, "Food", "for dogs", 1);
-//    FoodItem pupPizzaBites = new FoodItem("Pup Pizza Bites", 2.50, "Food", "for dogs", 1);
-//    FoodItem rowdyRawhideRinds = new FoodItem("Rowdy Rawhide Rinds", 2.00, "Food", "for dogs", 1);
-//    FoodItem pumpkinPupcake = new FoodItem("Pumpkin Pupcake", 2.25, "Food", "for dogs", 1);
-//    FoodItem poochCreamery = new FoodItem("Pooch Creamery Ice Cream", 3.50, "Food", "for dogs", 1);
-//    FoodItem pretzel = new FoodItem("Pretzel", 1.75, "Food", "for humans", 1);
-    FoodItem nachos = new FoodItem("Nachos", 1.50, "Food", 1, "for dogs");
-//    FoodItem pizzaSlice = new FoodItem("Pizza Slice", 1.00, "Food", "for humans", 1);
-//    FoodItem chickenWings = new FoodItem("Chicken Wings", 4.50, "Food", "for humans", 1);
-//    FoodItem mozzSticks = new FoodItem("Mozzarella Sticks", 2.25, "Food", "for humans", 1);
+    FoodItem classicPupCup = new FoodItem("Classic Pup Cup", 1.50, "Food", 1, "for dogs");
+    FoodItem pupPizzaBites = new FoodItem("Pup Pizza Bites", 2.50, "Food", 1, "for dogs");
+    FoodItem rowdyRawhideRinds = new FoodItem("Rowdy Rawhide Rinds", 2.00, "Food", 1, "for dogs");
+    FoodItem pumpkinPupcake = new FoodItem("Pumpkin Pupcake", 2.25, "Food", 1, "for dogs");
+    FoodItem poochCreamery = new FoodItem("Pooch Creamery Ice Cream", 3.50, "Food", 1, "for dogs");
+    FoodItem pretzel = new FoodItem("Pretzel", 1.75, "Food", 1, "for humans");
+    FoodItem nachos = new FoodItem("Nachos", 1.50, "Food", 1, "for humans");
+    FoodItem pizzaSlice = new FoodItem("Pizza Slice", 1.00, "Food", 1, "for humans");
+    FoodItem chickenWings = new FoodItem("Chicken Wings", 4.50, "Food", 1, "for humans");
+    FoodItem mozzSticks = new FoodItem("Mozzarella Sticks", 2.25, "Food", 1, "for humans");
 
-//    DrinkItem saltyDog = new DrinkItem("Salty Dog", 11.00, "Drink", true, 1);
-//    DrinkItem greyHound = new DrinkItem("Greyhound", 10.00, "Drink", true, 1);
-//    DrinkItem pitBull = new DrinkItem("The Pit Bull", 11.00, "Drink", true, 1);
-//    DrinkItem mastiffMartini = new DrinkItem("Mastiff Martini", 12, "Drink", true, 1);
-//    DrinkItem dobermanDrink = new DrinkItem("The Doberman", 10.75, "Drink", true, 1);
-//    DrinkItem huskyColada = new DrinkItem("Husky Colada", 13.75, "Drink", true, 1);
-//    DrinkItem moscowMutt = new DrinkItem("Moscow Mutt", 9.75, "Drink", true, 1);
-//    DrinkItem puppersLager = new DrinkItem("Puppers Lager", 4.00, "Drink", true, 1);
-//    DrinkItem dirtyDog = new DrinkItem("Dirty Dog IPA", 4.75, "Drink", true, 1);
-//    DrinkItem tailWagger = new DrinkItem("Tailwagger Hefeweizen", 5.75, "Drink", true, 1);
-//    DrinkItem blueSeaDog = new DrinkItem("Sea Dog - Blue Paw", 5.00, "Drink", true, 1);
-//    DrinkItem water = new DrinkItem("Water", 0.00, "Drink", false, 1);
-//    DrinkItem fountainDrink = new DrinkItem("Fountain Drink", 2.00, "Drink", false, 1);
-//    DrinkItem tea = new DrinkItem("Tea", 2.00, "Drink", false, 1);
-//    DrinkItem pupShake = new DrinkItem("Pup-Shake", 3.50, "Drink", false, 1);
+    DrinkItem saltyDog = new DrinkItem("Salty Dog", 11.00, "Drink", 1, true);
+    DrinkItem greyHound = new DrinkItem("Greyhound", 10.00, "Drink", 1, true);
+    DrinkItem pitBull = new DrinkItem("The Pit Bull", 11.00, "Drink", 1, true);
+    DrinkItem mastiffMartini = new DrinkItem("Mastiff Martini", 12, "Drink", 1, true);
+    DrinkItem dobermanDrink = new DrinkItem("The Doberman", 10.75, "Drink", 1, true);
+    DrinkItem huskyColada = new DrinkItem("Husky Colada", 13.75, "Drink", 1, true);
+    DrinkItem moscowMutt = new DrinkItem("Moscow Mutt", 9.75, "Drink", 1, true);
+    DrinkItem puppersLager = new DrinkItem("Puppers Lager", 4.00, "Drink", 1, true);
+    DrinkItem dirtyDog = new DrinkItem("Dirty Dog IPA", 4.75, "Drink", 1, true);
+    DrinkItem tailWagger = new DrinkItem("Tailwagger Hefeweizen", 5.75, "Drink", 1, true);
+    DrinkItem blueSeaDog = new DrinkItem("Sea Dog - Blue Paw", 5.00, "Drink", 1, true);
+    DrinkItem water = new DrinkItem("Water", 0.00, "Drink", 1, false);
+    DrinkItem fountainDrink = new DrinkItem("Fountain Drink", 2.00, "Drink", 1, false);
+    DrinkItem tea = new DrinkItem("Tea", 2.00, "Drink", 1, false);
+   DrinkItem pupShake = new DrinkItem("Pup-Shake", 3.50, "Drink", 1, false);
 
 
 
@@ -42,7 +42,7 @@ public class BarkNBrewController {
         BarkNBrewController barkNBrewController = new BarkNBrewController();
 
         barkNBrewController.welcomeInfo();
-        barkNBrewController.printMenu();
+       // barkNBrewController.printMenu();
 
         //Creating menu items and assigning them attributes
 
@@ -113,20 +113,95 @@ public class BarkNBrewController {
         DogCustomer party1 = new DogCustomer(partyInputName, numParty,ofAgeYesOrNo,new ArrayList<MenuItem>(),numDoggos, yesOrNo);
         party1.toString();
 
-        //Add Print menu here later.
 
-        System.out.println("What would you like to order?");
+        System.out.println("What would you like to order? (Please use all lowercase letters)");
 
+        //A do while for this section would work well...
         Scanner orderScanner = new Scanner(System.in);
         String customerOrderInput = orderScanner.nextLine();
 
         if(customerOrderInput.equals("nachos")){
             System.out.println(nachos);
             party1.addItemToOrder(nachos);
+        } else if (customerOrderInput.contains("slice")) {
+            System.out.println(pizzaSlice);
+            party1.addItemToOrder(pizzaSlice);
+        } else if (customerOrderInput.contains("pup cup")) {
+            System.out.println(classicPupCup);
+            party1.addItemToOrder(classicPupCup);
+        }else if (customerOrderInput.contains("pizza bites")) {
+            System.out.println(pupPizzaBites);
+            party1.addItemToOrder(pupPizzaBites);
+        }else if (customerOrderInput.contains("rawhide")) {
+            System.out.println(rowdyRawhideRinds);
+            party1.addItemToOrder(rowdyRawhideRinds);
+        }else if (customerOrderInput.contains("pumpkin")) {
+            System.out.println(pumpkinPupcake);
+            party1.addItemToOrder(pumpkinPupcake);
+        }else if (customerOrderInput.contains("creamery")) {
+            System.out.println(poochCreamery);
+            party1.addItemToOrder(poochCreamery);
+        }else if (customerOrderInput.equals("pretzel")) {
+            System.out.println(pretzel);
+            party1.addItemToOrder(pretzel);
+        }else if (customerOrderInput.contains("chicken")) {
+            System.out.println(chickenWings);
+            party1.addItemToOrder(chickenWings);
+        }else if (customerOrderInput.contains("sticks")) {
+            System.out.println(mozzSticks);
+            party1.addItemToOrder(mozzSticks);
+        }else if (customerOrderInput.contains("salty")) {
+            System.out.println(saltyDog);
+            party1.addItemToOrder(saltyDog);
+        }else if (customerOrderInput.equals("greyhound")) {
+            System.out.println(greyHound);
+            party1.addItemToOrder(greyHound);
+        }else if (customerOrderInput.contains("pit")) {
+            System.out.println(pitBull);
+            party1.addItemToOrder(pitBull);
+        }else if (customerOrderInput.contains("mastiff")) {
+            System.out.println(mastiffMartini);
+            party1.addItemToOrder(mastiffMartini);
+        }else if (customerOrderInput.contains("doberman")) {
+            System.out.println(dobermanDrink);
+            party1.addItemToOrder(dobermanDrink);
+        }else if (customerOrderInput.contains("husky")) {
+            System.out.println(huskyColada);
+            party1.addItemToOrder(huskyColada);
+        }else if (customerOrderInput.contains("moscow")) {
+            System.out.println(moscowMutt);
+            party1.addItemToOrder(moscowMutt);
+        }else if (customerOrderInput.contains("puppers")) {
+            System.out.println(puppersLager);
+            party1.addItemToOrder(puppersLager);
+        }else if (customerOrderInput.contains("dirty")) {
+            System.out.println(dirtyDog);
+            party1.addItemToOrder(dirtyDog);
+        }else if (customerOrderInput.contains("tailwagger")) {
+            System.out.println(tailWagger);
+            party1.addItemToOrder(tailWagger);
+        }else if (customerOrderInput.contains("sea dog")) {
+            System.out.println(blueSeaDog);
+            party1.addItemToOrder(blueSeaDog);
+        }else if (customerOrderInput.equals("water")) {
+            System.out.println(water);
+            party1.addItemToOrder(water);
+        }else if (customerOrderInput.contains("fountain")) {
+            System.out.println(fountainDrink);
+            party1.addItemToOrder(fountainDrink);
+        }else if (customerOrderInput.equals("tea")) {
+            System.out.println(tea);
+            party1.addItemToOrder(tea);
+        }else if (customerOrderInput.contains("shake")) {
+            System.out.println(pupShake);
+            party1.addItemToOrder(pupShake);
         }
+
 
         System.out.println(party1.customerOrder);
     }
+
+
     //Strictly for "customer" viewing purposes. Does not store any data or anything... may replace with print methods of objects.
     public void printMenu(){
         System.out.println("BARK N' BREW MENU");
@@ -177,6 +252,18 @@ public class BarkNBrewController {
 
 
 
+    public boolean orderMore(){
+        System.out.println("Would you like to order something (else)?");
+
+        Scanner yesNoScanner = new Scanner(System.in);
+        String customerAnswer = yesNoScanner.nextLine();
+
+        if(customerAnswer.equals("yes") | customerAnswer.equals("Yes")){
+            return true;
+        }
+        return false;
+
+    }
 
 
 
