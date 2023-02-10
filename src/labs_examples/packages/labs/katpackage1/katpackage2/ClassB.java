@@ -6,7 +6,7 @@ public class ClassB {
         System.out.println("This statement is a public statement in class B. It can be accessed and printed from the other package when imported.");
     }
 
-    private void thisWontPrint(){
+    protected void thisWontPrint(){
         System.out.println("This statement won't print because it is private and in another class and package.");
     }
 

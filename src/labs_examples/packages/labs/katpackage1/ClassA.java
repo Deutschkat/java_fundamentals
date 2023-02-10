@@ -15,7 +15,6 @@ public class ClassA {
         //Cannot print obj2.thisWontPrint because it is a private method.
 
 
-
     }
 
 
