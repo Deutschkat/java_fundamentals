@@ -14,7 +14,10 @@ public class ClassA {
 
         //Cannot print obj2.thisWontPrint because it is a private method.
 
+
+
     }
+
 
     public void printStatement(){
         System.out.println("This is a print statement from class A. It is public and can be accessed.");

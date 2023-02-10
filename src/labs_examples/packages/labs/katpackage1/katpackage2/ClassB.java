@@ -3,7 +3,7 @@ package labs_examples.packages.labs.katpackage1.katpackage2;
 public class ClassB {
 
     public void doesThisPrint(){
-        System.out.println("This statment is a public statement in class B. It can be accessed and printed from the other package when imported.");
+        System.out.println("This statement is a public statement in class B. It can be accessed and printed from the other package when imported.");
     }
 
     private void thisWontPrint(){
