@@ -6,12 +6,15 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import static java.lang.System.in;
+
 public class InputOutput {
     public static void main(String[] args){
 
 
         String letter;
         ArrayList<String> string = new ArrayList<>();
+        String joined = String.join("", string); // Made ArrayList display as a string.
 
         try{
 
@@ -33,15 +36,13 @@ public class InputOutput {
 
 
 
+
             }
 
-            System.out.println(string);
+            System.out.println(joined);
 
             // close the connection to the file
             in.close();
-
-
-            //Still need to write// <---Start
 
 
         }catch(IOException e2){
@@ -49,10 +50,13 @@ public class InputOutput {
             e2.printStackTrace();
         }
         try{
-            // create the FileInputStream object
-            // after you run this you should see the example.txt file in this REPL
-            FileOutputStream out = new FileOutputStream("blank.txt");
+                FileOutputStream out = new FileOutputStream("C:\\Users\\deuts\\Documents\\CodingNomads\\labs\\online-java-fundamentals\\src\\labs_examples\\repl\\blank.txt");
 
+                out.write(joined.getBytes());
+
+                //Dont think I did this right.
+
+            System.out.println();
             // close the connection to the file
             out.close();
         }catch(IOException e1){
