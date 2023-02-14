@@ -14,7 +14,7 @@ public class InputOutput {
 
         String letter;
         ArrayList<String> string = new ArrayList<>();
-        String joined = String.join("", string); // Made ArrayList display as a string.
+        String joined = null;
 
         try{
 
@@ -29,7 +29,6 @@ public class InputOutput {
             // the FileInputStream read() methods returns -1 when it reaches the end of the file
             while((i = in.read()) != -1){
                 // cast the int to a char (so it's a letter) and print it out
-                System.out.print((char) i);
                 letter = String.valueOf((char)i);
 
                 string.add(letter);
@@ -38,6 +37,7 @@ public class InputOutput {
 
 
             }
+            joined = String.join("", string); // Made ArrayList display as a string.
 
             System.out.println(joined);
 
