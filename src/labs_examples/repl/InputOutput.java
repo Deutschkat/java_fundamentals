@@ -52,11 +52,10 @@ public class InputOutput {
         try{
                 FileOutputStream out = new FileOutputStream("C:\\Users\\deuts\\Documents\\CodingNomads\\labs\\online-java-fundamentals\\src\\labs_examples\\repl\\blank.txt");
 
-                out.write(joined.getBytes());
+                byte[] bytes = joined.getBytes();
 
-                //Dont think I did this right.
+                out.write(bytes);
 
-            System.out.println();
             // close the connection to the file
             out.close();
         }catch(IOException e1){
