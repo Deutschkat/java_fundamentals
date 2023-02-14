@@ -19,8 +19,8 @@ To get started with this project please follow these instructions:
 11) In the "Module Structure" section, just click "next"
 12) If the Java 8 SDK does not automatically load - click the "+" and navigate to "/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home" or the appropriate directory containing the Java "Home" directory then click "next"
 13) click "Finish"
-14) Once loaded, you will see the directory structure on the left. Downclick on "Online_Java_Labs" to expand it. Also downclick on the "src" folder, then again "labs_examples.conditions_loops" and again on "examples".
-15) Double click on any file to open it.
+14) Once loaded, you will see the directory structure on the left. Downclick on "Online_Java_Labs" to expand it. Also downclick on the "src" folder, then again "labs_examples.conditions_loops" and again on "examples"
+15) Double click on any file to open it
 16) If the Java file contains a main() method, you can right click on the file and select "run" to run the code within the main()
 ```
 
