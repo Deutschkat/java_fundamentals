@@ -1,12 +1,22 @@
 package labs_examples.multi_threading.labs;
 
+// I combined exercise 2 and 3 here.
 public class ExerciseTwo {
     public static void main(String[] args) {
 
         System.out.println("Main start...");
         KatThread threadOne = new KatThread("Thread Theodore Logan");
+        threadOne.setPriority(10);
+        threadOne.start();
+
         KatThread threadTwo = new KatThread("Thread Danson");
+        threadTwo.setPriority(1);
+        threadTwo.start();
+
         KatThread threadThree = new KatThread("Thread Nugent");
+        threadThree.setPriority(5);
+        threadThree.start();
+
         System.out.println("Main ending...");
 
     }
@@ -18,8 +28,6 @@ public class ExerciseTwo {
         KatThread(String name){
 
             super(name);
-
-            start();
 
         }
 
