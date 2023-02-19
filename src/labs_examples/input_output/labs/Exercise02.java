@@ -14,6 +14,8 @@ public class Exercise02 {
 
             int x;
 
+            //This part was being a massive pain, so I just used the ASCII codes for 'a' and 'e'
+
             while ((x = inputStream.read()) != -1) {
 
                 if (x == (char)97) {
