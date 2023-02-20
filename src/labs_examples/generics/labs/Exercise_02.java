@@ -7,8 +7,41 @@ package labs_examples.generics.labs;
  *      Numbers in the ArrayList. Demonstrate how to call this method from the main() method.
  */
 import java.util.ArrayList;
+/*
+class Demo {
 
-class Demo{
+    public static void main(String[] args) {
+
+   /    GenericArrayList<> arrayList = new GenericArrayList<>();
+        arrayList.add(2.5);
+        arrayList.add(5);
+        arrayList.add(15.437);
+
+
+    }
+    // Having some trouble here
 
 
 }
+
+
+class GenericArrayList<T> {
+
+    private ArrayList<T> data;
+
+    public GenericArrayList(){
+        data = new ArrayList<T>();
+    }
+
+    public void add(T object){
+        if(!data.contains(object))
+            data.add(object);
+    }
+
+    public boolean contains(T object){
+        return (data.contains(object));
+    }
+
+    public void remove(T object){
+        data.remove(object);
+    }*/
