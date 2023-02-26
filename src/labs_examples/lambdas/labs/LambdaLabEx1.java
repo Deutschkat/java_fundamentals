@@ -1,5 +1,9 @@
 package labs_examples.lambdas.labs;
 
+import java.util.Scanner;
+import java.util.function.Predicate;
+import java.util.function.Supplier;
+
 public class LambdaLabEx1 {
     public static void main(String[] args) {
 
@@ -75,6 +79,27 @@ public class LambdaLabEx1 {
 
         testAnon.add(20,50);
 
+
+        // Two built in java functional interfaces
+
+        // Predicate for boolean response
+
+        Predicate<Integer> greaterThan = k -> (k > 20);
+
+        System.out.println(greaterThan.test(7));
+        System.out.println(greaterThan.test(50));
+
+
+        //Supplier
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Tell me what you want the supplier to repeat back to you:");
+
+        // I dunno why I chose to have it mirror user input, I just kinda felt like it.
+
+        Supplier<String> myWords = () -> scanner.nextLine();
+
+        System.out.println(myWords.get());
 
 
     }
