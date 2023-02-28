@@ -18,10 +18,12 @@ public class MethodRefREPL {
  //   Main object = new Main();
 
     // Step 1) Modify the line below to use a method reference rather than a lambda expression
-   // Collections.sort(nums, (num1, num2) -> object.compare(num1, num2));
+  //  Collections.sort(nums, object::compare);
 
     // Step 2) Modify the line below to use a method reference rather than a lambda expression
     nums.forEach((n) -> System.out.println(n));
+
+
 }
 
     public int compare(Integer val1, Integer val2) {
