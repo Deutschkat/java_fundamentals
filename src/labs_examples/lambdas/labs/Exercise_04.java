@@ -41,7 +41,7 @@ import java.util.stream.Stream;
  *
  *      8) Demonstrate how to Stream the stream_text_lab.csv file in this package. Split the lines into String arrays,
  *          the print out the sum of all elements at index 2.
- *
+ *      (Check)
  *
  *      9) Demonstrate the anyMatch() function.
  *
@@ -89,6 +89,19 @@ class Example {
         }
 
         lab.map(x-> x.split(",")).forEach(x-> System.out.println(x[1] + " "));
+
+        Stream<String> lab2 = null;
+        try {
+            lab2 = Files.lines(Paths.get("C:\\Users\\deuts\\Documents\\CodingNomads\\labs\\online-java-fundamentals\\src\\labs_examples\\lambdas\\labs\\stream_text_lab.csv"));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        lab2.map(x-> x.split(",")).forEach(x-> System.out.println(x[2] + " "));
+
+
+
+
 
 
 
