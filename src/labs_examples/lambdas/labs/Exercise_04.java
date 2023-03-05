@@ -4,7 +4,9 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Arrays;
+import java.util.List;
 import java.util.OptionalDouble;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -44,10 +46,10 @@ import java.util.stream.Stream;
  *      (Check)
  *
  *      9) Demonstrate the anyMatch() function.
- *
+ *      (Check)
  *
  *      10) Demonstrate the allMatch() function.
- *
+ *      (Check)
  *
  *      11) Demonstrate the collect() terminal operation to store resulting values into a List
  *      // Google search collect()
@@ -98,6 +100,20 @@ class Example {
         }
 
         lab2.map(x-> x.split(",")).forEach(x-> System.out.println(x[2] + " "));
+
+        List<Integer> listOne = Arrays.asList(3,4,5,6,7,9,12);
+        boolean answer = listOne.stream().anyMatch(n -> (n / 2 == 6));
+        System.out.println(answer);
+
+        List<Integer> allList = Arrays.asList(7,8,9,15,20);
+        boolean allOrNot = allList.stream().allMatch(n-> n / 2 == 4);
+        System.out.println(allOrNot);
+
+        List<Integer> numList = List.of(10, 15, 20, 25, 30, 35, 40);
+        List<Integer> oddNums = numList.stream().filter(n-> n % 2 != 0).collect(Collectors.toList());
+        System.out.println(oddNums);
+
+
 
 
 
