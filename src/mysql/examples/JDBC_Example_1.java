@@ -19,7 +19,7 @@ public class JDBC_Example_1 {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
             String connectionString = "jdbc:mysql://127.0.0.1:3306/college?"
-                    + "user=root&password=IND14N4C#0MP";
+                    + "user=root&password=STR0NGP4SSW0RD77";
 
             // Setup the connection with the DB
             connection = DriverManager
