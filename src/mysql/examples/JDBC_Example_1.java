@@ -41,7 +41,7 @@ public class JDBC_Example_1 {
                 int units = resultSet.getInt("units");
 
                 // print out the result
-                System.out.println("Course ID: " + id + " is " + name + " and has " + units + " credits");
+                System.out.println("Course ID: " + id + " is " + name + " and has " + units + " credits.");
             }
 
         } catch (SQLException exc) {
