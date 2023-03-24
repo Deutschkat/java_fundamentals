@@ -18,8 +18,9 @@ public class JDBC_Example_1 {
             // This will load the MySQL driver, each DB has its own driver
             Class.forName("com.mysql.cj.jdbc.Driver");
 
-            String connectionString = "jdbc:mysql://127.0.0.1:3306/college?"
-                    + "user=root&password=IND14N4C#0MP";
+            String connectionString = "jdbc:mysql://localhost/college?"
+                    + "user=<YOUR_MYSQL_USERNAME>&password=<YOUR_MYSQL_PASSWORD>"
+                    + "&useSSL=false&allowPublicKeyRetrieval=true";
 
             // Setup the connection with the DB
             connection = DriverManager
@@ -45,7 +46,6 @@ public class JDBC_Example_1 {
 
         } catch (SQLException exc) {
             System.out.println("Exception occurred");
-            System.out.println(exc.getMessage());
             exc.printStackTrace();
         } catch (ClassNotFoundException e) {
             System.out.println("Exception occured - driver not found on classpath");
