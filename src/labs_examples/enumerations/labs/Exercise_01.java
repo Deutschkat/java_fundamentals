@@ -7,7 +7,7 @@ package labs_examples.enumerations.labs;
  *      //Ex Heat w/ controller class.
  *
  *      2) Create a parameterized enumeration that passes one or more values to it's constructor. Demonstrate the use
- *      of this enum from a seperate class.
+ *      of this enum from a separate class.
  *      //Ex food
  */
 
