@@ -67,6 +67,8 @@
             UPDATE `college`.`teachers` SET `first_name` = 'alice', `last_name` = 'cooper' WHERE (`id` = '3');
  *
  *       8.) Export the schema to a dump file and copy it to this folder.
+
+ //DONE
  *
  *
  */
