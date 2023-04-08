@@ -16,4 +16,8 @@ public class KatNode<T> {
         this.data = data;
         this.next = node;
     }
+
+    public T getData() {
+        return data;
+    }
 }

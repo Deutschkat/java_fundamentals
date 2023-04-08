@@ -36,13 +36,13 @@ public class UsingKatLinkedList {
         System.out.println();
 
         //Remove from first
-        katList.removeFirst();
+        katList.remove("is");
         System.out.println(katList.toString());
 
         System.out.println();
 
         //Remove from end
-        katList.removeLast();
+        katList.remove("Aww!");
         System.out.println(katList.toString());
 
 

@@ -112,15 +112,13 @@ public class KatLinkedList<T> {
                 '}';
     }
 
-    public T get(int value){
+    public T get(T value){
         try{
-            int N = 0;
 
             KatNode iterator = first;
 
-            while(N != value){
+            while(iterator.getData() != value){
                 iterator = iterator.next;
-                N++;
             }
             return (T) iterator.data;
         }catch(NullPointerException ex){
@@ -128,30 +126,32 @@ public class KatLinkedList<T> {
         }
     }
 
-    public void removeFirst(){
-        if(this.first != null){
-            KatNode temp = this.first;
-            this.first = this.first.next;
-            temp= null;
+    // **WORKING HERE**
+    public void remove(T value) {
+
+        if (this.first != null) {
+
+            KatNode node = first;
+            KatNode previous = null;
+
+            while (node.getData() != value) {
+                previous = node;
+                node = node.next;
+            }
+            if (node != null) {
+                if(previous.equals(first)){
+                first = first.next;
+                }else{
+                previous.next = node.next;
+            }
+            }else{
+                node.next = null;
+            }
+
+
         }
     }
 
-    public void removeLast(){
-     if(first == null){
-         System.out.println("List empty.");
-         return;
-     }
-     else{
-         if(first != last){
-             KatNode temp = first;
-             while(temp.next != last){
-                 temp = temp.next;
-             }
-             last = temp;
-             last.next = null;
-         }
-     }
-    }
 
 
 
