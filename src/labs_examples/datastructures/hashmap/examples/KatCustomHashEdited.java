@@ -1,11 +1,9 @@
 package labs_examples.datastructures.hashmap.examples;
 
-import labs_examples.datastructures.linkedlist.examples.CustomLinkedList;
-
 /**
  * Created by Kevin Graham - https://codingnomads.co
  */
-public class CustomHashMap<K, V> {
+public class KatCustomHashEdited<K, V> {
 
     // create the underlying Entry array with the initial size of 10
     private Entry<K, V>[] table = new Entry[10];
@@ -20,7 +18,7 @@ public class CustomHashMap<K, V> {
      * @param key to be hashed
      * @return a table index
      */
-    private int hash(K key) {
+    private int katHash(K key) {
         // get the hashCode for the key and mod that hashCode by the length of the array
         int index = Math.abs(key.hashCode() % table.length);
         // the result will be the index where we can find and/or place entries
@@ -33,9 +31,9 @@ public class CustomHashMap<K, V> {
      * @param key   a key Object
      * @param value a value Object
      */
-    public void put(K key, V value) {
+    public void putHere(K key, V value) {
         // call the hash() method to get the index to place the element
-        int index = hash(key);
+        int index = katHash(key);
 
         // create the Entry object containing the key and value that we will store in the underlying array
         Entry<K,V> entry = new Entry(key, value);
@@ -65,21 +63,21 @@ public class CustomHashMap<K, V> {
         }
 
         // check for resize
-        if (numElements > table.length * .75) {
+        if (numElements > table.length * .50) {
             // the resize method will create a bigger underlying array and
             // add all values in the existing array to the new, larger array
-            resize();
+            resizeThis();
         }
     }
 
     /**
      * Resizes the underlying array to double its previous size and copies the old values into it
      */
-    private void resize() {
+    private void resizeThis() {
         // make a copy of the existing table and call it "old"
         Entry<K, V>[] old = table;
-        // create a new Entry[] that is twice the size of the old one
-        table = new Entry[old.length * 2];
+        // create a new Entry[] that is TRIPLE the size of the old one
+        table = new Entry[old.length * 3];
 
         // iterate over the length of the old array
         for (int i = 0; i < old.length; i++) {
@@ -87,14 +85,14 @@ public class CustomHashMap<K, V> {
                 // get the Entry at the index of "i" from the "old" table
                 Entry entry = old[i];
                 // call the put() method passing the key and value to add this element to the new table
-                put((K) entry.getKey(), (V) entry.getValue());
+                putHere((K) entry.getKey(), (V) entry.getValue());
 
                 // check to see if this entry is actually the start of a linked list
                 while (entry.next != null) {
                     // if it is, traverse to the next node
                     entry = entry.next;
                     // and call the put() method to add this element
-                    put((K) entry.getKey(), (V) entry.getValue());
+                    putHere((K) entry.getKey(), (V) entry.getValue());
                     // loop
                 }
             } catch (Exception e) {
@@ -108,16 +106,16 @@ public class CustomHashMap<K, V> {
      *
      * @param key of the pair to be removed
      */
-    public void remove(K key) {
+    public void removeElement(K key) {
 
         // ensure key exists by calling the get() method
-        if (get(key) == null) {
+        if (getKey(key) == null) {
             // if the get() method returns null, there's nothing to delete
             return;
         }
 
         // otherwise, get the index for the key by calling the hash() method
-        int index = hash(key);
+        int index = katHash(key);
 
         // get the Entry at the index
         Entry<K, V> entry = table[index];
@@ -163,9 +161,9 @@ public class CustomHashMap<K, V> {
      * @param key to search for
      * @return value of the given key
      */
-    public V get(K key) {
+    public V getKey(K key) {
         // call the hash() method to get the index for the key
-        int index = hash(key);
+        int index = katHash(key);
 
         // nothing at key - return null
         if (table[index] == null) {
@@ -207,7 +205,7 @@ public class CustomHashMap<K, V> {
 /**
  * A Key-Value Pair
  */
- class Entry<K, V> {
+class Entry<K, V> {
     private K key;
     private V value;
     // it means this is a LinkedList

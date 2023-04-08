@@ -17,3 +17,5 @@ package labs_examples.datastructures.hashmap.labs;
  *      8) add at least one more method that you think could be useful to the HashMap
  *          review Java's built-in HashMap for inspiration
  */
+
+//Did this in the java file.
