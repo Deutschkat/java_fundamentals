@@ -5,15 +5,46 @@
 *   Now that you have your air travel database all set up and populated, please demonstrate how to:
 *
 *       1.) Query all flights on a specific day
+
+        SELECT * FROM airtravel.flight WHERE FlightDate = "2022-10-10";
+
 *       2.) Query all flights between two specific cities on a specific day
+
+        //I did something similar, but my data was different so I just went with it.
+
+        SELECT * FROM airtravel.flight WHERE origin = "21" and destination = "22"
+        or origin = "47" and destination = "50";
+
 *       3.) Query all passengers on a specific flight between two specific cities today
+
+        **
+
 *       4.) Query the flight information for a specific passenger on a specific flight
+
+        Select flight.FlightNum, flight.Origin, flight.Destination, flight.FlightDepartTime, flight.FlightDate, passenger.LastName
+        FROM flight
+        JOIN tickets t ON flight.FlightNum = ticket.FlightNum
+        JOIN passengers p ON ticket.Passenger_ID = passenger.PassengerID
+        WHERE passenger.PassengerID = "2000";
+
 *       5.) Query the passenger information for a specific user on a specific flight yesterday
+
+
 *       6.) Query the number of flights between two specific cities this week, month, and year
+
+
 *       7.) Query the number of passengers that travelled between two specific cities today, this week, month and year
+
+
 *       8.) Insert records for new flights between airports
+
+
 *       9.) Insert records for new tickets and passengers on specific flights
+
+
 *       10.) Update meal preference (or something similar) for a specific passenger on a specific flight
+
+
 *       Bonus: Have some fun - get creative - what else can you do? Flex those SQL muscles and show us what
 *           you've got! :)
 *
