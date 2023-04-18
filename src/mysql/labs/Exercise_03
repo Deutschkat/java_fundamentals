@@ -17,7 +17,16 @@
 
 *       3.) Query all passengers on a specific flight between two specific cities today
 
-        **
+      SELECT passenger.FirstName, passenger.LastName, passenger.DOB, passenger.PhoneNum, passenger.Email
+      FROM passenger p
+      JOIN ticket t ON p.TicketID = t.TicketID
+      JOIN flight f ON t.FlightNum = f.FlightNum
+      WHERE f.FlightNum = '2005'
+        AND f.origin = '21'
+        AND f.destination = '61'
+        AND DATE(f.FlightDate) = CURDATE(); // This part will check for any flights that happen *today*
+        //But there are none in my data. So without this, it will actually find something.
+
 
 *       4.) Query the flight information for a specific passenger on a specific flight
 
@@ -29,20 +38,84 @@
 
 *       5.) Query the passenger information for a specific user on a specific flight yesterday
 
+        SELECT passenger.FirstName, passenger.LastName, passenger.DOB, passenger.PhoneNum, passenger.Email
+        FROM passenger p
+        JOIN ticket t ON p.TicketID = t.TicketID
+        JOIN flight f ON t.FlightNum = f.FlightNum
+        WHERE f.FlightNum = '2005'
+          AND p.PassengerId = '2019'
+          AND DATE(f.FlightDate) = DATE_SUB(CURDATE(), INTERVAL 1 DAY);
+
 
 *       6.) Query the number of flights between two specific cities this week, month, and year
 
+        SELECT COUNT(*) AS num_of_flights FROM flight
+        WHERE origin = '1'
+          AND destination = '21'
+          AND YEARWEEK(FlightDate) = YEARWEEK(NOW());
+
+        SELECT COUNT(*) AS num_of_flights FROM flight
+        WHERE origin = '1'
+          AND destination = '21'
+          AND YEAR(FlightDate) = YEAR(NOW())
+          AND MONTH(FlightDate) = MONTH(NOW());
+
+        SELECT COUNT(*) AS num_of_flights FROM flight
+        WHERE origin = '1'
+          AND destination = '21'
+          AND YEAR(FlightDate) = YEAR(NOW());
 
 *       7.) Query the number of passengers that travelled between two specific cities today, this week, month and year
+
+        SELECT COUNT(*) AS num_of_passengers FROM flight
+        JOIN ticket ON flight.FlightNum = ticket.FlightNum
+        JOIN passenger ON ticket.Passenger_ID = passenger.PassengerId
+        WHERE flight.origin = '1'
+            AND flight.destination = '21'
+            AND flight.FlightDate = CURDATE();
+
+        SELECT COUNT(*) AS num_of_passengers FROM flight
+        JOIN ticket ON flight.FlightNum = ticket.FlightNum
+        JOIN passenger ON ticket.Passenger_ID = passenger.PassengerId
+        WHERE flight.origin = '1'
+            AND flight.destination = '21'
+            AND YEARWEEK(flight.FlightDate, 1) = YEARWEEK(CURDATE(), 1);
+
+        SELECT COUNT(*) AS num_of_passengers FROM flight
+        JOIN ticket ON flight.FlightNum = ticket.FlightNum
+        JOIN passenger ON ticket.Passenger_ID = passenger.PassengerId
+        WHERE flight.origin = '1'
+            AND flight.destination = '21' AND MONTH(flight.FlightDate) = MONTH(CURDATE())
+            AND YEAR(flight.FlightDate) = YEAR(CURDATE());
+
+        SELECT COUNT(*) AS num_of_passengers FROM flight
+        JOIN ticket ON flight.FlightNum = ticket.FlightNum
+        JOIN passenger ON ticket.Passenger_ID = passenger.PassengerId
+        WHERE flight.origin = '1'
+            AND flight.destination = '21'
+            AND YEAR(flight.FlightDate) = YEAR(CURDATE());
 
 
 *       8.) Insert records for new flights between airports
 
+        INSERT INTO flight (FlightNum, origin, destination, FlightDate, PlaneId, FlightDepartTime)
+        VALUES ('50123', '1', '21', '2023-04-18', 6024, '10:45:00');
+
 
 *       9.) Insert records for new tickets and passengers on specific flights
 
+        INSERT INTO passenger (FirstName, LastName, DOB, PhoneNum, Email, TicketID)
+        VALUES ('Jyrki', 'Tavastia', '1990-01-12', '5558476', 'jyrkitavastia@email.com');
+
+        INSERT INTO ticket (FlightNum, TicketID)
+        VALUES ('2005', '1021');
+
 
 *       10.) Update meal preference (or something similar) for a specific passenger on a specific flight
+
+        UPDATE `airtravel`.`passenger` SET `MealPreference` = 'Vegetarian'
+        WHERE (`PassengerID` = '2019')
+        AND (`TicketID` = '1005');
 
 
 *       Bonus: Have some fun - get creative - what else can you do? Flex those SQL muscles and show us what
